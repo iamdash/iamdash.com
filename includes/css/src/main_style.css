@@ -1,0 +1,342 @@
+/* line 17, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 87, scss/main_style.scss */
+#wrapper {
+  float: left;
+  margin-right: 20px;
+  width: 940px;
+  float: none;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 97.917%;
+}
+/* line 70, scss/main_style.scss */
+#wrapper:before, #wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 75, scss/main_style.scss */
+#wrapper:after {
+  clear: both;
+}
+/* line 80, scss/main_style.scss */
+#wrapper {
+  zoom: 1;
+}
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+  /* line 87, scss/main_style.scss */
+  #wrapper {
+    width: 330px!important;
+  }
+}
+
+/* line 99, scss/main_style.scss */
+.row {
+  float: left;
+  margin-right: 20px;
+  width: 940px;
+  margin-right: 0;
+  width: 100%;
+  background: #eee;
+  margin-bottom: 20px;
+}
+/* line 70, scss/main_style.scss */
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+/* line 75, scss/main_style.scss */
+.row:after {
+  clear: both;
+}
+/* line 80, scss/main_style.scss */
+.row {
+  zoom: 1;
+}
+@media screen and (max-width:768px) {
+  /* line 99, scss/main_style.scss */
+  .row {
+    clear: both;
+  }
+}
+
+/* line 111, scss/main_style.scss */
+.section-header,
+#logo {
+  float: left;
+  margin-right: 20px;
+  width: 300px;
+  width: 31%;
+}
+/* line 70, scss/main_style.scss */
+.section-header:before, .section-header:after,
+#logo:before,
+#logo:after {
+  content: "";
+  display: table;
+}
+/* line 75, scss/main_style.scss */
+.section-header:after,
+#logo:after {
+  clear: both;
+}
+/* line 80, scss/main_style.scss */
+.section-header,
+#logo {
+  zoom: 1;
+}
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+  /* line 111, scss/main_style.scss */
+  .section-header,
+  #logo {
+    width: 330px!important;
+  }
+}
+@media screen and (max-width:768px) {
+  /* line 111, scss/main_style.scss */
+  .section-header,
+  #logo {
+    clear: both;
+  }
+}
+
+/* line 125, scss/main_style.scss */
+.section-content,
+.section-intro,
+.section-nav,
+#page-nav {
+  float: left;
+  margin-right: 20px;
+  width: 620px;
+  margin-right: 0;
+  width: 66.666%;
+}
+/* line 70, scss/main_style.scss */
+.section-content:before, .section-content:after,
+.section-intro:before,
+.section-intro:after,
+.section-nav:before,
+.section-nav:after,
+#page-nav:before,
+#page-nav:after {
+  content: "";
+  display: table;
+}
+/* line 75, scss/main_style.scss */
+.section-content:after,
+.section-intro:after,
+.section-nav:after,
+#page-nav:after {
+  clear: both;
+}
+/* line 80, scss/main_style.scss */
+.section-content,
+.section-intro,
+.section-nav,
+#page-nav {
+  zoom: 1;
+}
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+  /* line 125, scss/main_style.scss */
+  .section-content,
+  .section-intro,
+  .section-nav,
+  #page-nav {
+    margin: 0 auto;
+    padding: 10px 10px 0 10px;
+    width: 300px!important;
+  }
+}
+@media screen and (max-width:768px) {
+  /* line 125, scss/main_style.scss */
+  .section-content,
+  .section-intro,
+  .section-nav,
+  #page-nav {
+    clear: both;
+    width: 100%;
+  }
+}
+
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+  /* line 140, scss/main_style.scss */
+  .section-intro {
+    padding: 0;
+    width: 320px!important;
+  }
+}
+
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+  /* line 146, scss/main_style.scss */
+  .section-intro section {
+    padding: 10px;
+    width: 300px!important;
+  }
+}
+
+/* line 155, scss/main_style.scss */
+body {
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+  text-shadow: white 0px 0px 1px;
+}
+
+/* line 159, scss/main_style.scss */
+#logo h1 {
+  color: #fff;
+  background-color: #500000;
+  text-indent: 10px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  background: #000;
+  font-size: 16px;
+}
+
+/* line 166, scss/main_style.scss */
+h2 {
+  color: #fff;
+  background-color: #500000;
+  text-indent: 10px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+/* line 172, scss/main_style.scss */
+h3 {
+  color: #fff;
+  background-color: #b4b1a2;
+  text-indent: 10px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+/* line 179, scss/main_style.scss */
+a {
+  -webkit-transition: background 500ms ease;
+  -moz-transition: background 500ms ease;
+  -o-transition: background 500ms ease;
+  transition: background 500ms ease;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 0;
+  background: #b4b1a2;
+  color: #fff;
+  padding: 3px;
+  text-decoration: none;
+}
+
+/* line 188, scss/main_style.scss */
+a:hover {
+  background: #500000;
+}
+
+/* line 193, scss/main_style.scss */
+#project-images li {
+  float: left;
+  margin-right: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  width: 32.2%;
+}
+@media screen and (max-width:1024px) {
+  /* line 193, scss/main_style.scss */
+  #project-images li {
+    margin-right: 18px;
+  }
+}
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+  /* line 193, scss/main_style.scss */
+  #project-images li {
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+
+/* line 205, scss/main_style.scss */
+#project-images li img {
+  width: 100%;
+}
+
+/* line 210, scss/main_style.scss */
+#project-images li.omega {
+  margin-right: 0!important;
+}

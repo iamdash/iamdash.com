@@ -1,0 +1,212 @@
+@import 'compass/reset';
+@import 'compass/css3/text-shadow';
+
+// Variable declarations -------------------------------------------------------
+
+$iamdash-red: 		 		#500000;
+$iamdash-grey: 		 		#b4b1a2;
+$iamdash-font-sansserif: 	Helvetica, Arial, "Lucida Grande", sans-serif;
+$iamdash-font-size:		 	14px;
+$iamdash-line-height:		1.6em;
+$iamdash-corner-radius:	 	0;
+$iamdash-font-padding:	 	0;
+
+$column-width:           	60px;    // 12 columns = 720px
+$gutter-width:           	20px;    // 11 gutters = 220px
+
+$default-text-shadow-color: 	#ffffff;
+$default-text-shadow-h-offset: 	0px;
+$default-text-shadow-v-offset: 	0px;
+$default-text-shadow-blur: 		1px;
+
+
+// Mixins
+
+@mixin sans-serif-font{
+   font-family: $iamdash-font-sansserif;
+   font-size: $iamdash-font-size;
+   line-height: $iamdash-line-height;	
+}
+@mixin block-line-height{
+	height: 30px;
+	line-height: 30px;
+}
+
+@mixin text-dark-bg{
+  	color:  #fff;
+  	background-color: $iamdash-red;
+  	text-indent: 10px;
+  	@include el-corner-radius;
+}
+@mixin text-light-bg{
+  	color:  #fff;
+  	background-color: $iamdash-grey;
+  	text-indent: 10px;
+  	@include el-corner-radius;
+}
+
+@mixin el-transition{
+    -webkit-transition: background 500ms ease;
+    -moz-transition: background 500ms ease;
+    -o-transition: background 500ms ease;
+    transition: background 500ms ease;	
+}
+@mixin el-corner-radius{
+	border-radius: $iamdash-corner-radius;
+  	-webkit-border-radius: $iamdash-corner-radius;
+  	-moz-border-radius: $iamdash-corner-radius;
+  	padding:  $iamdash-font-padding;
+}
+
+@mixin grid-unit($span) {
+  float: left;
+  margin-right: $gutter-width;
+  width: ($column-width * $span) + ($gutter-width * ($span - 1));
+}
+
+@mixin clearfix {
+	// For modern browsers
+	&:before,
+	&:after {
+		content:"";
+		display:table;
+	}
+	
+	&:after {
+		clear:both;
+	}
+	
+	// For IE 6/7 (trigger hasLayout)
+	& {
+		zoom:1;
+	}
+}
+
+// Containers			-------------------------------------------------------
+
+#wrapper{
+	@include clearfix;
+	@include grid-unit(12);
+	float: none;
+	margin: 0 auto;
+        max-width: 1200px;
+        // result = target / context
+        width: percentage(940px / 960px);
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		width: 330px!important;
+	}    
+}
+.row{
+    @include clearfix;
+    @include grid-unit(12);
+    margin-right:0;
+    width: 100%;
+    background: #eee;
+    margin-bottom: 20px;
+	@media screen and (max-width:768px){
+		clear: both;
+	}
+}
+.section-header,
+#logo{
+	@include clearfix;
+	@include grid-unit(4);
+	width: 31%;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		width: 330px!important;
+	}
+	@media screen and (max-width:768px){
+		clear: both;
+	}		
+}
+.section-content,
+.section-intro,
+.section-nav,
+#page-nav{
+    @include clearfix;
+    @include grid-unit(8);
+    margin-right: 0;
+    width: 66.666%;
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		margin: 0 auto;
+		padding: 10px 10px 0 10px;
+		width: 300px!important;
+	}
+	@media screen and (max-width:768px){
+		clear: both;
+		width: 100%;
+	}	
+}
+.section-intro{
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		padding: 0;
+		width: 320px!important;
+	}
+}
+.section-intro section{
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		padding: 10px;
+		width: 300px!important;
+	}
+}
+
+// Type				-------------------------------------------------------
+
+body{
+ 	@include sans-serif-font;
+ 	@include text-shadow;
+}
+#logo h1{
+	@include text-dark-bg;
+	@include block-line-height;
+
+	background: #000;
+	font-size: 16px;
+}
+h2{
+	@include text-dark-bg;
+	@include block-line-height;
+
+	font-size: 16px;
+}
+h3{
+	@include text-light-bg;
+	@include block-line-height;
+	
+	font-size: 14px;
+}
+
+a{
+	@include el-transition;
+	@include el-corner-radius;
+	
+	background: $iamdash-grey;
+	color: #fff;
+	padding: 3px;
+	text-decoration: none;
+}
+a:hover{
+	background: $iamdash-red;
+}
+
+
+#project-images li{
+    @include grid-unit(4);
+    margin-bottom: 20px;
+    width: 32.2%;
+    @media screen and (max-width:1024px){
+        margin-right: 18px;
+    }
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }    
+}
+#project-images li img{
+    width: 100%
+}
+
+
+#project-images li.omega{
+        margin-right: 0!important;
+}

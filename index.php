@@ -20,8 +20,7 @@ include 'includes/php/functions.php';
     <meta name="description" content="">
 
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/includes/css/src/iamdash-all.css" />
-    <link rel="stylesheet" href="/includes/css/src/media.css" />
+    <link rel="stylesheet" href="/includes/css/src/main_style.css" />
     <script src="/includes/js/libs/modernizr-2.5.2.min.js"></script>
 </head>
 <body>
@@ -44,37 +43,42 @@ include 'includes/php/functions.php';
      </div>
   <div role="main" class="clearfix">
       <article id="intro" class="row">
-          <section class="grid_3 alpha omega">
-              <img src="/images/common/flower.png" alt="Flower" class="grid_1 alpha" id="flower" />
-              <header class="push_1">
-                  <h2 class="grid_2 omega">I am Dave Ashman. I have been building websites since 2003 and am still going strong.</h2>
-              </header>
-              <section class="grid_2 omega">
-                  <?php include('includes/content/intro.php');?>
-              </section>
-          </section>
+        <section>
+            <img src="/images/common/flower.png" alt="Flower" class="section-header" id="flower" />
+            <section class="section-content">
+                <header>
+                    <h2>I am Dave Ashman. I have been building websites since 2003 and am still going strong.</h2>
+                </header>
+                <section>
+                    <?php include('includes/content/intro.php');?>
+                </section>
+            </section>
+        </section>
       </article>
       <article id="work" class="row">
-          <section class="page-section">
+          <section>
               <div class="up-down">    
                 <a href="#skillset" class="next">Things I can do</a>
                 <a href="#wrapper" class="previous">Top of the page</a>
               </div>
-              <header class="grid_1 alpha">
+              <header class="section-header">
                   <h2>Things I have done</h2>
               </header>
-                  <nav id="project-type" class="section-nav grid_2 omega">
-                      <ul>
-                          <li><a href="#" rel="cms">CMS</a></li>
-                          <li><a href="#" rel="ecommerce">E-commerce</a></li>
-                          <li><a href="#" rel="exhibition">Exhibition</a></li>
-                          <li><a href="#" rel="frontend">Front end</a></li>
-                          <li><a href="#" rel="joomla">Joomla</a></li>
-                          <li><a href="#" rel="php-framework">PHP Framework</a></li>
-                          <li><a href="#" rel="wordpress">Wordpress</a></li>
-                      </ul>
-                  </nav>              
-              <section id="project-thumbs" class="row alpha omega">                 
+              <div class="section-nav">
+                    <nav id="project-type" class="section-nav grid_2 omega">
+                        <ul>
+                            <li><a href="#" rel="cms">CMS</a></li>
+                            <li><a href="#" rel="ecommerce">E-commerce</a></li>
+                            <li><a href="#" rel="exhibition">Exhibition</a></li>
+                            <li><a href="#" rel="frontend">Front end</a></li>
+                            <li><a href="#" rel="joomla">Joomla</a></li>
+                            <li><a href="#" rel="php-framework">PHP Framework</a></li>
+                            <li><a href="#" rel="wordpress">Wordpress</a></li>
+                        </ul>
+                    </nav>                  
+              </div>
+              
+              <section id="project-thumbs" class="row">                 
                   <?php include('includes/content/project-thumbs.php');?>
               </section>              
           </section>
@@ -85,23 +89,23 @@ include 'includes/php/functions.php';
                 <a href="#more" class="next">A little bit more</a>
                 <a href="#work" class="previous">Things I have done</a>
               </div>              
-                <header class="grid_1 alpha">
+                <header class="section-header">
                   <h2>Things I can do</h2>
               </header>
 
               <section class="row">
-                 <header class="grid_1 alpha">
+                 <header class="section-header">
                      <h3>Front-end ...</h3>
                  </header>                  
-                  <div class="grid_2 omega section-content">
+                  <div class="section-content">
                      <?php include('includes/content/skillset-front.php');?>
                   </div>
               </section>
               <section class="row">        
-                    <header class="grid_1 alpha">
+                    <header class="section-header">
                         <h3>CMS, e-commerce and back-end ...</h3>
                     </header>    
-                    <div class="grid_2  omega section-content">
+                    <div class="section-content">
                         <?php include('includes/content/skillset-back.php');?>
                     </div>  
                 </section>                    
@@ -113,22 +117,22 @@ include 'includes/php/functions.php';
                 <a href="#get-in-touch" class="next">Get in touch</a>
                 <a href="#skillset" class="previous">Things I can do</a>
               </div>              
-              <header class="grid_1 alpha">
+              <header class="section-header">
                   <h2>A little bit more</h2>
               </header>          
               <section class="row">
-                 <header class="grid_1 alpha">
+                 <header class="section-header">
                      <h3>About me ...</h3>
                  </header>                  
-                  <div class="grid_2 omega section-content">
+                  <div class="section-content">
                      <?php include('includes/content/more-about-me.php');?>
                   </div>
               </section> 
               <section class="row">
-                 <header class="grid_1 alpha">
+                 <header class="section-header">
                      <h3>About the site ...</h3>
                  </header>                  
-                  <div class="grid_2 omega section-content">
+                  <div class="section-content">
                      <?php include('includes/content/more-about-the-site.php');?>
                   </div>
               </section>               
@@ -139,14 +143,14 @@ include 'includes/php/functions.php';
               <div class="up-down">    
                 <a href="#more" class="previous">A little bit more</a>
               </div>               
-              <header class="grid_1 alpha">
+              <header class="section-header">
                   <h2>Get in touch</h2>
               </header> 
               <section class="row"> 
-                 <header class="grid_1 alpha">
+                 <header class="section-header">
                      <h3>How to contact me</h3>
                  </header>   
-                  <div class="grid_2 omega section-content">
+                  <div class="section-content">
                      <?php include('includes/content/contact.php');?>
                   </div>             
                 </section>

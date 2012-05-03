@@ -1,5 +1,5 @@
 $( document ).ready( function() {
-    scaleText();
+    //scaleText();
     $('.slidewrap2').carousel({
             slider: '.slider',
             slide: '.slide',

@@ -14,7 +14,7 @@
           <script src="/includes/js/jquery-1.4.2-min.js" charset="utf-8"></script>
           <script>$('html').addClass('js');</script>
           
-          <link rel="stylesheet" href="/includes/css/src/styles.css?v=<?php echo md5(time()); ?>" type="text/css" />
+          <link rel="stylesheet" href="/includes/css/src/main_style.css?v=<?php echo md5(time()); ?>" type="text/css" />
           
 
           <?php /* $browser = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
