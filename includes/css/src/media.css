@@ -1,0 +1,205 @@
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+    body{
+        font-size: 75%!important;
+    }
+    section .up-down{
+        opacity: 1!important;
+        right: 4px;
+        top: 10px;
+        height: 30px;
+        overflow: hidden
+    }
+    section .up-down a{
+        height: 30px;
+        line-height: 30px;
+    }
+    .up-down a.next{
+        background: url('/images/icons/arrow-down-small.png') no-repeat bottom left;
+        margin-right: 0;
+    } 
+    .up-down a.previous{
+        background: url('/images/icons/arrow-up-small.png') no-repeat top left;
+    }
+    #page-footer .up-down{
+        float: right;
+        margin-right: 5px!important;
+        margin-top:  10px!important;
+        width: 32px!important;
+    }
+    article,
+    article.row{
+        padding: 0 0 10px 0!important;
+        width: 320px!important;
+    }
+    article#intro{
+       margin-bottom: 0!important;
+        padding-top: 20px!important;
+    }
+    header{
+        margin-bottom: 0!important;
+    } 
+    img#flower{
+        display: none;
+    }
+    .grid_1,
+    .grid_2,
+    .grid_3 {
+            display:block;
+            float: left;
+            padding: 0!important;
+            position: relative;
+            margin-left: 0!important;
+            margin-right: 0!important;
+            max-width:  300px!important;
+            min-width:  300px!important;
+            width: 300px!important;        
+    }
+    section,
+    section.grid_1,
+    section.grid_2,
+    section.grid_3{
+        clear:both;
+        padding: 10px!important;
+        max-width:  300px!important;
+        min-width:  300px!important;        
+        width: 300px!important;
+    } 
+    #project-thumbs .grid_1{
+        max-width: 33%!important;
+        width: 33%!important;
+        min-width:  33%!important;
+    }
+    section section.grid_1,
+    section section.grid_2{
+        padding: 0!important;
+    }
+    .section-content{
+        background: none!important;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }    
+   
+    #project-images a.grid_3{
+        max-width:  100%!important;
+        min-width:  100%!important;        
+        width: 100%!important;
+    }
+    .container_3 .push_1,
+    .container_3 .prefix_1 {
+            left:0!important;
+    }
+    #page-footer .grid_1{
+        clear: none!important;
+        max-width:  200px!important;
+        min-width:  200px!important;        
+        width: 200px!important;
+    }
+    .container_3{
+        margin:0!important;
+        max-width:  320px!important;
+        min-width:  320px!important;
+        padding: 0;
+        width: 320px!important;
+        overflow: hidden!important;        
+    }
+    body{
+        padding-top: 0!important;
+    }
+    .page-header{
+        min-height: 50px;
+        width: 320px;
+    }
+    body,
+    header#logo,
+    nav#page-nav{
+            max-width:  320px!important;
+            min-width:  320px!important;        
+        width: 320px!important;
+    }
+    nav.page-header,nav.section-nav{
+        background: #000;
+        min-height: 30px;
+        padding-bottom: 10px;
+    }
+    nav.section-nav{
+        background: none;
+    }
+    nav#page-nav ul{
+        margin-bottom: 10px;
+        margin-right: 10px!important;
+        margin-left: 10px;        
+    } 
+    nav#page-nav li{
+        margin-bottom: 2px;
+        margin-right: 2px;
+    }
+    
+    nav.section-nav a,
+    nav#page-nav li a{
+        line-height: 20px;
+        padding: 2px 4px;
+    }    
+    section{
+        padding: 0;
+    }
+    section section{
+        padding: 0;
+    }
+
+    #intro h2{
+        background: none!important;
+        font-size: 20px!important;
+        line-height:22px!important;
+        margin: 0;
+        margin-bottom: 20px!important;
+        text-indent: 0!important;
+    }
+    h2,h3{
+        margin-bottom: 10px!important;
+    }
+    h2{
+        font-size: 14px!important;
+        line-height: 30px!important;
+        text-indent: 10px!important;
+    }
+    h3{
+        background: #d4d0bd!important;
+        font-size: 14px!important;
+        line-height: 20px!important;
+        text-indent: 10px!important;
+    }
+    .row{
+        margin: 0;
+        padding: 0!important;
+    }
+
+}
+@media screen and (max-width:768px){
+    section{
+        clear:both
+    }
+    .container_3{
+
+    }
+}
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #page-footer .up-down{
+        float: right;
+        margin-right: 5px!important;
+        margin-top:  0!important;
+        width: 32px!important;
+    }
+    #page-footer .grid_1{
+        clear: none!important;
+        max-width:  200px!important;
+        min-width:  200px!important;        
+        width: 200px!important;
+    } 
+    .section-nav{
+        clear: both;
+        margin-left: 0;
+        margin-top: 5px;
+        width: 100%!important
+    }
+}

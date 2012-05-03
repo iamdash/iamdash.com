@@ -1,0 +1,16 @@
+img{
+	behavior: url('/includes/css/ie/iepngfix.htc'); 
+}
+.js #logo{
+	left: 20px;
+	position: absolute;
+	top: 10px;	
+}
+.js footer#page-footer{
+	bottom: 20px;
+	margin-bottom: 0;
+	position: absolute;
+}
+p, dl, li{
+	font-size: 12px;
+}
