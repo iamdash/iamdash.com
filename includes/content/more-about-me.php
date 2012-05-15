@@ -1,6 +1,6 @@
 <p>I have been working with the web in some way shape or form since immigrating to the UK from Cape Town in early 2003. My last position, before
     saying goodbye to the world of full-time employment, was as senior developer at <a href="http://www.icodesign.com/" title="www.icodesign.com">ico Design 
-        Consultancy</a> where I had had held the position for four years.</p>
+        Consultancy</a> in Central London where I had had held the position for four years.</p>
 
 <p>While at ico, I had the opportunity to work on some brilliant projects ranging from front end development for
     <a href="http://www.wellcomecollection.org/" title="www.wellcomecollection.org">The Wellcome Collection</a>, run by the Wellcome Trust,

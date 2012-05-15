@@ -2,7 +2,7 @@ $( document ).ready( function() {
 		doInView()
        $('#page-header nav, .up-down, p').localScroll({
 		queue:true,
-		duration:2000,
+		duration:1500,
 		hash:true,
 		easing: 'easeOutBounce',
 			onBefore:function( e, anchor, $target ){

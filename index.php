@@ -27,6 +27,19 @@ include 'includes/php/functions.php';
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/includes/css/src/main_style.css" />
     <script src="/includes/js/libs/modernizr-2.5.2.min.js"></script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-318641-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 </head>
 <body id="site">
  <div class="container_3 clearfix" id="wrapper">
@@ -41,7 +54,7 @@ include 'includes/php/functions.php';
         <ul>
             <li><a href="#site" class="active">Home</a></li>
             <li><a href="#work">Things i have done</a></li>
-            <li><a href="#skillset">Things I can do</a></li>
+            <li><a href="#skillset">The things I do</a></li>
             <li><a href="#more">A little bit more</a></li>
             <li><a href="#get-in-touch">Get in touch</a></li>
         </ul>
@@ -53,7 +66,7 @@ include 'includes/php/functions.php';
             <img src="/images/common/flower.png" alt="Flower" class="section-header" id="flower" />
             <section class="section-content">
                 <header>
-                    <h2>I am Dave Ashman. I have been building websites since 2003 and am still going strong.</h2>
+                    <h2>I am Dave Ashman, web developer, based in Greater Manchester, UK. <span>Building web things since 2003 and still going strong.</span></h2>
                 </header>
                 <section>
                     <?php include('includes/content/intro.php');?>
@@ -67,7 +80,7 @@ include 'includes/php/functions.php';
       <article id="work" class="row">
           <section>
               <div class="up-down">   
-	<a href="#wrapper" class="previous">Top of the page</a> 
+				<a href="#site" class="previous">Top of the page</a> 
                 <a href="#skillset" class="next">Things I can do</a>
                 
               </div>
@@ -96,12 +109,12 @@ include 'includes/php/functions.php';
       <article id="skillset" class="row">
           <section class="page-section">
               <div class="up-down">    
-	<a href="#work" class="previous">Things I have done</a>
+				<a href="#work" class="previous">Things I have done</a>
                 <a href="#more" class="next">A little bit more</a>
                 
               </div>              
                 <header class="section-header">
-                  <h2>Things I can do</h2>
+                  <h2>The things I do</h2>
               </header>
 
               <section class="row">
@@ -119,15 +132,7 @@ include 'includes/php/functions.php';
                     <div class="section-content">
                         <?php include('includes/content/skillset-back.php');?>
                     </div>  
-                </section>
-              <section class="row">        
-                    <header class="section-header">
-                        <h3>Other bits ...</h3>
-                    </header>    
-                    <div class="section-content">
-                        <?php include('includes/content/skillset-other.php');?>
-                    </div>  
-                </section>                    
+                </section>                  
           </section>
       </article>
       <article id="more" class="row">

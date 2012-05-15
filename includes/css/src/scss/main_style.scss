@@ -358,6 +358,7 @@ h2{
 	}	
 }
 #intro h2{
+	font-size: 50px;
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 		font-size: 20px;
 		letter-spacing: 0;
@@ -366,6 +367,12 @@ h2{
 		padding-right: 40px;
 		text-indent: 0;
 	}	
+}
+#intro h2 span{
+	display: block;
+	font-size: 30px;
+	line-height: 35px;
+	margin-top: 20px;;
 }
 #logo h2{
     display: none;
@@ -377,6 +384,9 @@ h3{
 }
 p,dd{
 	margin-bottom: 20px;
+}
+dl p{
+	margin-bottom: 7px;
 }
 dt{
 	background: #dcdac8;
@@ -407,7 +417,9 @@ dl.techie-stuff dt{
 	$default-text-shadow-h-offset: 0;
 	$default-text-shadow-v-offset: 	0;
 	@include text-shadow;	
-	
+}
+dl.techie-stuff dd{
+    color: $iamdash-grey;
 }
 dt{
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
@@ -419,10 +431,12 @@ dt{
 }
 .section-content ul li{
 	background: url('/images/common/arrow-right.png') no-repeat 0 5px;
-	margin-bottom: 15px;
+	margin-bottom: 7px;
 	padding-left: 15px;
 }
-
+.section-content dl ul li{
+	margin-bottom: 0;
+}
 a{
 	@include el-transition;
 	@include el-corner-radius;
@@ -655,4 +669,3 @@ ul.social-links li a:hover{
 .delicious a:hover{	background: url('/images/icons/delicious.png');	}
 .last-fm a,
 .last-fm a:hover{	background: url('/images/icons/last-fm.png');	}
-
