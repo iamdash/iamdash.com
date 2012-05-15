@@ -94,7 +94,12 @@ $default-text-shadow-blur: 		0px;
   margin-right: $gutter-width;
   width: ($column-width * $span) + ($gutter-width * ($span - 1));
 }
-
+@mixin full-opacity{
+	opacity:  1!important;
+	-moz-opacity: 1!important;
+	-o-opacity: 1!important;
+	-webkit-opacity: 1!important;
+}
 
 
 @mixin clearfix {
@@ -163,7 +168,7 @@ article.row section.row{
 }
 #get-in-touch.row,
 #page-footer.row{
-	min-height: 100px;
+	min-height: 500px;
 }
 #page-header.row{
 	margin-top: 0;
@@ -310,6 +315,11 @@ h2{
 #logo h2{
     display: none;
 }
+h3{
+	@media screen and (max-width:1024px){
+		margin-bottom: 10px
+	}	
+}
 p,dd{
 	margin-bottom: 20px;
 }
@@ -383,8 +393,10 @@ a:hover{
 	width: 66px;
 	z-index: 4000;
 	@media screen and (max-width:1024px){
+	
+		@include full-opacity;
+		
 		right:0;
-		margin-right: -3px;
 		z-index: 4000;
 	}
 }
@@ -392,9 +404,9 @@ a:hover{
 	right: 0;
 }
 #intro .up-down{
-	
 	right: 0;
-	
+	top: 0;
+	width:  30px;
 }
 .up-down a,
 .section-nav li a{
@@ -442,8 +454,14 @@ a:hover{
 }
 
 #get-in-touch .up-down{
-	
 	@media screen and (max-width:1024px){
+		width:  30px;
+	}	
+}
+#page-footer .up-down{
+	@media screen and (max-width:1024px){
+		right:0;
+		top:  0;
 		width:  30px;
 	}	
 }
@@ -486,10 +504,15 @@ div#contact-links{
 	margin-top: 60px;
 	position: relative;
 	width:  100%;
+    @media screen and (max-width:1024px){
+		bottom: 0;
+        margin-top: auto;
+        position: absolute;
+        right:  0;
+        width: 105px
+    }	
 }
-#contact-links .up-down{
-	top: 0;
-}
+
 ul.social-links{
 	float: left;
     list-style: none;

@@ -28,7 +28,7 @@ include 'includes/php/functions.php';
     <link rel="stylesheet" href="/includes/css/src/main_style.css" />
     <script src="/includes/js/libs/modernizr-2.5.2.min.js"></script>
 </head>
-<body>
+<body id="site">
  <div class="container_3 clearfix" id="wrapper">
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
      
@@ -39,7 +39,7 @@ include 'includes/php/functions.php';
         </header>
         <nav id="page-nav" class="section-nav">
         <ul>
-            <li><a href="#intro" class="active">Home</a></li>
+            <li><a href="#site" class="active">Home</a></li>
             <li><a href="#work">Things i have done</a></li>
             <li><a href="#skillset">Things I can do</a></li>
             <li><a href="#more">A little bit more</a></li>
@@ -184,7 +184,7 @@ include 'includes/php/functions.php';
       </article>       
       <footer id="page-footer" class="row">
           <div class="up-down">    
-              <a href="#intro" class="previous">To the top of the page</a>
+              <a href="#site" class="previous">To the top of the page</a>
           </div>
       </footer>       
   </div>
