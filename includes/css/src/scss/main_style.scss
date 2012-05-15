@@ -608,7 +608,7 @@ a:hover{
     width: 100%
 }
 #project-images img.active-project{
-	outline: 1px inset #000;
+	outline: 1px solid #B4B1A2;
     @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 		outline: none;
     }
