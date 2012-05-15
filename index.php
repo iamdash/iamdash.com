@@ -66,9 +66,10 @@ include 'includes/php/functions.php';
       </article>
       <article id="work" class="row">
           <section>
-              <div class="up-down">    
+              <div class="up-down">   
+	<a href="#wrapper" class="previous">Top of the page</a> 
                 <a href="#skillset" class="next">Things I can do</a>
-                <a href="#wrapper" class="previous">Top of the page</a>
+                
               </div>
               <header class="section-header">
                   <h2>Things I have done</h2>
@@ -95,8 +96,9 @@ include 'includes/php/functions.php';
       <article id="skillset" class="row">
           <section class="page-section">
               <div class="up-down">    
+	<a href="#work" class="previous">Things I have done</a>
                 <a href="#more" class="next">A little bit more</a>
-                <a href="#work" class="previous">Things I have done</a>
+                
               </div>              
                 <header class="section-header">
                   <h2>Things I can do</h2>
@@ -131,8 +133,9 @@ include 'includes/php/functions.php';
       <article id="more" class="row">
           <section class="page-section">
               <div class="up-down">    
+	<a href="#skillset" class="previous">Things I can do</a>
                 <a href="#get-in-touch" class="next">Get in touch</a>
-                <a href="#skillset" class="previous">Things I can do</a>
+                
               </div>              
               <header class="section-header">
                   <h2>A little bit more</h2>

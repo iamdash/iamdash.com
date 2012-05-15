@@ -131,6 +131,7 @@ $default-text-shadow-blur: 		0px;
         // result = target / context
         width: percentage(940px / 960px);
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		margin-top:0;
 		width: 330px!important;
 	}
 	@media screen and (max-width:1024px){
@@ -148,6 +149,11 @@ $default-text-shadow-blur: 		0px;
     position: relative;
     width: 100%;
     margin-bottom: 20px;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		min-height: 100px;
+		padding-top: 16px!important;
+		width: 330px!important;
+	}    
 	@media screen and (max-width:768px){
 		clear: both;
 	}
@@ -162,6 +168,9 @@ article.row section.row{
 }
 #intro.row{
 	padding-top: 75px;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		padding-top: 0!important;
+	} 	
 	@media screen and (max-width:1024px){
 		padding-top: 100px;
 	}	
@@ -176,6 +185,9 @@ article.row section.row{
 	padding-top: 0;
 	position: fixed;
 	z-index: 3000;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		position: relative;
+	}	
 }
 
 .row .row{
@@ -187,6 +199,7 @@ article.row section.row{
 	@include grid-unit(5);
 
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		height: 30px;
 		width: 330px!important;
 	}
 	@media screen and (max-width:768px){
@@ -226,12 +239,19 @@ header.section-header{
 	}
 	@media screen and (max-width:1024px){
 		clear: both;
-		
 		width: 100%;
 	}		
 }
+#page-nav{
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		padding:0
+	}	
+}
 .section-nav{
 	@include grid-unit(10);
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		padding: 10px 10px 0 0;
+	}	
 }
 #intro .section-content{
 	@media screen and (max-width:1024px){
@@ -252,6 +272,9 @@ header.section-header{
 }
 
 img#flower{
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		display:none;
+	}	
 	@media screen and (max-width:1024px){
 		position: absolute;
 		right:  40px;
@@ -268,7 +291,11 @@ body{
  	
 	background: #efeee3 url('/images/common/bg-flowers.png') fixed;
 	color: #403f39;
-	font-weight: 500; 	
+	font-weight: 500; 
+	
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		background: #efeee3;
+	}		
 }
 #logo h1{
 	@include text-dark-bg;
@@ -280,18 +307,16 @@ body{
 h1,h2,h3{
 	text-transform: lowercase!important;
 }
-/*h2{
-	@include text-dark-bg;
-	@include block-line-height;
 
-	font-size: 16px;
-}*/
 h3,dt{
 	@include block-line-height;
 	@include text-light-bg;	
 	
 	color: #fff;
 	font-size: 14px;
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		text-shadow: none!important;
+	}	
 }
 
 h2{
@@ -311,6 +336,22 @@ h2{
 	padding: 0;
 	text-indent: 0;
 	text-transform: lowercase;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		font-size: 20px;
+		letter-spacing: 0;
+		line-height: 30px;
+		text-indent: 10px;
+	}	
+}
+#intro h2{
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		font-size: 20px;
+		letter-spacing: 0;
+		line-height: 20px;
+		margin-top: -10px;
+		padding-right: 40px;
+		text-indent: 0;
+	}	
 }
 #logo h2{
     display: none;
@@ -354,9 +395,13 @@ dl.techie-stuff dt{
 	@include text-shadow;	
 	
 }
-
+dt{
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		color:	#54524a;
+		}
+}
 .section-content ul li{
-	background: #f4f2eb url('/images/common/arrow-right.png') no-repeat 0 5px;
+	background: url('/images/common/arrow-right.png') no-repeat 0 5px;
 	margin-bottom: 15px;
 	padding-left: 15px;
 }
@@ -373,6 +418,12 @@ a{
 	color: #fff;
 	padding: 3px;
 	text-decoration: none;
+	
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		color:#54524a;
+		text-shadow: none!important;
+	}	
+	
 }
 a:hover{
 	background: $iamdash-red;
@@ -383,6 +434,10 @@ a:hover{
 	
 	float: left;
 	margin-right: 3px;
+	
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		margin-right:0
+	}	
 }
 .up-down{
 	float: left;
@@ -392,21 +447,38 @@ a:hover{
 	top:  20px;
 	width: 66px;
 	z-index: 4000;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		right: -6px!important;
+		top: 15px;
+	}  	
+	
 	@media screen and (max-width:1024px){
 	
 		@include full-opacity;
 		
 		right:0;
 		z-index: 4000;
+		
 	}
 }
 #page-footer .up-down{
 	right: 0;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		right: 0!important;
+	} 	
+}
+#get-in-touch .up-down{
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		right: 0!important;
+	} 	
 }
 #intro .up-down{
 	right: 0;
 	top: 0;
 	width:  30px;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		right: 0!important;
+	} 	
 }
 .up-down a,
 .section-nav li a{
@@ -416,7 +488,11 @@ a:hover{
 	background: #dcdac8;
 	color: #fff;
 	padding: 0 5px;
-	text-indent: 0;
+	text-indent: 0;	
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		color:	#54524a;
+		}	
+	
 }
 .section-nav li a:hover{
 	background-color: $iamdash-grey;
@@ -429,6 +505,9 @@ a:hover{
 	
 	background-color: $iamdash-red;
 	cursor: default;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		color:	#fff;
+		}	
 }
 .up-down a{
     float: left;
@@ -469,6 +548,11 @@ a:hover{
 
 #project-images{
 	margin-top: 20px;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		margin-left: 10px;
+		margin-top: 5px;
+		width:  310px;
+    } 
 }
 
 #project-images li{
@@ -482,8 +566,9 @@ a:hover{
         width:  288px;
     }
     @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-        margin-bottom: 5px;
+		margin-bottom: 5px;
         margin-right: 5px;
+        width: 100px;
     }    
 }
 #project-images li img{
@@ -492,6 +577,9 @@ a:hover{
 }
 #project-images img.active-project{
 	outline: 1px inset #000;
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		outline: none;
+    } 	
 }
 #project-images li.omega{
         margin-right: 0!important;
