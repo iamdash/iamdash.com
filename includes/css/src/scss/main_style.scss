@@ -1,6 +1,29 @@
 @import 'compass/reset';
 @import 'compass/css3/text-shadow';
 
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
 // Variable declarations -------------------------------------------------------
 
 $iamdash-red: 		 		#500000;
@@ -15,9 +38,9 @@ $column-width:           	60px;    // 12 columns = 720px
 $gutter-width:           	20px;    // 11 gutters = 220px
 
 $default-text-shadow-color: 	#ffffff;
-$default-text-shadow-h-offset: 	0px;
-$default-text-shadow-v-offset: 	0px;
-$default-text-shadow-blur: 		1px;
+$default-text-shadow-h-offset: 	1px;
+$default-text-shadow-v-offset: 	1px;
+$default-text-shadow-blur: 		0px;
 
 
 // Mixins
@@ -28,8 +51,10 @@ $default-text-shadow-blur: 		1px;
    line-height: $iamdash-line-height;	
 }
 @mixin block-line-height{
+	display: block;
 	height: 30px;
 	line-height: 30px;
+	text-transform: uppercase;
 }
 
 @mixin text-dark-bg{
@@ -37,12 +62,18 @@ $default-text-shadow-blur: 		1px;
   	background-color: $iamdash-red;
   	text-indent: 10px;
   	@include el-corner-radius;
+  	$default-text-shadow-color: 	#000000;
+  	@include text-shadow;
 }
 @mixin text-light-bg{
-  	color:  #fff;
+  	color:  #B4B1A2;
   	background-color: $iamdash-grey;
   	text-indent: 10px;
   	@include el-corner-radius;
+	$default-text-shadow-h-offset: 	1px;
+	$default-text-shadow-v-offset: 	1px;
+	$default-text-shadow-color: 	#B4B1A2;
+	@include text-shadow;	
 }
 
 @mixin el-transition{
@@ -63,6 +94,8 @@ $default-text-shadow-blur: 		1px;
   margin-right: $gutter-width;
   width: ($column-width * $span) + ($gutter-width * ($span - 1));
 }
+
+
 
 @mixin clearfix {
 	// For modern browsers
@@ -88,36 +121,82 @@ $default-text-shadow-blur: 		1px;
 	@include clearfix;
 	@include grid-unit(12);
 	float: none;
-	margin: 0 auto;
+	margin: 20px auto;
         max-width: 1200px;
         // result = target / context
         width: percentage(940px / 960px);
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 		width: 330px!important;
-	}    
+	}
+	@media screen and (max-width:1024px){
+		overflow: hidden;
+		width: 900px;
+	}	
 }
+
 .row{
     @include clearfix;
     @include grid-unit(12);
     margin-right:0;
+    min-height: 1000px;
+    padding-top: 96px;
+    position: relative;
     width: 100%;
-    background: #eee;
     margin-bottom: 20px;
 	@media screen and (max-width:768px){
 		clear: both;
 	}
+	@media screen and (max-width:1024px){
+		margin-bottom: 20px;
+		padding-top: 77px;
+		width: 900px;
+	}	
+}
+article.row section.row{
+	min-height: 100px!important;
+}
+#intro.row{
+	padding-top: 75px;	
+}
+#get-in-touch.row{
+	min-height: 100px;
+}
+#page-header.row{
+	margin-top: 0;
+	min-height: 53px;
+	padding-top: 0;
+	position: fixed;
+	z-index: 3000;
+}
+
+.row .row{
+	padding-top: 0;;
 }
 .section-header,
 #logo{
 	@include clearfix;
-	@include grid-unit(4);
-	width: 31%;
+	@include grid-unit(5);
+
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 		width: 330px!important;
 	}
 	@media screen and (max-width:768px){
 		clear: both;
-	}		
+	}
+	@media screen and (max-width:1024px){
+		clear: both;
+	}	
+}
+header#logo,
+header.section-header{
+	@media screen and (max-width:768px){
+		clear: both;
+	}
+	@media screen and (max-width:1024px){
+		clear: both;
+		margin-bottom: 3px;
+		width: 100%;
+	}	
 }
 .section-content,
 .section-intro,
@@ -135,7 +214,15 @@ $default-text-shadow-blur: 		1px;
 	@media screen and (max-width:768px){
 		clear: both;
 		width: 100%;
-	}	
+	}
+	@media screen and (max-width:1024px){
+		clear: both;
+		
+		width: 100%;
+	}		
+}
+.section-nav{
+	@include grid-unit(10);
 }
 .section-intro{
     @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
@@ -150,11 +237,24 @@ $default-text-shadow-blur: 		1px;
 	}
 }
 
+img#flower{
+	@media screen and (max-width:1024px){
+		position: absolute;
+		right:  40px;
+		top:  100px;
+		width: 120px
+	}
+}
+
 // Type				-------------------------------------------------------
 
 body{
  	@include sans-serif-font;
  	@include text-shadow;
+ 	
+	background: #f4f2eb url('/images/common/bg-flowers.png');
+	color: #403f39;
+	font-weight: 500; 	
 }
 #logo h1{
 	@include text-dark-bg;
@@ -163,22 +263,85 @@ body{
 	background: #000;
 	font-size: 16px;
 }
-h2{
+h1,h2,h3{
+	text-transform: lowercase!important;
+}
+/*h2{
 	@include text-dark-bg;
 	@include block-line-height;
 
 	font-size: 16px;
-}
-h3{
-	@include text-light-bg;
+}*/
+h3,dt{
 	@include block-line-height;
+	@include text-light-bg;	
 	
+	color: #fff;
 	font-size: 14px;
 }
 
+h2{
+	$default-text-shadow-h-offset: 	2px;
+	$default-text-shadow-v-offset: 	2px;
+	$default-text-shadow-color: 	#ffffff;
+	@include text-shadow;
+	
+	background: none;
+	color: #363530!important;
+	font-size: 275%;
+	font-weight: bold;
+	height: auto;
+	letter-spacing: -2px;
+	line-height: 0.9em;
+	margin-bottom: 20px;
+	padding: 0;
+	text-indent: 0;
+	text-transform: lowercase;
+}
+#logo h2{
+    display: none;
+}
+p,dd{
+	margin-bottom: 20px;
+}
+dt{
+	background: #dcdac8;
+	color: #fff;
+	clear: both;
+	float: left;
+	margin-bottom: 7px;
+	padding: 0 5px;
+	text-indent: 0;
+}
+dd{
+	
+	clear: both;
+	float: left;
+}
+dl.techie-stuff{
+    font-size: 11px!important;
+    margin-top: 30px;
+}
+dl.techie-stuff dt{
+	background: #B4B1A2;
+	color: #fff;
+	font-size: 11px!important;
+	height: 20px;
+	line-height:20px;
+	
+	$default-text-shadow-color: 	#000000;
+	$default-text-shadow-h-offset: 0;
+	$default-text-shadow-v-offset: 	0;
+	@include text-shadow;	
+	
+}
 a{
 	@include el-transition;
 	@include el-corner-radius;
+	$default-text-shadow-color: 	#ffffff;
+	$default-text-shadow-h-offset: 0;
+	$default-text-shadow-v-offset: 	0;
+	@include text-shadow;
 	
 	background: $iamdash-grey;
 	color: #fff;
@@ -189,11 +352,81 @@ a:hover{
 	background: $iamdash-red;
 }
 
+.section-nav li{
+	@include block-line-height;
+	
+	float: left;
+	margin-right: 3px;
+}
+.up-down{
+	float: left;
+	margin-bottom: 3px;
+	position: absolute;
+	top:  53px;
+	width: 66px;
+	
+	@media screen and (max-width:1024px){
+		float: right;
+		margin-right: -3px;
+	}
+}
+#page-footer .up-down{
+	top:  0;
+	position: relative;
+	width:  36px;
+}
+.up-down a,
+.section-nav li a{
+	@include block-line-height;
+	@include block-line-height;
+	@include text-light-bg;
+	background: #dcdac8;
+	color: #fff;
+	padding: 0 5px;
+	text-indent: 0;
+}
+.section-nav li a:hover{
+	background-color: $iamdash-grey;
+}
+
+.section-nav li a.active{
+	$default-text-shadow-h-offset: 0;
+	$default-text-shadow-v-offset: 	0;
+	@include text-shadow;	
+	
+	background-color: $iamdash-red;
+	cursor: default;
+}
+.up-down a{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 3px;
+    padding: 0;
+    text-indent: -999em;
+    width: 30px;
+
+}
+.up-down a.next{
+    background: url('/images/icons/arrow-down.png') no-repeat bottom left;
+}
+.up-down a.next:hover{
+    background: url('/images/icons/arrow-down.png') no-repeat top left;
+}
+.up-down a.previous{
+    background: url('/images/icons/arrow-up.png') no-repeat top left;
+}
+.up-down a.previous:hover{
+    background: url('/images/icons/arrow-up.png') no-repeat bottom left;
+}
+#project-images{
+	margin-top: 20px;
+}
 
 #project-images li{
-    @include grid-unit(4);
+    @include grid-unit(5);
     margin-bottom: 20px;
-    width: 32.2%;
+
     @media screen and (max-width:1024px){
         margin-right: 18px;
     }
@@ -205,8 +438,43 @@ a:hover{
 #project-images li img{
     width: 100%
 }
-
-
 #project-images li.omega{
         margin-right: 0!important;
 }
+/* Social media links
+-------------------------------------------------------------- */
+
+ul.social-links{
+	float: left;
+    list-style: none;
+}
+ul.social-links li{
+	float: left;
+	height: 30px;
+	margin-right: 5px;
+	width: 30px;
+}
+.social-links a{
+	background-position: 0 0;
+	background-repeat: 0 0;
+    border: 1px solid #eee;
+	display: block;
+	height: 30px;
+    padding: 0;
+	text-indent: -999em;
+	width: 30px;
+}
+ul.social-links li a:hover{
+    background-color: none!important;
+    background-position: 0 -30px;
+      
+}
+.flickr a,
+.flickr a:hover{	background: url('/images/icons/flickr.png');		}
+.linked-in a,
+.linked-in a:hover{	background: url('/images/icons/linked-in.png');	}
+.delicious a,
+.delicious a:hover{	background: url('/images/icons/delicious.png');	}
+.last-fm a,
+.last-fm a:hover{	background: url('/images/icons/last-fm.png');	}
+

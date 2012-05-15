@@ -26,22 +26,23 @@ include 'includes/php/functions.php';
 <body>
  <div class="container_3 clearfix" id="wrapper">
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-     <div class="row">
-     <header id="logo" class="grid_1 alpha page-header">
+     
+	<div id="page-header" class="row">
+        <header id="logo" class="grid_1 alpha page-header">
         <h1>iamdash.net</h1>
         <h2>Freelance web developer.</h2>
-    </header>
-    <nav id="page-nav" class="grid_2 omega page-header">
+        </header>
+        <nav id="page-nav" class="section-nav">
         <ul>
-            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#intro" class="active">Home</a></li>
             <li><a href="#work">Things i have done</a></li>
             <li><a href="#skillset">Things I can do</a></li>
             <li><a href="#more">A little bit more</a></li>
             <li><a href="#get-in-touch">Get in touch</a></li>
         </ul>
-    </nav>
+        </nav>
      </div>
-  <div role="main" class="clearfix">
+  	<div role="main" class="clearfix">
       <article id="intro" class="row">
         <section>
             <img src="/images/common/flower.png" alt="Flower" class="section-header" id="flower" />
@@ -65,7 +66,7 @@ include 'includes/php/functions.php';
                   <h2>Things I have done</h2>
               </header>
               <div class="section-nav">
-                    <nav id="project-type" class="section-nav grid_2 omega">
+                    <nav id="project-type" class="section-nav">
                         <ul>
                             <li><a href="#" rel="cms">CMS</a></li>
                             <li><a href="#" rel="ecommerce">E-commerce</a></li>
@@ -159,15 +160,12 @@ include 'includes/php/functions.php';
       <footer id="page-footer" class="row">
             <div class="up-down">    
                 <a href="#wrapper" class="previous">To the top of the page</a>
-            </div>            
-          <section class="alpha grid_1">
-              
+            </div>  
                 <ul class="social-links">
-			<li class="flickr"><a href="http://www.flickr.com/photos/iamdashnet/" title="View my flickr photo stream">flickr</a></li>
-			<li class="last-fm"><a href="http://www.last.fm/user/daveashman" title="My Last.fm profile">Last.fm</a></li>
-			<li class="linked-in"><a href="http://uk.linkedin.com/in/iamdash" title="My Linked In profile">Linked in</a></li>
-		</ul>
-          </section>        
+					<li class="flickr"><a href="http://www.flickr.com/photos/iamdashnet/" title="View my flickr photo stream">flickr</a></li>
+					<li class="last-fm"><a href="http://www.last.fm/user/daveashman" title="My Last.fm profile">Last.fm</a></li>
+					<li class="linked-in"><a href="http://uk.linkedin.com/in/iamdash" title="My Linked In profile">Linked in</a></li>
+				</ul>        
       </footer>       
   </div>
   <footer>

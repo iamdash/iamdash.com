@@ -1,14 +1,7 @@
 $( document ).ready( function() {
-    //scaleText();
-    $('.slidewrap2').carousel({
-            slider: '.slider',
-            slide: '.slide',
-            addNav: false,
-            addPagination: true,
-            speed: 2000,
-            slideHed: true
-    });
-    $('nav, .up-down').localScroll({
+        //scaleText();
+
+        $('#page-header nav, .up-down').localScroll({
 		//target: '#content', // could be a selector or a jQuery object too.
 		queue:true,
 		duration:500,
@@ -39,23 +32,8 @@ $( document ).ready( function() {
                 },100);
             });
         })
-        /*$('#project-thumbs img').each(function(){
-            var the_image = $(this);           
-            the_image.live('mouseenter',function(){
-                the_image.animate({
-                    'opacity':1
-                })
-            });
-            the_image.live('mouseleave',function(){
-                if(!$(this).hasClass('highlighted')){
-                    the_image.animate({
-                    'opacity':0.2
-                    })
-                }
-                
-            });
-        });*/
-        //$('#project-images img').fadeTo(100,1);
+
+        $('#project-images img').fadeTo(100,1);
         $('.section-nav a').each(function(){
            $(this).click(function(e){
                e.preventDefault();
@@ -73,7 +51,16 @@ $( document ).ready( function() {
                })
            }) 
         }); 
-        
+        $('article.row').bind('inview', function (event, visible) {
+		  if (visible == true) {
+		    // element is now visible in the viewport
+			console.log($(this).attr('id'));
+			$('#page-header nav a').removeClass('active');
+			$('#page-header nav a[href=#'+$(this).attr('id')+']').addClass('active')
+		  } else {
+		    // element has gone out of viewport
+		  }
+		});
 });
 
 
