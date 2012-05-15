@@ -1,6 +1,6 @@
 $( document ).ready( function() {
 		doInView()
-       $('#page-header nav, .up-down').localScroll({
+       $('#page-header nav, .up-down, p').localScroll({
 		queue:true,
 		duration:2000,
 		hash:true,

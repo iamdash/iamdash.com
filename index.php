@@ -117,6 +117,14 @@ include 'includes/php/functions.php';
                     <div class="section-content">
                         <?php include('includes/content/skillset-back.php');?>
                     </div>  
+                </section>
+              <section class="row">        
+                    <header class="section-header">
+                        <h3>Other bits ...</h3>
+                    </header>    
+                    <div class="section-content">
+                        <?php include('includes/content/skillset-other.php');?>
+                    </div>  
                 </section>                    
           </section>
       </article>

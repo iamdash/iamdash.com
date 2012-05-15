@@ -183,12 +183,13 @@ article.row section.row {
   }
 }
 
-/* line 164, scss/main_style.scss */
-#get-in-touch.row {
+/* line 165, scss/main_style.scss */
+#get-in-touch.row,
+#page-footer.row {
   min-height: 100px;
 }
 
-/* line 167, scss/main_style.scss */
+/* line 168, scss/main_style.scss */
 #page-header.row {
   margin-top: 0;
   min-height: 53px;
@@ -197,12 +198,12 @@ article.row section.row {
   z-index: 3000;
 }
 
-/* line 175, scss/main_style.scss */
+/* line 176, scss/main_style.scss */
 .row .row {
   padding-top: 0;
 }
 
-/* line 179, scss/main_style.scss */
+/* line 180, scss/main_style.scss */
 .section-header,
 #logo {
   float: left;
@@ -227,21 +228,21 @@ article.row section.row {
   zoom: 1;
 }
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
-  /* line 179, scss/main_style.scss */
+  /* line 180, scss/main_style.scss */
   .section-header,
   #logo {
     width: 330px!important;
   }
 }
 @media screen and (max-width:768px) {
-  /* line 179, scss/main_style.scss */
+  /* line 180, scss/main_style.scss */
   .section-header,
   #logo {
     clear: both;
   }
 }
 @media screen and (max-width:1024px) {
-  /* line 179, scss/main_style.scss */
+  /* line 180, scss/main_style.scss */
   .section-header,
   #logo {
     clear: both;
@@ -249,14 +250,14 @@ article.row section.row {
 }
 
 @media screen and (max-width:768px) {
-  /* line 194, scss/main_style.scss */
+  /* line 195, scss/main_style.scss */
   header#logo,
   header.section-header {
     clear: both;
   }
 }
 @media screen and (max-width:1024px) {
-  /* line 194, scss/main_style.scss */
+  /* line 195, scss/main_style.scss */
   header#logo,
   header.section-header {
     clear: both;
@@ -265,7 +266,7 @@ article.row section.row {
   }
 }
 
-/* line 207, scss/main_style.scss */
+/* line 208, scss/main_style.scss */
 .section-content,
 .section-intro,
 .section-nav,
@@ -302,7 +303,7 @@ article.row section.row {
   zoom: 1;
 }
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
-  /* line 207, scss/main_style.scss */
+  /* line 208, scss/main_style.scss */
   .section-content,
   .section-intro,
   .section-nav,
@@ -313,7 +314,7 @@ article.row section.row {
   }
 }
 @media screen and (max-width:768px) {
-  /* line 207, scss/main_style.scss */
+  /* line 208, scss/main_style.scss */
   .section-content,
   .section-intro,
   .section-nav,
@@ -323,7 +324,7 @@ article.row section.row {
   }
 }
 @media screen and (max-width:1024px) {
-  /* line 207, scss/main_style.scss */
+  /* line 208, scss/main_style.scss */
   .section-content,
   .section-intro,
   .section-nav,
@@ -333,7 +334,7 @@ article.row section.row {
   }
 }
 
-/* line 227, scss/main_style.scss */
+/* line 228, scss/main_style.scss */
 .section-nav {
   float: left;
   margin-right: 20px;
@@ -341,14 +342,14 @@ article.row section.row {
 }
 
 @media screen and (max-width:1024px) {
-  /* line 230, scss/main_style.scss */
+  /* line 231, scss/main_style.scss */
   #intro .section-content {
     width: 700px;
   }
 }
 
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
-  /* line 235, scss/main_style.scss */
+  /* line 236, scss/main_style.scss */
   .section-intro {
     padding: 0;
     width: 320px!important;
@@ -356,7 +357,7 @@ article.row section.row {
 }
 
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
-  /* line 241, scss/main_style.scss */
+  /* line 242, scss/main_style.scss */
   .section-intro section {
     padding: 10px;
     width: 300px!important;
@@ -364,7 +365,7 @@ article.row section.row {
 }
 
 @media screen and (max-width:1024px) {
-  /* line 248, scss/main_style.scss */
+  /* line 249, scss/main_style.scss */
   img#flower {
     position: absolute;
     right: 40px;
@@ -373,18 +374,18 @@ article.row section.row {
   }
 }
 
-/* line 259, scss/main_style.scss */
+/* line 260, scss/main_style.scss */
 body {
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 12px;
-  line-height: 1.6em;
+  line-height: 21px;
   text-shadow: white 1px 1px 0px;
-  background: #f4f2eb url("/images/common/bg-flowers.png") fixed;
+  background: #efeee3 url("/images/common/bg-flowers.png") fixed;
   color: #403f39;
   font-weight: 500;
 }
 
-/* line 267, scss/main_style.scss */
+/* line 268, scss/main_style.scss */
 #logo h1 {
   color: #fff;
   background-color: #500000;
@@ -402,7 +403,7 @@ body {
   font-size: 16px;
 }
 
-/* line 274, scss/main_style.scss */
+/* line 275, scss/main_style.scss */
 h1, h2, h3 {
   text-transform: lowercase!important;
 }
@@ -413,7 +414,7 @@ h1, h2, h3 {
 
 	font-size: 16px;
 }*/
-/* line 283, scss/main_style.scss */
+/* line 284, scss/main_style.scss */
 h3, dt {
   display: block;
   height: 30px;
@@ -431,7 +432,7 @@ h3, dt {
   font-size: 14px;
 }
 
-/* line 291, scss/main_style.scss */
+/* line 292, scss/main_style.scss */
 h2 {
   text-shadow: white 2px 2px 0px;
   background: none;
@@ -447,17 +448,17 @@ h2 {
   text-transform: lowercase;
 }
 
-/* line 309, scss/main_style.scss */
+/* line 310, scss/main_style.scss */
 #logo h2 {
   display: none;
 }
 
-/* line 312, scss/main_style.scss */
+/* line 313, scss/main_style.scss */
 p, dd {
   margin-bottom: 20px;
 }
 
-/* line 315, scss/main_style.scss */
+/* line 316, scss/main_style.scss */
 dt {
   background: #dcdac8;
   color: #fff;
@@ -468,19 +469,19 @@ dt {
   text-indent: 0;
 }
 
-/* line 324, scss/main_style.scss */
+/* line 325, scss/main_style.scss */
 dd {
   clear: both;
   float: left;
 }
 
-/* line 329, scss/main_style.scss */
+/* line 330, scss/main_style.scss */
 dl.techie-stuff {
   font-size: 11px!important;
   margin-top: 30px;
 }
 
-/* line 333, scss/main_style.scss */
+/* line 334, scss/main_style.scss */
 dl.techie-stuff dt {
   background: #B4B1A2;
   color: #fff;
@@ -490,7 +491,14 @@ dl.techie-stuff dt {
   text-shadow: black 0 0 0px;
 }
 
-/* line 346, scss/main_style.scss */
+/* line 348, scss/main_style.scss */
+.section-content ul li {
+  background: #f4f2eb url("/images/common/arrow-right.png") no-repeat 0 5px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+/* line 354, scss/main_style.scss */
 a {
   -webkit-transition: background 500ms ease;
   -moz-transition: background 500ms ease;
@@ -501,18 +509,26 @@ a {
   -moz-border-radius: 0;
   padding: 0;
   text-shadow: white 0 0 0px;
-  background: #b4b1a2;
+  color: #B4B1A2;
+  background-color: #b4b1a2;
+  text-indent: 10px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 0;
+  text-shadow: #b4b1a2 1px 1px 0px;
+  background: #DCDAC8;
   color: #fff;
   padding: 3px;
   text-decoration: none;
 }
 
-/* line 359, scss/main_style.scss */
+/* line 367, scss/main_style.scss */
 a:hover {
   background: #500000;
 }
 
-/* line 363, scss/main_style.scss */
+/* line 371, scss/main_style.scss */
 .section-nav li {
   display: block;
   height: 30px;
@@ -522,7 +538,7 @@ a:hover {
   margin-right: 3px;
 }
 
-/* line 369, scss/main_style.scss */
+/* line 377, scss/main_style.scss */
 .up-down {
   float: left;
   margin-bottom: 3px;
@@ -533,7 +549,7 @@ a:hover {
   z-index: 4000;
 }
 @media screen and (max-width:1024px) {
-  /* line 369, scss/main_style.scss */
+  /* line 377, scss/main_style.scss */
   .up-down {
     right: 0;
     margin-right: -3px;
@@ -541,17 +557,17 @@ a:hover {
   }
 }
 
-/* line 383, scss/main_style.scss */
+/* line 391, scss/main_style.scss */
 #page-footer .up-down {
   right: 0;
 }
 
-/* line 386, scss/main_style.scss */
+/* line 394, scss/main_style.scss */
 #intro .up-down {
   right: 0;
 }
 
-/* line 392, scss/main_style.scss */
+/* line 400, scss/main_style.scss */
 .up-down a,
 .section-nav li a {
   display: block;
@@ -576,19 +592,19 @@ a:hover {
   text-indent: 0;
 }
 
-/* line 401, scss/main_style.scss */
+/* line 409, scss/main_style.scss */
 .section-nav li a:hover {
   background-color: #b4b1a2;
 }
 
-/* line 405, scss/main_style.scss */
+/* line 413, scss/main_style.scss */
 .section-nav li a.active {
   text-shadow: #b4b1a2 0 0 0px;
   background-color: #500000;
   cursor: default;
 }
 
-/* line 413, scss/main_style.scss */
+/* line 421, scss/main_style.scss */
 .up-down a {
   float: left;
   height: 30px;
@@ -599,78 +615,79 @@ a:hover {
   width: 30px;
 }
 
-/* line 423, scss/main_style.scss */
+/* line 431, scss/main_style.scss */
 .up-down a.next {
   background: url("/images/icons/arrow-down.png") no-repeat bottom left;
 }
 
-/* line 426, scss/main_style.scss */
+/* line 434, scss/main_style.scss */
 .up-down a.next:hover {
   background: url("/images/icons/arrow-down.png") no-repeat top left;
 }
 
-/* line 429, scss/main_style.scss */
+/* line 437, scss/main_style.scss */
 .up-down a.previous {
   background: url("/images/icons/arrow-up.png") no-repeat top left;
 }
 
-/* line 432, scss/main_style.scss */
+/* line 440, scss/main_style.scss */
 .up-down a.previous:hover {
   background: url("/images/icons/arrow-up.png") no-repeat bottom left;
 }
 
 @media screen and (max-width:1024px) {
-  /* line 436, scss/main_style.scss */
+  /* line 444, scss/main_style.scss */
   #get-in-touch .up-down {
     width: 30px;
   }
 }
 
-/* line 444, scss/main_style.scss */
+/* line 452, scss/main_style.scss */
 #project-images {
   margin-top: 20px;
 }
 
-/* line 448, scss/main_style.scss */
+/* line 456, scss/main_style.scss */
 #project-images li {
   float: left;
   margin-right: 20px;
   width: 380px;
+  background: #fff;
   margin-bottom: 20px;
 }
 @media screen and (max-width:1024px) {
-  /* line 448, scss/main_style.scss */
+  /* line 456, scss/main_style.scss */
   #project-images li {
     margin-right: 18px;
     width: 288px;
   }
 }
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
-  /* line 448, scss/main_style.scss */
+  /* line 456, scss/main_style.scss */
   #project-images li {
     margin-bottom: 5px;
     margin-right: 5px;
   }
 }
 
-/* line 461, scss/main_style.scss */
+/* line 471, scss/main_style.scss */
 #project-images li img {
   width: 100%;
 }
 
-/* line 464, scss/main_style.scss */
+/* line 475, scss/main_style.scss */
 #project-images img.active-project {
   outline: 1px inset #000;
 }
 
-/* line 467, scss/main_style.scss */
+/* line 478, scss/main_style.scss */
 #project-images li.omega {
   margin-right: 0!important;
 }
 
 /* Social media links
 -------------------------------------------------------------- */
-/* line 473, scss/main_style.scss */
+/* line 484, scss/main_style.scss */
 div#contact-links {
   height: 30px;
   margin-top: 60px;
@@ -678,18 +695,18 @@ div#contact-links {
   width: 100%;
 }
 
-/* line 479, scss/main_style.scss */
+/* line 490, scss/main_style.scss */
 #contact-links .up-down {
   top: 0;
 }
 
-/* line 482, scss/main_style.scss */
+/* line 493, scss/main_style.scss */
 ul.social-links {
   float: left;
   list-style: none;
 }
 
-/* line 486, scss/main_style.scss */
+/* line 497, scss/main_style.scss */
 ul.social-links li {
   float: left;
   height: 30px;
@@ -697,7 +714,7 @@ ul.social-links li {
   width: 30px;
 }
 
-/* line 492, scss/main_style.scss */
+/* line 503, scss/main_style.scss */
 .social-links a {
   background-position: 0 0;
   background-repeat: 0 0;
@@ -709,31 +726,31 @@ ul.social-links li {
   width: 30px;
 }
 
-/* line 502, scss/main_style.scss */
+/* line 513, scss/main_style.scss */
 ul.social-links li a:hover {
   background-color: none!important;
   background-position: 0 -30px;
 }
 
-/* line 508, scss/main_style.scss */
+/* line 519, scss/main_style.scss */
 .flickr a,
 .flickr a:hover {
   background: url("/images/icons/flickr.png");
 }
 
-/* line 510, scss/main_style.scss */
+/* line 521, scss/main_style.scss */
 .linked-in a,
 .linked-in a:hover {
   background: url("/images/icons/linked-in.png");
 }
 
-/* line 512, scss/main_style.scss */
+/* line 523, scss/main_style.scss */
 .delicious a,
 .delicious a:hover {
   background: url("/images/icons/delicious.png");
 }
 
-/* line 514, scss/main_style.scss */
+/* line 525, scss/main_style.scss */
 .last-fm a,
 .last-fm a:hover {
   background: url("/images/icons/last-fm.png");

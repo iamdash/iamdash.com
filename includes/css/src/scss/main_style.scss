@@ -30,7 +30,7 @@ $iamdash-red: 		 		#500000;
 $iamdash-grey: 		 		#b4b1a2;
 $iamdash-font-sansserif: 	Helvetica, Arial, "Lucida Grande", sans-serif;
 $iamdash-font-size:		 	12px;
-$iamdash-line-height:		1.6em;
+$iamdash-line-height:		21px;
 $iamdash-corner-radius:	 	0;
 $iamdash-font-padding:	 	0;
 
@@ -161,7 +161,8 @@ article.row section.row{
 		padding-top: 100px;
 	}	
 }
-#get-in-touch.row{
+#get-in-touch.row,
+#page-footer.row{
 	min-height: 100px;
 }
 #page-header.row{
@@ -260,7 +261,7 @@ body{
  	@include sans-serif-font;
  	@include text-shadow;
  	
-	background: #f4f2eb url('/images/common/bg-flowers.png') fixed;
+	background: #efeee3 url('/images/common/bg-flowers.png') fixed;
 	color: #403f39;
 	font-weight: 500; 	
 }
@@ -343,6 +344,13 @@ dl.techie-stuff dt{
 	@include text-shadow;	
 	
 }
+
+.section-content ul li{
+	background: #f4f2eb url('/images/common/arrow-right.png') no-repeat 0 5px;
+	margin-bottom: 15px;
+	padding-left: 15px;
+}
+
 a{
 	@include el-transition;
 	@include el-corner-radius;
@@ -350,8 +358,8 @@ a{
 	$default-text-shadow-h-offset: 0;
 	$default-text-shadow-v-offset: 	0;
 	@include text-shadow;
-	
-	background: $iamdash-grey;
+	@include text-light-bg;
+	background: #DCDAC8;
 	color: #fff;
 	padding: 3px;
 	text-decoration: none;
@@ -447,6 +455,8 @@ a:hover{
 
 #project-images li{
     @include grid-unit(5);
+    
+    background: #fff;
     margin-bottom: 20px;
 
     @media screen and (max-width:1024px){
@@ -459,6 +469,7 @@ a:hover{
     }    
 }
 #project-images li img{
+	
     width: 100%
 }
 #project-images img.active-project{
