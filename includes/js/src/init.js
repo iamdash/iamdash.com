@@ -1,66 +1,59 @@
 $( document ).ready( function() {
-        //scaleText();
-
-        $('#page-header nav, .up-down').localScroll({
-		//target: '#content', // could be a selector or a jQuery object too.
+		doInView()
+       $('#page-header nav, .up-down').localScroll({
 		queue:true,
-		duration:500,
+		duration:2000,
 		hash:true,
-                easing: 'easeOutCirc',
-		onBefore:function( e, anchor, $target ){
-			// The 'this' is the settings object, can be modified
-		},
-		onAfter:function( anchor, settings ){
-			// The 'this' contains the scrolled element (#content)
-		}
-	});    
-        $('.up-down').css({
-            'opacity': 0.2,
-            'z-index': 999
-        });
-        $('.row').each(function(){
-            var the_row = $(this);
-            var up_down = the_row.find($('.up-down'))            
-            the_row.mouseenter(function(){
-                up_down.animate({
-                    'opacity':1
-                },100);
-            });
-            the_row.mouseleave(function(){
-                up_down.animate({
-                    'opacity':0.2
-                },100);
-            });
-        })
+		easing: 'easeOutBounce',
+			onBefore:function( e, anchor, $target ){
 
-        $('#project-images img').fadeTo(100,1);
-        $('.section-nav a').each(function(){
-           $(this).click(function(e){
-               e.preventDefault();
-               var the_link = $(this);
-               $('.section-nav a').removeClass('active');
-               the_link.addClass('active');
-               var skill_type = the_link.attr('rel');
-               console.log(skill_type)
-               $('#project-images img').animate({
+			},
+			onAfter:function( anchor, settings ){
+				var hash = window.location.hash;
+				$('#page-header nav a').removeClass('active');
+				$('#page-header nav a[href='+hash+']').addClass('active');				
+			}
+		});    
+       $('.up-down').css({
+           'opacity': 0.2
+       });
+       $('.row').each(function(){
+           var the_row = $(this);
+           var up_down = the_row.find($('.up-down'))            
+           the_row.mouseenter(function(){
+               up_down.animate({
+                   'opacity':1
+               },100);
+           });
+           the_row.mouseleave(function(){
+               up_down.animate({
                    'opacity':0.2
-               },100, function(){
-                   $('#project-images img.'+skill_type).animate({
-                        'opacity':1
-                    },100)
-               })
-           }) 
-        }); 
-        $('article.row').bind('inview', function (event, visible) {
-		  if (visible == true) {
-		    // element is now visible in the viewport
-			console.log($(this).attr('id'));
-			$('#page-header nav a').removeClass('active');
-			$('#page-header nav a[href=#'+$(this).attr('id')+']').addClass('active')
-		  } else {
-		    // element has gone out of viewport
-		  }
-		});
+               },100);
+           });
+       })
+
+       $('#project-images img').fadeTo(100,0.2);
+       $('#work .section-nav a').each(function(){
+			var the_nav = $(this);
+          $(this).click(function(e){
+			  $('*').removeClass('active-project');
+              e.preventDefault();
+              var the_link = $(this);
+              $('#work .section-nav a').removeClass('active');
+              the_link.addClass('active');
+              var skill_type = the_link.attr('rel');
+
+              $('#project-images img').animate({
+                  'opacity':0.2
+              },100, function(){
+					
+                  $('#project-images img.'+skill_type).addClass('active-project').animate({
+                       'opacity':1
+                   },100)
+              })
+          }) 
+       }); 
+
 });
 
 
@@ -87,4 +80,13 @@ function scaleText(){
 
             //Fire it when the page first loads:
             setBodyScale();    
+}
+
+function doInView(){
+	$('article.row').bind('inview', function (event, visible) {
+		if (visible == true) {
+			$('#page-header nav a').removeClass('active');
+			$('#page-header nav a[href=#'+$(this).attr('id')+']').addClass('active');
+		}
+	});	
 }

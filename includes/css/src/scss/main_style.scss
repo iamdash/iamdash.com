@@ -29,7 +29,7 @@
 $iamdash-red: 		 		#500000;
 $iamdash-grey: 		 		#b4b1a2;
 $iamdash-font-sansserif: 	Helvetica, Arial, "Lucida Grande", sans-serif;
-$iamdash-font-size:		 	14px;
+$iamdash-font-size:		 	12px;
 $iamdash-line-height:		1.6em;
 $iamdash-corner-radius:	 	0;
 $iamdash-font-padding:	 	0;
@@ -148,7 +148,7 @@ $default-text-shadow-blur: 		0px;
 	}
 	@media screen and (max-width:1024px){
 		margin-bottom: 20px;
-		padding-top: 77px;
+		padding-top: 100px;
 		width: 900px;
 	}	
 }
@@ -156,7 +156,10 @@ article.row section.row{
 	min-height: 100px!important;
 }
 #intro.row{
-	padding-top: 75px;	
+	padding-top: 75px;
+	@media screen and (max-width:1024px){
+		padding-top: 100px;
+	}	
 }
 #get-in-touch.row{
 	min-height: 100px;
@@ -224,6 +227,11 @@ header.section-header{
 .section-nav{
 	@include grid-unit(10);
 }
+#intro .section-content{
+	@media screen and (max-width:1024px){
+		width:  700px;
+	}		
+}
 .section-intro{
     @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 		padding: 0;
@@ -252,7 +260,7 @@ body{
  	@include sans-serif-font;
  	@include text-shadow;
  	
-	background: #f4f2eb url('/images/common/bg-flowers.png');
+	background: #f4f2eb url('/images/common/bg-flowers.png') fixed;
 	color: #403f39;
 	font-weight: 500; 	
 }
@@ -362,18 +370,23 @@ a:hover{
 	float: left;
 	margin-bottom: 3px;
 	position: absolute;
-	top:  53px;
+	right: 0;
+	top:  20px;
 	width: 66px;
-	
+	z-index: 4000;
 	@media screen and (max-width:1024px){
-		float: right;
+		right:0;
 		margin-right: -3px;
+		z-index: 4000;
 	}
 }
 #page-footer .up-down{
-	top:  0;
-	position: relative;
-	width:  36px;
+	right: 0;
+}
+#intro .up-down{
+	
+	right: 0;
+	
 }
 .up-down a,
 .section-nav li a{
@@ -419,6 +432,15 @@ a:hover{
 .up-down a.previous:hover{
     background: url('/images/icons/arrow-up.png') no-repeat bottom left;
 }
+
+#get-in-touch .up-down{
+	
+	@media screen and (max-width:1024px){
+		width:  30px;
+	}	
+}
+
+
 #project-images{
 	margin-top: 20px;
 }
@@ -429,6 +451,7 @@ a:hover{
 
     @media screen and (max-width:1024px){
         margin-right: 18px;
+        width:  288px;
     }
     @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
         margin-bottom: 5px;
@@ -438,12 +461,24 @@ a:hover{
 #project-images li img{
     width: 100%
 }
+#project-images img.active-project{
+	outline: 1px inset #000;
+}
 #project-images li.omega{
         margin-right: 0!important;
 }
 /* Social media links
 -------------------------------------------------------------- */
 
+div#contact-links{
+	height: 30px;
+	margin-top: 60px;
+	position: relative;
+	width:  100%;
+}
+#contact-links .up-down{
+	top: 0;
+}
 ul.social-links{
 	float: left;
     list-style: none;

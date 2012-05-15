@@ -12,12 +12,17 @@ include 'includes/php/functions.php';
 <head>
   <meta charset="utf-8">
   <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
-  <title>iamdash.com</title>
+  <title>iamdash.com | Online home of Dave Ashman, web developer, based in Greater Manchester, UK</title>
   <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
   <?php /*
     <script type="text/javascript" src="http://use.typekit.com/jek6rrs.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  */?>
-    <meta name="description" content="">
+	
+	<meta name="author" content="Dave Ashman" />
+	<meta name="description" content="Dave Ashman, freelance web developer based in Greater Manchester, UK. My work focuses on the development of 
+		accessible, standards-based web sites, from front- and back-end build through to custom content management systems and 
+		WordPress integration and customisation" />
+	<meta name="keywords" content="Dave Ashman, dave ashman, iamdash,web developer, Manchester, Greater Machester, Bury, Bolton, UK, front end (x)HTML, HTML5, CSS, JavaScript, PHP backend and CMS development" />
 
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/includes/css/src/main_style.css" />
@@ -29,7 +34,7 @@ include 'includes/php/functions.php';
      
 	<div id="page-header" class="row">
         <header id="logo" class="grid_1 alpha page-header">
-        <h1>iamdash.net</h1>
+        <h1>iamdash.com</h1>
         <h2>Freelance web developer.</h2>
         </header>
         <nav id="page-nav" class="section-nav">
@@ -52,6 +57,9 @@ include 'includes/php/functions.php';
                 </header>
                 <section>
                     <?php include('includes/content/intro.php');?>
+		              <div class="up-down">    
+		                <a href="#work" class="next">Things I have done</a>
+		              </div>
                 </section>
             </section>
         </section>
@@ -146,10 +154,19 @@ include 'includes/php/functions.php';
               </div>               
               <header class="section-header">
                   <h2>Get in touch</h2>
+
               </header> 
               <section class="row"> 
                  <header class="section-header">
                      <h3>How to contact me</h3>
+					<div id="contact-links">
+ 
+		                <ul class="social-links">
+							<li class="flickr"><a href="http://www.flickr.com/photos/iamdashnet/" title="View my flickr photo stream">flickr</a></li>
+							<li class="last-fm"><a href="http://www.last.fm/user/daveashman" title="My Last.fm profile">Last.fm</a></li>
+							<li class="linked-in"><a href="http://uk.linkedin.com/in/iamdash" title="My Linked In profile">Linked in</a></li>
+						</ul>
+					</div>
                  </header>   
                   <div class="section-content">
                      <?php include('includes/content/contact.php');?>
@@ -158,14 +175,9 @@ include 'includes/php/functions.php';
             </section>
       </article>       
       <footer id="page-footer" class="row">
-            <div class="up-down">    
-                <a href="#wrapper" class="previous">To the top of the page</a>
-            </div>  
-                <ul class="social-links">
-					<li class="flickr"><a href="http://www.flickr.com/photos/iamdashnet/" title="View my flickr photo stream">flickr</a></li>
-					<li class="last-fm"><a href="http://www.last.fm/user/daveashman" title="My Last.fm profile">Last.fm</a></li>
-					<li class="linked-in"><a href="http://uk.linkedin.com/in/iamdash" title="My Linked In profile">Linked in</a></li>
-				</ul>        
+          <div class="up-down">    
+              <a href="#intro" class="previous">To the top of the page</a>
+          </div>
       </footer>       
   </div>
   <footer>
