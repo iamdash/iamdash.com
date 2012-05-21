@@ -151,33 +151,13 @@ $default-text-shadow-blur: 		0px;
     padding-top: 80px;
     position: relative;
     width: 100%;
-    margin-bottom: 20px;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		min-height: 100px;
-		padding-top: 16px!important;
-		width: 330px!important;
-	}    
-	@media screen and (max-width:768px){
-		clear: both;
-	}
-	@media screen and (max-width:1024px){
-		margin-bottom: 20px;
-		padding-top: 100px;
-		width: 900px;
-	}	
+    margin-bottom: 20px;	
 }
 article.row section.row{
 	min-height: 100px!important;
 }
 #intro.row{
 	padding-top: 75px;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		height: 590px;
-		padding-top: 100px!important;
-	} 	
-	@media screen and (max-width:1024px){
-		padding-top: 100px;
-	}	
 }
 #get-in-touch.row,
 #page-footer.row{
@@ -190,13 +170,7 @@ article.row section.row{
 	min-height: 30px;
 	padding-top: 0;
 	position: fixed;
-	z-index: 3000;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		position: relative;
-	}
-	@media screen and (max-width:768px){
-		position: relative;
-	}	
+	z-index: 3000;	
 }
 
 .row .row{
@@ -205,30 +179,9 @@ article.row section.row{
 .section-header,
 #logo{
 	@include clearfix;
-	@include grid-unit(5);
+	@include grid-unit(5);	
+}
 
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		height: 30px;
-		width: 330px!important;
-	}
-	@media screen and (max-width:768px){
-		clear: both;
-	}
-	@media screen and (max-width:1024px){
-		clear: both;
-	}	
-}
-header#logo,
-header.section-header{
-	@media screen and (max-width:768px){
-		clear: both;
-	}
-	@media screen and (max-width:1024px){
-		clear: both;
-		margin-bottom: 3px;
-		width: 100%;
-	}	
-}
 .section-content,
 .section-intro,
 .section-nav,
@@ -236,79 +189,17 @@ header.section-header{
     @include clearfix;
     @include grid-unit(8);
     margin-right: 0;
-    width: 66.666%;
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		margin: 0 auto;
-		padding: 10px 10px 0 10px;
+    width: 66.666%;	
+}
 
-		width: 330px!important;
-	}
-	@media screen and (max-width:768px){
-		clear: both;
-		width: 100%;
-	}
-	@media screen and (max-width:1024px){
-		clear: both;
-		width: 100%;
-	}		
-}
-#page-nav{
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		background: #DCDAC8;
-		padding:0;
-		text-align: center;
-		position: absolute;
-		top:  320px;
-		width:  320px;
-	}	
-}
 .section-nav{
 	@include grid-unit(10);
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		padding: 10px 10px 0 0;
-	}	
+
 }
-#intro .section-content{
-   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		padding-top: 310px;
-	}	
-	@media screen and (max-width:1024px){
-		
-		width:  700px;
-	}		
-}
-.section-content{
-	@media screen and (max-width:768px){
-		padding: 10px;
-	}	
-}
-.section-intro{
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		padding: 0;
-		width: 320px!important;
-	}
-}
-.section-intro section{
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		padding: 10px;
-		width: 300px!important;
-	}
-}
+
 
 img#flower{
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 
-		right: 20px!important;
-		top: -30px!important;
-		height:  240px;
-		width: 240px!important;
-	}	
-	@media screen and (max-width:1024px){
-		position: absolute;
-		right:  -20px;
-		top:  100px;
-		width: 240px
-	}
 }
 
 // Type				-------------------------------------------------------
@@ -320,10 +211,7 @@ body{
 	/*background: #efeee3 url('/images/common/bg.png') fixed;*/
 	color: #403f39;
 	font-weight: 500; 
-	
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		background: #efeee3;
-	}		
+		
 }
 #logo h1{
 	@include text-dark-bg;
@@ -342,12 +230,7 @@ h3,dt{
 	
 	color: #fff;
 	font-size: 14px;
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		text-shadow: none!important;
-	}
-	@media screen and (max-width:768px){
-		text-shadow: none!important;
-	}		
+		
 }
 
 h2{
@@ -367,42 +250,24 @@ h2{
 	padding: 0;
 	text-indent: 0;
 	text-transform: lowercase;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		font-size: 20px;
-		letter-spacing: 0;
-		line-height: 30px;
-		text-indent: 10px;
-	}	
+	
 }
 #intro h2{
 	font-size: 50px;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		font-size: 20px;
-		letter-spacing: 0;
-		line-height: 20px;
-		margin-top: -10px;
-		padding-right: 40px;
-		text-indent: 0;
-	}	
+
 }
 #intro h2 span{
 	display: block;
 	font-size: 30px;
 	line-height: 35px;
-	margin-top: 20px;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		font-size: 16px;
-		line-height: 20px
-	}	
+	margin-top: 20px;	
 }
 #logo h2{
     display: none;
 }
 
 h3{
-	@media screen and (max-width:1024px){
-		margin-bottom: 10px
-	}	
+	
 }
 p,dd{
 	margin-bottom: 20px;
@@ -444,12 +309,7 @@ dl.techie-stuff dd{
     color: $iamdash-grey;
 }
 dt{
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		color:	#54524a;
-	}
-	@media screen and (max-width:768px){
-		color:	#54524a;
-	}		
+	
 }
 .section-content ul li{
 	background: url('/images/common/arrow-right.png') no-repeat 0 5px;
@@ -472,13 +332,7 @@ a{
 	color: #fff;
 	padding: 3px;
 	text-decoration: none;
-	
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px),screen and (max-width:768px)  {
-		color:#54524a;
-		text-shadow: none!important;
-	}
-	
-	
+
 }
 a:hover{
 	background: $iamdash-red;
@@ -499,11 +353,6 @@ blockquote{
 	float: left;
 	margin-right: 3px;
 	
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-
-		margin-right:0;
-		width: 160px;
-	}	
 }
 .up-down{
 	float: left;
@@ -513,39 +362,17 @@ blockquote{
 	top:  20px;
 	width: 66px;
 	z-index: 4000;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		right: -6px!important;
-		top: 15px;
-	}  	
-	
-	@media screen and (max-width:1024px){
-	
-		@include full-opacity;
-		
-		right:0;
-		z-index: 4000;
-		
-	}
 }
 #page-footer .up-down{
 	right: 0;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		right: 0!important;
-	} 	
 }
 #get-in-touch .up-down{
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		right: 0!important;
-	} 	
+	
 }
 #intro .up-down{
 	right: 0;
 	top: 0;
-	width:  30px;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		right: 0!important;
-		top:-73px
-	} 	
+	width:  30px;	
 }
 .up-down a,
 .section-nav li a{
@@ -555,11 +382,7 @@ blockquote{
 	background: #dcdac8;
 	color: #fff;
 	padding: 0 5px;
-	text-indent: 0;	
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px),screen and (max-width:768px)  {
-		color:	#54524a;
-		}	
-	
+	text-indent: 0;
 }
 .section-nav li a:hover{
 	background-color: $iamdash-grey;
@@ -571,10 +394,7 @@ blockquote{
 	@include text-shadow;	
 	
 	background-color: $iamdash-red;
-	cursor: default;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px),screen and (max-width:768px)  {
-		color:	#fff;
-		}	
+	cursor: default;	
 }
 .up-down a{
     float: left;
@@ -600,26 +420,15 @@ blockquote{
 }
 
 #get-in-touch .up-down{
-	@media screen and (max-width:1024px){
-		width:  30px;
-	}	
+	
 }
 #page-footer .up-down{
-	@media screen and (max-width:1024px){
-		right:0;
-		top:  0;
-		width:  30px;
-	}	
+	
 }
 
 
 #project-images{
 	margin-top: 20px;
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		margin-left: 10px;
-		margin-top: 5px;
-		width:  310px;
-    } 
 }
 
 #project-images li{
@@ -631,35 +440,13 @@ blockquote{
     padding: 10px;
     outline: 1px solid #B4B1A2;
     overflow: hidden;
-	width: 360px;
-	
-	
-    @media screen and (max-width:1024px){
-		height:  144px;
-        margin-right: 18px;
-        width:  288px;
-    }
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		height: 50px;
-		margin-bottom: 5px;
-        margin-right: 5px;
-        width: 100px;
-    }    
+	width: 360px; 
 }
 #project-images a{
 	cursor: default;
     display: block;
     height:  180px;
-	width: 360px;
-	
-    @media screen and (max-width:1024px){
-		height:  144px;
-        width:  288px;
-    }
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		height: 50px;
-        width: 100px;
-    }    
+	width: 360px;  
 }
 
 #project-images li img{
@@ -668,13 +455,7 @@ blockquote{
 #project-images .active-project{
 	cursor: pointer;    	
 }
-#project-images img.active-project{
-    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		outline: none;
-    }
-	@media screen and (max-width:768px){
-		outline: none;
-	}     	
+#project-images img.active-project{     	
 }
 #project-images li.omega{
 	margin-right: 0!important;
@@ -692,14 +473,7 @@ div#contact-links{
 	height: 30px;
 	margin-top: 60px;
 	position: relative;
-	width:  100%;
-    @media screen and (max-width:1024px){
-		bottom: 0;
-        margin-top: auto;
-        position: absolute;
-        right:  0;
-        width: 105px
-    }	
+	width:  100%;	
 }
 
 ul.social-links{
