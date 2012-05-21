@@ -148,7 +148,7 @@ $default-text-shadow-blur: 		0px;
     @include grid-unit(12);
     margin-right:0;
     min-height: 1000px;
-    padding-top: 96px;
+    padding-top: 80px;
     position: relative;
     width: 100%;
     margin-bottom: 20px;
@@ -172,7 +172,8 @@ article.row section.row{
 #intro.row{
 	padding-top: 75px;
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		padding-top: 0!important;
+		height: 590px;
+		padding-top: 100px!important;
 	} 	
 	@media screen and (max-width:1024px){
 		padding-top: 100px;
@@ -183,8 +184,10 @@ article.row section.row{
 	min-height: 500px;
 }
 #page-header.row{
+	background: yellow;
 	margin-top: 0;
-	min-height: 53px;
+	height: 30px;
+	min-height: 30px;
 	padding-top: 0;
 	position: fixed;
 	z-index: 3000;
@@ -237,7 +240,8 @@ header.section-header{
     @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 		margin: 0 auto;
 		padding: 10px 10px 0 10px;
-		width: 300px!important;
+
+		width: 330px!important;
 	}
 	@media screen and (max-width:768px){
 		clear: both;
@@ -250,7 +254,12 @@ header.section-header{
 }
 #page-nav{
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		padding:0
+		background: #DCDAC8;
+		padding:0;
+		text-align: center;
+		position: absolute;
+		top:  320px;
+		width:  320px;
 	}	
 }
 .section-nav{
@@ -260,7 +269,11 @@ header.section-header{
 	}	
 }
 #intro .section-content{
+   @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		padding-top: 310px;
+	}	
 	@media screen and (max-width:1024px){
+		
 		width:  700px;
 	}		
 }
@@ -284,13 +297,17 @@ header.section-header{
 
 img#flower{
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		display:none;
+
+		right: 20px!important;
+		top: -30px!important;
+		height:  240px;
+		width: 240px!important;
 	}	
 	@media screen and (max-width:1024px){
 		position: absolute;
-		right:  40px;
+		right:  -20px;
 		top:  100px;
-		width: 120px
+		width: 240px
 	}
 }
 
@@ -299,8 +316,8 @@ img#flower{
 body{
  	@include sans-serif-font;
  	@include text-shadow;
- 	
-	background: #efeee3 url('/images/common/bg.png') fixed;
+ 	background: #fff;
+	/*background: #efeee3 url('/images/common/bg.png') fixed;*/
 	color: #403f39;
 	font-weight: 500; 
 	
@@ -372,11 +389,16 @@ h2{
 	display: block;
 	font-size: 30px;
 	line-height: 35px;
-	margin-top: 20px;;
+	margin-top: 20px;
+	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		font-size: 16px;
+		line-height: 20px
+	}	
 }
 #logo h2{
     display: none;
 }
+
 h3{
 	@media screen and (max-width:1024px){
 		margin-bottom: 10px
@@ -434,7 +456,8 @@ dt{
 	margin-bottom: 7px;
 	padding-left: 15px;
 }
-.section-content dl ul li{
+.section-content dl ul li,
+.jqmWindow .section-content ul li{
 	margin-bottom: 0;
 }
 a{
@@ -461,6 +484,15 @@ a:hover{
 	background: $iamdash-red;
 }
 
+blockquote{
+	background: url('/images/common/quote.png') no-repeat 0 10px;
+	font-style: italic;
+	border-bottom: 1px solid #DCDAC8;
+	border-top: 1px solid #DCDAC8;
+	padding: 20px 20px 0 60px;
+	min-height: 50px;
+}
+
 .section-nav li{
 	@include block-line-height;
 	
@@ -468,7 +500,9 @@ a:hover{
 	margin-right: 3px;
 	
     @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		margin-right:0
+
+		margin-right:0;
+		width: 160px;
 	}	
 }
 .up-down{
@@ -510,6 +544,7 @@ a:hover{
 	width:  30px;
 	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 		right: 0!important;
+		top:-73px
 	} 	
 }
 .up-down a,
@@ -591,24 +626,49 @@ a:hover{
     @include grid-unit(5);
     
     background: #fff;
+    height:  180px;
     margin-bottom: 20px;
-
+    padding: 10px;
+    outline: 1px solid #B4B1A2;
+    overflow: hidden;
+	width: 360px;
+	
+	
     @media screen and (max-width:1024px){
+		height:  144px;
         margin-right: 18px;
         width:  288px;
     }
     @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		height: 50px;
 		margin-bottom: 5px;
         margin-right: 5px;
         width: 100px;
     }    
 }
-#project-images li img{
+#project-images a{
+	cursor: default;
+    display: block;
+    height:  180px;
+	width: 360px;
 	
+    @media screen and (max-width:1024px){
+		height:  144px;
+        width:  288px;
+    }
+    @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
+		height: 50px;
+        width: 100px;
+    }    
+}
+
+#project-images li img{
     width: 100%
 }
+#project-images .active-project{
+	cursor: pointer;    	
+}
 #project-images img.active-project{
-	outline: 1px solid #B4B1A2;
     @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
 		outline: none;
     }
@@ -617,8 +677,14 @@ a:hover{
 	}     	
 }
 #project-images li.omega{
-        margin-right: 0!important;
+	margin-right: 0!important;
 }
+#project-images li a{
+	background: none;
+	padding: 0;
+	text-indent: 0;
+}
+
 /* Social media links
 -------------------------------------------------------------- */
 
@@ -669,3 +735,214 @@ ul.social-links li a:hover{
 .delicious a:hover{	background: url('/images/icons/delicious.png');	}
 .last-fm a,
 .last-fm a:hover{	background: url('/images/icons/last-fm.png');	}
+
+
+/**	jQmodal window	**/
+
+a.jqmClose{
+	cursor: pointer;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	padding: 0;
+	position: absolute;
+	right: 5px;
+	text-align: center;
+	top: 0;
+	text-indent: 0;
+	width: 20px;
+}
+.jqmWindow .section-header{
+	margin-bottom: 20px;
+	width: 35%;
+}
+
+.jqmWindow h2{
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 12px;
+}
+.jqmWindow h4{
+	margin-bottom: 20px;
+}
+.jqmWindow h4 a{
+	margin-right: 10px;
+}
+.jqmWindow dt{
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	margin-right: 2px;
+	width: 45px;
+}
+.jqmWindow dt,
+.jqmWindow dd{
+	display: block;
+	clear: none;
+	float: left;
+	margin-bottom: 1px;
+}
+.jqmWindow dd{
+	width: 180px;
+}
+.jqmWindow p{
+	line-height: 20px;
+}
+.jqmWindow .copy{
+	margin-top: 20px;
+}
+.jqmWindow .section-content{
+	margin-top: 1px;
+}
+.jqmWindow .row{
+	background: #fff;
+	border: 1px solid #B4B1A2;
+	margin-bottom: 0;
+	min-height: 100px;
+	padding: 10px 20px 50px 20px;
+	position: relative;
+	width: 758px;
+}
+/* jqModal base Styling courtesy of;
+	Brice Burgess <bhb@iceburg.net> */
+
+/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
+	the Window's z-index value will be set to 3000 by default (via jqModal.js). */
+	
+.jqmWindow {
+    display: none;
+    
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    
+    margin-left: -400px;
+    width: 800px;
+    
+    background-color: #EEE;
+    color: #333;
+    border: 1px solid #B4B1A2;
+    padding: 12px;
+    z-index: 5000;
+}
+
+.jqmOverlay { background-color: #000; }
+
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;
+	width: expression(this.parentNode.offsetWidth+'px');
+	height: expression(this.parentNode.offsetHeight+'px');
+}
+
+/* Fixed posistioning emulation for IE6
+     Star selector used to hide definition from browsers other than IE6
+     For valid CSS, use a conditional include instead */
+* html .jqmWindow {
+     position: absolute;
+     top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+
+/**	Tipsy	**/
+
+.tipsy {
+	text-shadow: none!important;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px;
+	position: absolute;
+	z-index: 4998; }
+ 
+.tipsy-inner {
+	background-color: #000;
+	color: #FFF;
+	max-width: 380px;
+	padding: 5px 8px 4px 8px;
+	text-align: center; }
+ 
+ 
+/* Uncomment for shadow */
+/*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+.tipsy-arrow {
+	border: 5px dashed #000;
+	height: 0;
+	line-height: 0;
+	position: absolute;
+	width: 0; }
+ 
+/* Rules to colour arrows */
+.tipsy-arrow-n { border-bottom-color: #000; }
+ 
+.tipsy-arrow-s { border-top-color: #000; }
+ 
+.tipsy-arrow-e { border-left-color: #000; }
+ 
+.tipsy-arrow-w { border-right-color: #000; }
+ 
+.tipsy-n .tipsy-arrow {
+	border-bottom-style: solid;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top: none;
+	left: 50%;
+	margin-left: -5px;
+	top: 0px; }
+ 
+.tipsy-nw .tipsy-arrow {
+	border-bottom-style: solid;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top: none;
+	left: 10px;
+	top: 0; }
+ 
+.tipsy-ne .tipsy-arrow {
+	border-bottom-style: solid;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top: none;
+	right: 10px;
+	top: 0; }
+ 
+.tipsy-s .tipsy-arrow {
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top-style: solid;
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px; }
+ 
+.tipsy-sw .tipsy-arrow {
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top-style: solid;
+	bottom: 0;
+	left: 10px; }
+ 
+.tipsy-se .tipsy-arrow {
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-top-style: solid;
+	bottom: 0;
+	right: 10px; }
+ 
+.tipsy-e .tipsy-arrow {
+	border-bottom-color: transparent;
+	border-left-style: solid;
+	border-right: none;
+	border-top-color: transparent;
+	margin-top: -5px;
+	right: 0;
+	top: 50%; }
+ 
+.tipsy-w .tipsy-arrow {
+	border-bottom-color: transparent;
+	border-left: none;
+	border-right-style: solid;
+	border-top-color: transparent;
+	left: 0;
+	margin-top: -5px;
+	top: 50%; }

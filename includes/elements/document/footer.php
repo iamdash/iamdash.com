@@ -15,11 +15,7 @@ Box('<?php echo "http://".$_SERVER['SERVER_NAME'];?>/includes/js/src/', [
 ], { minify: false });
 </script>
 <?php else:?>
-<script src="/includes/js/src/jquery.tooltip.js" charset="utf-8"></script>
-<script src="/includes/js/src/jquery.html5form.js"></script>
-<script src="/includes/js/src/jquery.form.js" charset="utf-8"></script>
-<script src="/includes/js/src/shadowbox.js" charset="utf-8"></script>
-<script src="/includes/js/src/common.js" charset="utf-8"></script>
+<script src="/includes/js/src/jquery.jqmodal.js" charset="utf-8"></script>
 <?php endif;?>
 <script type="text/javascript">
 
