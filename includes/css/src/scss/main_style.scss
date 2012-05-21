@@ -75,6 +75,16 @@ $default-text-shadow-blur: 		0px;
 	$default-text-shadow-color: 	#B4B1A2;
 	@include text-shadow;	
 }
+@mixin dark-text-shadow{
+  	color:  #686554;
+  	text-indent: 10px;
+  	@include el-corner-radius;
+	$default-text-shadow-h-offset: 	1px;
+	$default-text-shadow-v-offset: 	1px;
+	$default-text-shadow-color: 	#ffffff;
+	@include text-shadow;	
+}
+
 
 @mixin el-transition{
     -webkit-transition: background 500ms ease;
@@ -121,26 +131,36 @@ $default-text-shadow-blur: 		0px;
 }
 
 // Containers			-------------------------------------------------------
+body{
+ 	@include sans-serif-font;
+ 	@include text-shadow;
+ 	background: #fff;
+	/*background: #efeee3 url('/images/common/bg.png') fixed;*/
+	color: #403f39;
+	font-weight: 500; 
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		max-width: 320px;
+		width: 320px;
+	}
+}
 
 #wrapper{
 	@include clearfix;
 	@include grid-unit(12);
 	float: none;
 	margin: 20px auto;
-        max-width: 1200px;
-        // result = target / context
-        width: percentage(940px / 960px);
-	@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px)  {
-		margin-top:0;
-		width: 330px!important;
-	}
-	@media screen and (max-width:768px){
-		padding: 0 20px;
+    max-width: 1200px;
+    width: percentage(940px / 960px);
+		
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		margin:  0;
+		width: 320px;
 	}	
-	@media screen and (max-width:1024px){
-		overflow: hidden;
-		width: 900px;
-	}	
+	@media only screen and (max-width : 480px)  { // Smart phone, landscape
+		margin:  0;
+		max-width: 480px;
+		width: 480px;
+	}		
 }
 
 .row{
@@ -151,26 +171,50 @@ $default-text-shadow-blur: 		0px;
     padding-top: 80px;
     position: relative;
     width: 100%;
-    margin-bottom: 20px;	
+    margin-bottom: 20px;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		margin:  0;
+		min-height: 480px;
+		padding-top:0;
+		width: 320px;
+	}    
 }
 article.row section.row{
 	min-height: 100px!important;
 }
 #intro.row{
 	padding-top: 75px;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		margin-top: 100px;
+		padding-top:0
+	} 	
 }
 #get-in-touch.row,
 #page-footer.row{
 	min-height: 500px;
+	@media only screen and (max-width : 320px) { // Smart phone, Portrait
+		min-height: 480px;
+	}	
+}
+#page-footer.row{
+	@media only screen and (max-width : 320px) { // Smart phone, Portrait
+		min-height: 30px;
+	}	
 }
 #page-header.row{
-	background: yellow;
 	margin-top: 0;
 	height: 30px;
 	min-height: 30px;
 	padding-top: 0;
 	position: fixed;
-	z-index: 3000;	
+	z-index: 3000;
+	@media only screen and (max-width : 320px)  {
+		position: relative;
+		width: 320px;
+	}
+	@media only screen and (max-width : 480px) {
+		width: 480px;
+	}		
 }
 
 .row .row{
@@ -179,9 +223,18 @@ article.row section.row{
 .section-header,
 #logo{
 	@include clearfix;
-	@include grid-unit(5);	
+	@include grid-unit(5);
+	
+	@media only screen and (max-width : 320px)  {
+		margin-right: 0;
+		width: 320px;
+	}	
 }
-
+#page-header header{
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		margin-bottom: 1px;
+	}	
+}
 .section-content,
 .section-intro,
 .section-nav,
@@ -190,29 +243,41 @@ article.row section.row{
     @include grid-unit(8);
     margin-right: 0;
     width: 66.666%;	
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		margin-right: 0;
+		width: 320px;
+	}    
 }
-
+.section-content{
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		padding: 10px;
+		width: 300px;
+	} 	
+}
 .section-nav{
 	@include grid-unit(10);
 
 }
-
+#intro .section-content header{
+	@media only screen and (max-width : 320px) { // Smart phone, Portrait
+		margin-bottom: 0;
+	}
+}
 
 img#flower{
+	@media only screen and (max-width : 320px) { // Smart phone, Portrait
+		position: absolute;
+		right:  10px;
+		top:  5px;
+		width: 100px;
+	}
+	@media only screen and (max-width : 480px)  { // Smart phone, landscape
 
+	}	
 }
 
 // Type				-------------------------------------------------------
 
-body{
- 	@include sans-serif-font;
- 	@include text-shadow;
- 	background: #fff;
-	/*background: #efeee3 url('/images/common/bg.png') fixed;*/
-	color: #403f39;
-	font-weight: 500; 
-		
-}
 #logo h1{
 	@include text-dark-bg;
 	@include block-line-height;
@@ -250,17 +315,45 @@ h2{
 	padding: 0;
 	text-indent: 0;
 	text-transform: lowercase;
+	@media only screen and (max-width : 320px) { // Smart phone, Portrait
+		font-size: 20px;
+		letter-spacing: -1px;
+		line-height: 40px;
+		margin-bottom: 5px;
+		margin-top: 3px;
+		text-indent: 10px;
+	}	
 	
 }
 #intro h2{
 	font-size: 50px;
-
+	letter-spacing: -2px;
+	@media only screen and (max-width : 320px) {
+	font-size: 20px;
+		letter-spacing: -1px;
+		line-height: 24px;
+		margin-bottom: 20px;
+		text-indent: 0;
+		width:  200px;
+	}	
 }
 #intro h2 span{
 	display: block;
 	font-size: 30px;
 	line-height: 35px;
-	margin-top: 20px;	
+	margin-top: 20px;
+	@media only screen and (max-width : 320px)   {
+		background: yellow;
+		font-size: 18px;
+		line-height: 20px;
+	}
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		display: none;
+	}
+	@media only screen and (max-width : 320px)  { // Smart phone, landscape
+		font-size: 18px;
+		width:  460px;
+	}				
 }
 #logo h2{
     display: none;
@@ -271,6 +364,10 @@ h3{
 }
 p,dd{
 	margin-bottom: 20px;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		font-size: 12px;
+		line-height: 18px;
+	}	
 }
 dl p{
 	margin-bottom: 7px;
@@ -303,14 +400,16 @@ dl.techie-stuff dt{
 	$default-text-shadow-color: 	#000000;
 	$default-text-shadow-h-offset: 0;
 	$default-text-shadow-v-offset: 	0;
-	@include text-shadow;	
+	@include text-shadow;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		text-shadow: none!important;
+	}	
 }
 dl.techie-stuff dd{
     color: $iamdash-grey;
+  
 }
-dt{
-	
-}
+
 .section-content ul li{
 	background: url('/images/common/arrow-right.png') no-repeat 0 5px;
 	margin-bottom: 7px;
@@ -332,12 +431,21 @@ a{
 	color: #fff;
 	padding: 3px;
 	text-decoration: none;
-
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		padding:1px 2px;
+	}
 }
 a:hover{
 	background: $iamdash-red;
 }
-
+p a,dl a{
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		background: none;
+		color: #B4B1A2;
+		font-weight: bold;
+		text-shadow: none!important;
+	}	
+}
 blockquote{
 	background: url('/images/common/quote.png') no-repeat 0 10px;
 	font-style: italic;
@@ -345,14 +453,36 @@ blockquote{
 	border-top: 1px solid #DCDAC8;
 	padding: 20px 20px 0 60px;
 	min-height: 50px;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+	    display:none;
+	}	
 }
-
+.section-nav{
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		width:  320px!important;
+	}
+}
 .section-nav li{
 	@include block-line-height;
 	
 	float: left;
 	margin-right: 3px;
-	
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		float: left;
+		margin: 0 1px 1px 0;
+		text-align: center;
+		width:  159px;
+	}
+}
+.section-nav li:nth-child(2n){
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		margin-right:0;
+	}
+}
+.section-nav li:last-child{
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		width:  320px;
+	}
 }
 .up-down{
 	float: left;
@@ -362,17 +492,25 @@ blockquote{
 	top:  20px;
 	width: 66px;
 	z-index: 4000;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		top: 8px;
+	} 	
 }
 #page-footer .up-down{
-	right: 0;
+	bottom: 3px;
+	width: 34px;
 }
 #get-in-touch .up-down{
-	
+	width: 34px;
 }
 #intro .up-down{
 	right: 0;
 	top: 0;
-	width:  30px;	
+	width:  30px;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		top: -130px;
+		@include full-opacity;
+	}	
 }
 .up-down a,
 .section-nav li a{
@@ -383,6 +521,9 @@ blockquote{
 	color: #fff;
 	padding: 0 5px;
 	text-indent: 0;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		 @include dark-text-shadow
+	}	
 }
 .section-nav li a:hover{
 	background-color: $iamdash-grey;
@@ -394,7 +535,10 @@ blockquote{
 	@include text-shadow;	
 	
 	background-color: $iamdash-red;
-	cursor: default;	
+	cursor: default;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		 color: #fff;
+	}		
 }
 .up-down a{
     float: left;
@@ -429,8 +573,13 @@ blockquote{
 
 #project-images{
 	margin-top: 20px;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		margin-top: 10px;
+	}	
 }
-
+#project-images ul{
+	min-height: 480px;
+}
 #project-images li{
     @include grid-unit(5);
     
@@ -440,7 +589,19 @@ blockquote{
     padding: 10px;
     outline: 1px solid #B4B1A2;
     overflow: hidden;
-	width: 360px; 
+	width: 360px;
+	
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		height:  50px;
+		margin-bottom: 8px;
+		margin-right: 8px;
+		padding: 2px;
+		width: 97px;
+	}	 
+}
+#project-images li:nth-child(3n){
+	margin-right: 0!important;
+	float: right; 
 }
 #project-images a{
 	cursor: default;
@@ -450,7 +611,10 @@ blockquote{
 }
 
 #project-images li img{
-    width: 100%
+    width: 100%;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		width: 97px;
+	}    
 }
 #project-images .active-project{
 	cursor: pointer;    	
@@ -474,6 +638,10 @@ div#contact-links{
 	margin-top: 60px;
 	position: relative;
 	width:  100%;	
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		margin-left: 5px;
+		margin-top: 5px;
+	}		
 }
 
 ul.social-links{
@@ -529,6 +697,10 @@ a.jqmClose{
 .jqmWindow .section-header{
 	margin-bottom: 20px;
 	width: 35%;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		margin-bottom: 5px;
+		width: 260px;
+	} 		
 }
 
 .jqmWindow h2{
@@ -557,7 +729,12 @@ a.jqmClose{
 	margin-bottom: 1px;
 }
 .jqmWindow dd{
+	display: block;
 	width: 180px;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		height: 25px;
+		line-height: 20px;
+	} 	
 }
 .jqmWindow p{
 	line-height: 20px;
@@ -567,6 +744,10 @@ a.jqmClose{
 }
 .jqmWindow .section-content{
 	margin-top: 1px;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+	    margin: 0;
+	    width:  240px;
+	}  	
 }
 .jqmWindow .row{
 	background: #fff;
@@ -576,6 +757,9 @@ a.jqmClose{
 	padding: 10px 20px 50px 20px;
 	position: relative;
 	width: 758px;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+		width: 300px;
+	} 	
 }
 /* jqModal base Styling courtesy of;
 	Brice Burgess <bhb@iceburg.net> */
@@ -598,9 +782,18 @@ a.jqmClose{
     border: 1px solid #B4B1A2;
     padding: 12px;
     z-index: 5000;
+    
+    
 }
 
-.jqmOverlay { background-color: #000; }
+.jqmOverlay { 
+	background-color: #000;
+	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+
+	    height:  480px;
+	    width: 320px;
+	}  
+}
 
 /* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
 * iframe.jqm {position:absolute;top:0;left:0;z-index:-1;

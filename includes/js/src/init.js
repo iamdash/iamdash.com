@@ -3,14 +3,27 @@ $(window).ready(function(){
     // Hide the address bar!
     window.scrollTo(0, 1);
   }, 0);
+  
 })
 $( document ).ready( function() {
     doInView();
-    modalOverlay();
-    $('a').tipsy({
-        gravity: 's',
-        fade: true
-    });
+    var mq_320 = window.matchMedia( "(max-width: 320px)" );
+    
+    
+    if (!mq_320.matches) { 
+        modalOverlay();
+        $('a').tipsy({
+            gravity: 's',
+            fade: true
+        });        
+    }else{
+        $('#project-images *').click(function(e){
+            e.preventDefault()
+        })
+    }
+    
+
+    
     $('#page-header nav, .up-down, p').localScroll({
         queue:true,
         duration: 1500,
@@ -114,13 +127,10 @@ function modalOverlay(){
 
 }
 var showDialog=function(hash){ 
-    console.log(hash)
-    //if($(hash.t).hasClass('active-project')){
+
         hash.w.fadeIn(100, function(){
             $('.up-down a').fadeOut(100);
         });
-    //}
-
 };
 var hideDialog=function(hash) { 
     hash.w.fadeOut('2000',function(){ 

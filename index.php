@@ -23,32 +23,32 @@ include 'includes/php/functions.php';
 		accessible, standards-based web sites, from front- and back-end build through to custom content management systems and 
 		WordPress integration and customisation" />
 	<meta name="keywords" content="Dave Ashman, dave ashman, iamdash,web developer, Manchester, Greater Machester, Bury, Bolton, UK, front end (x)HTML, HTML5, CSS, JavaScript, PHP backend and CMS development" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="user-scalable = no">
+        <link rel="stylesheet" href="/includes/css/src/main_style.css" />
+        <script src="/includes/js/libs/modernizr-2.5.2.min.js"></script>
+            <script type="text/javascript">
 
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/includes/css/src/main_style.css" />
-    <script src="/includes/js/libs/modernizr-2.5.2.min.js"></script>
-	<script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-318641-1']);
+            _gaq.push(['_trackPageview']);
 
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-318641-1']);
-	  _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
+            </script>
 </head>
 <body id="site">
  <div class="container_3 clearfix" id="wrapper">
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
      
 	<div id="page-header" class="row">
-        <header id="logo" class="grid_1 alpha page-header">
-        <h1>iamdash.com</h1>
-        <h2>Freelance web developer.</h2>
+            <header id="logo" class="page-header">
+            <h1>iamdash.com</h1>
+            <h2>Freelance web developer.</h2>
         </header>
         <nav id="page-nav" class="section-nav">
         <ul>
