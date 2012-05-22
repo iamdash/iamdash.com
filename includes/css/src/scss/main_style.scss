@@ -627,7 +627,7 @@ p a,dl a{
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 		@include dark-text-shadow;
 		background: none;
-		color: #B4B1A2;
+		color: #413f34;
 		font-weight: bold;
 	}			
 }
@@ -769,7 +769,6 @@ blockquote{
 	}
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 		@include dark-text-shadow;
-		color: #B4B1A2;
 		font-weight: bold;
 		padding-right: 10px;
 	}		

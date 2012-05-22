@@ -761,7 +761,7 @@ a:hover {
     padding: 0;
     text-shadow: white 1px 1px 0px;
     background: none;
-    color: #B4B1A2;
+    color: #413f34;
     font-weight: bold; } }
 
 /* line 634, scss/main_style.scss */
@@ -983,34 +983,33 @@ blockquote {
       -moz-border-radius: 0;
       padding: 0;
       text-shadow: white 1px 1px 0px;
-      color: #B4B1A2;
       font-weight: bold;
       padding-right: 10px; } }
 
-/* line 777, scss/main_style.scss */
+/* line 776, scss/main_style.scss */
 .section-nav li a:hover {
   background-color: #b4b1a2; }
 
-/* line 781, scss/main_style.scss */
+/* line 780, scss/main_style.scss */
 .section-nav li a.active {
   text-shadow: white 0 0 0px;
   background-color: #500000;
   cursor: default; }
   @media only screen and (max-width : 320px) {
-    /* line 781, scss/main_style.scss */
+    /* line 780, scss/main_style.scss */
     .section-nav li a.active {
       color: #fff; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 781, scss/main_style.scss */
+    /* line 780, scss/main_style.scss */
     .section-nav li a.active {
       color: #fff; } }
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    /* line 781, scss/main_style.scss */
+    /* line 780, scss/main_style.scss */
     .section-nav li a.active {
       color: #fff;
       text-shadow: none!important; } }
 
-/* line 800, scss/main_style.scss */
+/* line 799, scss/main_style.scss */
 .up-down a {
   float: left;
   height: 30px;
@@ -1020,39 +1019,39 @@ blockquote {
   text-indent: -999em;
   width: 30px; }
 
-/* line 810, scss/main_style.scss */
+/* line 809, scss/main_style.scss */
 .up-down a.next {
   background: url("/images/icons/arrow-down.png") no-repeat bottom left; }
 
-/* line 813, scss/main_style.scss */
+/* line 812, scss/main_style.scss */
 .up-down a.next:hover {
   background: url("/images/icons/arrow-down.png") no-repeat top left; }
 
-/* line 816, scss/main_style.scss */
+/* line 815, scss/main_style.scss */
 .up-down a.previous {
   background: url("/images/icons/arrow-up.png") no-repeat top left; }
 
-/* line 819, scss/main_style.scss */
+/* line 818, scss/main_style.scss */
 .up-down a.previous:hover {
   background: url("/images/icons/arrow-up.png") no-repeat bottom left; }
 
-/* line 831, scss/main_style.scss */
+/* line 830, scss/main_style.scss */
 #project-images {
   margin-top: 20px; }
   @media only screen and (max-width : 320px) {
-    /* line 831, scss/main_style.scss */
+    /* line 830, scss/main_style.scss */
     #project-images {
       margin-top: 10px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 831, scss/main_style.scss */
+    /* line 830, scss/main_style.scss */
     #project-images {
       padding: 0 10px; } }
 
-/* line 840, scss/main_style.scss */
+/* line 839, scss/main_style.scss */
 #project-images ul {
   min-height: 480px; }
 
-/* line 843, scss/main_style.scss */
+/* line 842, scss/main_style.scss */
 #project-images li {
   float: left;
   margin-right: 20px;
@@ -1065,7 +1064,7 @@ blockquote {
   overflow: hidden;
   width: 360px; }
   @media only screen and (max-width : 320px) {
-    /* line 843, scss/main_style.scss */
+    /* line 842, scss/main_style.scss */
     #project-images li {
       height: 50px;
       margin-bottom: 8px;
@@ -1073,7 +1072,7 @@ blockquote {
       padding: 2px;
       width: 97px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 843, scss/main_style.scss */
+    /* line 842, scss/main_style.scss */
     #project-images li {
       height: 76px;
       margin-bottom: 8px;
@@ -1081,59 +1080,59 @@ blockquote {
       padding: 2px;
       width: 144px; } }
   @media (max-width: 1024px) {
-    /* line 843, scss/main_style.scss */
+    /* line 842, scss/main_style.scss */
     #project-images li {
       height: 148px;
       width: 295px; } }
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    /* line 843, scss/main_style.scss */
+    /* line 842, scss/main_style.scss */
     #project-images li {
       height: 118px;
       margin-right: 14px;
       padding: 2px;
       width: 236px; } }
 
-/* line 879, scss/main_style.scss */
+/* line 878, scss/main_style.scss */
 #project-images li:nth-child(3n) {
   margin-right: 0!important;
   float: right; }
 
-/* line 883, scss/main_style.scss */
+/* line 882, scss/main_style.scss */
 #project-images a {
   cursor: default;
   display: block;
   height: 180px;
   width: 360px; }
 
-/* line 890, scss/main_style.scss */
+/* line 889, scss/main_style.scss */
 #project-images li img {
   width: 100%; }
   @media only screen and (max-width : 320px) {
-    /* line 890, scss/main_style.scss */
+    /* line 889, scss/main_style.scss */
     #project-images li img {
       width: 97px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 890, scss/main_style.scss */
+    /* line 889, scss/main_style.scss */
     #project-images li img {
       width: 150px; } }
   @media (max-width: 1024px) {
-    /* line 890, scss/main_style.scss */
+    /* line 889, scss/main_style.scss */
     #project-images li img {
       width: 295px; } }
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    /* line 890, scss/main_style.scss */
+    /* line 889, scss/main_style.scss */
     #project-images li img {
       width: 236px; } }
 
-/* line 905, scss/main_style.scss */
+/* line 904, scss/main_style.scss */
 #project-images .active-project {
   cursor: pointer; }
 
-/* line 910, scss/main_style.scss */
+/* line 909, scss/main_style.scss */
 #project-images li.omega {
   margin-right: 0!important; }
 
-/* line 913, scss/main_style.scss */
+/* line 912, scss/main_style.scss */
 #project-images li a {
   background: none;
   padding: 0;
@@ -1141,41 +1140,41 @@ blockquote {
 
 /* Social media links
 -------------------------------------------------------------- */
-/* line 922, scss/main_style.scss */
+/* line 921, scss/main_style.scss */
 div#contact-links {
   height: 30px;
   margin-top: 60px;
   position: relative;
   width: 100%; }
   @media only screen and (max-width : 320px) {
-    /* line 922, scss/main_style.scss */
+    /* line 921, scss/main_style.scss */
     div#contact-links {
       margin-left: 5px;
       margin-top: 5px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 922, scss/main_style.scss */
+    /* line 921, scss/main_style.scss */
     div#contact-links {
       margin-left: 5px;
       margin-top: 5px; } }
   @media (max-width: 1024px) {
-    /* line 922, scss/main_style.scss */
+    /* line 921, scss/main_style.scss */
     div#contact-links {
       height: 40px;
       margin-top: 7px; } }
 
-/* line 941, scss/main_style.scss */
+/* line 940, scss/main_style.scss */
 ul.social-links {
   float: left;
   list-style: none; }
 
-/* line 945, scss/main_style.scss */
+/* line 944, scss/main_style.scss */
 ul.social-links li {
   float: left;
   height: 30px;
   margin-right: 5px;
   width: 30px; }
 
-/* line 951, scss/main_style.scss */
+/* line 950, scss/main_style.scss */
 .social-links a {
   background-position: 0 0;
   background-repeat: 0 0;
@@ -1186,33 +1185,33 @@ ul.social-links li {
   text-indent: -999em;
   width: 30px; }
 
-/* line 961, scss/main_style.scss */
+/* line 960, scss/main_style.scss */
 ul.social-links li a:hover {
   background-color: none!important;
   background-position: 0 -30px; }
 
-/* line 967, scss/main_style.scss */
+/* line 966, scss/main_style.scss */
 .flickr a,
 .flickr a:hover {
   background: url("/images/icons/flickr.png"); }
 
-/* line 969, scss/main_style.scss */
+/* line 968, scss/main_style.scss */
 .linked-in a,
 .linked-in a:hover {
   background: url("/images/icons/linked-in.png"); }
 
-/* line 971, scss/main_style.scss */
+/* line 970, scss/main_style.scss */
 .delicious a,
 .delicious a:hover {
   background: url("/images/icons/delicious.png"); }
 
-/* line 973, scss/main_style.scss */
+/* line 972, scss/main_style.scss */
 .last-fm a,
 .last-fm a:hover {
   background: url("/images/icons/last-fm.png"); }
 
 /**	jQmodal window	**/
-/* line 978, scss/main_style.scss */
+/* line 977, scss/main_style.scss */
 a.jqmClose {
   cursor: pointer;
   display: block;
@@ -1226,31 +1225,31 @@ a.jqmClose {
   text-indent: 0;
   width: 20px; }
 
-/* line 991, scss/main_style.scss */
+/* line 990, scss/main_style.scss */
 .jqmWindow .section-header {
   margin-bottom: 20px;
   width: 35%; }
   @media only screen and (max-width : 320px) {
-    /* line 991, scss/main_style.scss */
+    /* line 990, scss/main_style.scss */
     .jqmWindow .section-header {
       margin-bottom: 5px;
       width: 260px; } }
 
-/* line 1000, scss/main_style.scss */
+/* line 999, scss/main_style.scss */
 .jqmWindow h2 {
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 12px; }
 
-/* line 1005, scss/main_style.scss */
+/* line 1004, scss/main_style.scss */
 .jqmWindow h4 {
   margin-bottom: 20px; }
 
-/* line 1008, scss/main_style.scss */
+/* line 1007, scss/main_style.scss */
 .jqmWindow h4 a {
   margin-right: 10px; }
 
-/* line 1011, scss/main_style.scss */
+/* line 1010, scss/main_style.scss */
 .jqmWindow dt {
   font-size: 12px;
   height: 20px;
@@ -1258,7 +1257,7 @@ a.jqmClose {
   margin-right: 2px;
   width: 45px; }
 
-/* line 1019, scss/main_style.scss */
+/* line 1018, scss/main_style.scss */
 .jqmWindow dt,
 .jqmWindow dd {
   display: block;
@@ -1266,34 +1265,34 @@ a.jqmClose {
   float: left;
   margin-bottom: 1px; }
 
-/* line 1025, scss/main_style.scss */
+/* line 1024, scss/main_style.scss */
 .jqmWindow dd {
   display: block;
   width: 180px; }
   @media only screen and (max-width : 320px) {
-    /* line 1025, scss/main_style.scss */
+    /* line 1024, scss/main_style.scss */
     .jqmWindow dd {
       height: 25px;
       line-height: 20px; } }
 
-/* line 1033, scss/main_style.scss */
+/* line 1032, scss/main_style.scss */
 .jqmWindow p {
   line-height: 20px; }
 
-/* line 1036, scss/main_style.scss */
+/* line 1035, scss/main_style.scss */
 .jqmWindow .copy {
   margin-top: 20px; }
 
-/* line 1039, scss/main_style.scss */
+/* line 1038, scss/main_style.scss */
 .jqmWindow .section-content {
   margin-top: 1px; }
   @media only screen and (max-width : 320px) {
-    /* line 1039, scss/main_style.scss */
+    /* line 1038, scss/main_style.scss */
     .jqmWindow .section-content {
       margin: 0;
       width: 240px; } }
 
-/* line 1046, scss/main_style.scss */
+/* line 1045, scss/main_style.scss */
 .jqmWindow .row {
   background: #fff;
   border: 1px solid #B4B1A2;
@@ -1303,7 +1302,7 @@ a.jqmClose {
   position: relative;
   width: 758px; }
   @media only screen and (max-width : 320px) {
-    /* line 1046, scss/main_style.scss */
+    /* line 1045, scss/main_style.scss */
     .jqmWindow .row {
       width: 300px; } }
 
@@ -1311,7 +1310,7 @@ a.jqmClose {
 	Brice Burgess <bhb@iceburg.net> */
 /* The Window's CSS z-index value is respected (takes priority). If none is supplied,
 	the Window's z-index value will be set to 3000 by default (via jqModal.js). */
-/* line 1064, scss/main_style.scss */
+/* line 1063, scss/main_style.scss */
 .jqmWindow {
   display: none;
   position: fixed;
@@ -1325,17 +1324,17 @@ a.jqmClose {
   padding: 12px;
   z-index: 5000; }
 
-/* line 1083, scss/main_style.scss */
+/* line 1082, scss/main_style.scss */
 .jqmOverlay {
   background-color: #000; }
   @media only screen and (max-width : 320px) {
-    /* line 1083, scss/main_style.scss */
+    /* line 1082, scss/main_style.scss */
     .jqmOverlay {
       height: 480px;
       width: 320px; } }
 
 /* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
-/* line 1093, scss/main_style.scss */
+/* line 1092, scss/main_style.scss */
 * iframe.jqm {
   position: absolute;
   top: 0;
@@ -1347,13 +1346,13 @@ a.jqmClose {
 /* Fixed posistioning emulation for IE6
      Star selector used to hide definition from browsers other than IE6
      For valid CSS, use a conditional include instead */
-/* line 1101, scss/main_style.scss */
+/* line 1100, scss/main_style.scss */
 * html .jqmWindow {
   position: absolute;
   top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px'); }
 
 /**	Tipsy	**/
-/* line 1112, scss/main_style.scss */
+/* line 1111, scss/main_style.scss */
 .tipsy {
   text-shadow: none!important;
   text-transform: uppercase;
@@ -1363,7 +1362,7 @@ a.jqmClose {
   position: absolute;
   z-index: 9999; }
 
-/* line 1121, scss/main_style.scss */
+/* line 1120, scss/main_style.scss */
 .tipsy-inner {
   background-color: #000;
   color: #FFF;
@@ -1373,7 +1372,7 @@ a.jqmClose {
 
 /* Uncomment for shadow */
 /*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
-/* line 1131, scss/main_style.scss */
+/* line 1130, scss/main_style.scss */
 .tipsy-arrow {
   border: 5px dashed #000;
   height: 0;
@@ -1382,23 +1381,23 @@ a.jqmClose {
   width: 0; }
 
 /* Rules to colour arrows */
-/* line 1139, scss/main_style.scss */
+/* line 1138, scss/main_style.scss */
 .tipsy-arrow-n {
   border-bottom-color: #000; }
 
-/* line 1141, scss/main_style.scss */
+/* line 1140, scss/main_style.scss */
 .tipsy-arrow-s {
   border-top-color: #000; }
 
-/* line 1143, scss/main_style.scss */
+/* line 1142, scss/main_style.scss */
 .tipsy-arrow-e {
   border-left-color: #000; }
 
-/* line 1145, scss/main_style.scss */
+/* line 1144, scss/main_style.scss */
 .tipsy-arrow-w {
   border-right-color: #000; }
 
-/* line 1147, scss/main_style.scss */
+/* line 1146, scss/main_style.scss */
 .tipsy-n .tipsy-arrow {
   border-bottom-style: solid;
   border-left-color: transparent;
@@ -1408,7 +1407,7 @@ a.jqmClose {
   margin-left: -5px;
   top: 0px; }
 
-/* line 1156, scss/main_style.scss */
+/* line 1155, scss/main_style.scss */
 .tipsy-nw .tipsy-arrow {
   border-bottom-style: solid;
   border-left-color: transparent;
@@ -1417,7 +1416,7 @@ a.jqmClose {
   left: 10px;
   top: 0; }
 
-/* line 1164, scss/main_style.scss */
+/* line 1163, scss/main_style.scss */
 .tipsy-ne .tipsy-arrow {
   border-bottom-style: solid;
   border-left-color: transparent;
@@ -1426,7 +1425,7 @@ a.jqmClose {
   right: 10px;
   top: 0; }
 
-/* line 1172, scss/main_style.scss */
+/* line 1171, scss/main_style.scss */
 .tipsy-s .tipsy-arrow {
   border-bottom: none;
   border-left-color: transparent;
@@ -1436,7 +1435,7 @@ a.jqmClose {
   left: 50%;
   margin-left: -5px; }
 
-/* line 1181, scss/main_style.scss */
+/* line 1180, scss/main_style.scss */
 .tipsy-sw .tipsy-arrow {
   border-bottom: none;
   border-left-color: transparent;
@@ -1445,7 +1444,7 @@ a.jqmClose {
   bottom: 0;
   left: 10px; }
 
-/* line 1189, scss/main_style.scss */
+/* line 1188, scss/main_style.scss */
 .tipsy-se .tipsy-arrow {
   border-bottom: none;
   border-left-color: transparent;
@@ -1454,7 +1453,7 @@ a.jqmClose {
   bottom: 0;
   right: 10px; }
 
-/* line 1197, scss/main_style.scss */
+/* line 1196, scss/main_style.scss */
 .tipsy-e .tipsy-arrow {
   border-bottom-color: transparent;
   border-left-style: solid;
@@ -1464,7 +1463,7 @@ a.jqmClose {
   right: 0;
   top: 50%; }
 
-/* line 1206, scss/main_style.scss */
+/* line 1205, scss/main_style.scss */
 .tipsy-w .tipsy-arrow {
   border-bottom-color: transparent;
   border-left: none;
