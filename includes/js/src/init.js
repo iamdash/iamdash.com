@@ -7,17 +7,14 @@ $(window).ready(function(){
 })
 $( document ).ready( function() {
     doInView();
-    var mq_320 = window.matchMedia( "(max-width: 320px)" );
-    
-    
-    if (!mq_320.matches) { 
+    if(!$.browser.mobile){ 
         modalOverlay();
         $('a').tipsy({
             gravity: 's',
             fade: true
         });        
     }else{
-        $('#project-images *').click(function(e){
+        $('#project-images a').click(function(e){
             e.preventDefault()
         })
     }
