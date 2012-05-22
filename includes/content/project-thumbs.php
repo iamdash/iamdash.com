@@ -15,11 +15,12 @@
             <img src="/images/projects/visaesta-thumb.png"  alt="visa-esta-usa.com" class="frontend cms php-framework ecommerce overlay" rel="/projects/visa-esta"  />
             </a>
         </li>
+        <?php /*
         <li class="alpha">
             <a href="/projects/tesco-opticians" title="Tesco Opticians">
             <img src="/images/projects/tesco-thumb.png"  alt="doolittlesdispensary.com" class="frontend overlay" rel="/projects/tesco-opticians"  />
             </a>
-        </li>  
+        </li>  */?>
         <li>
             <a href="/projects/nrm" title="National Railway Museum">
             <img src="/images/projects/nrm-thumb.png"  alt="nrm.org.uk" class="frontend overlay"  rel="/projects/nrm"  />
