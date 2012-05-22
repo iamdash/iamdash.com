@@ -3,7 +3,6 @@ $(window).ready(function(){
     // Hide the address bar!
     window.scrollTo(0, 1);
   }, 0);
-  
 })
 $( document ).ready( function() {
     doInView();
@@ -106,6 +105,7 @@ function scaleText(){
 
 function doInView(){
     $('article.row').bind('inview', function (event, visible) {
+
         if (visible == true) {
             $('#page-header nav a').removeClass('active');
             $('#page-header nav a[href=#'+$(this).attr('id')+']').addClass('active');
@@ -114,14 +114,14 @@ function doInView(){
 }
 
 function modalOverlay(){
- 
-    $('#project-display').jqm({
-        ajax: '@rel',
-        trigger: '.overlay',
-        onShow: showDialog,
-        onHide: hideDialog
-    }); 
-
+    if(!$('html').hasClass('touch')){
+        $('#project-display').jqm({
+            ajax: '@rel',
+            trigger: '.overlay',
+            onShow: showDialog,
+            onHide: hideDialog
+        }); 
+    }
 }
 var showDialog=function(hash){ 
 

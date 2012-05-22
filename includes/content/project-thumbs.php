@@ -56,5 +56,5 @@
 </div>
 <div class="jqmWindow" id="project-display">
 
-Please wait... <img src="inc/busy.gif" alt="loading" />
+Please wait...
 </div>

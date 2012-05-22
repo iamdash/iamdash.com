@@ -142,6 +142,9 @@ body{
 		max-width: 320px;
 		width: 320px;
 	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		max-width: 600px;
+	}	
 }
 
 #wrapper{
@@ -160,7 +163,20 @@ body{
 		margin:  0;
 		max-width: 480px;
 		width: 480px;
-	}		
+	}
+	@media (max-width: 1024px) {
+		margin-top: 0;
+		max-width: 990px;
+		min-height: 320px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		margin: 10px;
+		max-width:  748px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+		margin: 10px;
+		width: 1004px;
+	}			
 }
 
 .row{
@@ -185,6 +201,21 @@ body{
 		padding-top:0;
 		width: 480px;
 	}
+	@media (max-width: 1024px) {
+		max-width: 990px;
+		min-height: 490px;
+		padding-top: 102px;
+	}	
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		min-height: 980px;
+		padding-top: 20px;
+		width:  748px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+		min-height: 675px;
+		padding-top: 20px;
+		width: 1004px;
+	}		
 }
 article.row section.row{
 	min-height: 100px!important;
@@ -194,13 +225,29 @@ article.row section.row{
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
 		margin-top: 100px;
 		padding-top:0
-	} 	
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		min-height: 980px;
+		width:  748px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+		width: 1004px;
+	}	
 }
 #get-in-touch.row,
 #page-footer.row{
 	min-height: 500px;
 	@media only screen and (max-width : 320px) { // Smart phone, Portrait
 		min-height: 480px;
+	}
+		
+}
+#get-in-touch.row{
+	@media (max-width: 1024px) {
+		min-height: 490px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+		min-height: 675px;
 	}	
 }
 #page-footer.row{
@@ -214,7 +261,7 @@ article.row section.row{
 	min-height: 30px;
 	padding-top: 0;
 	position: fixed;
-	z-index: 3000;
+	
 	@media only screen and (max-width : 320px)  {
 		position: relative;
 		width: 320px;
@@ -222,7 +269,11 @@ article.row section.row{
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		position: relative;
 		width: 480px;
-	}		
+	}
+	@media (max-width: 1024px) {
+		background: #000;
+		position: relative;
+	}			
 }
 
 .row .row{
@@ -254,7 +305,11 @@ article.row section.row{
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
 		margin-right: 0;
 		width: 320px;
-	}    
+	} 
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+		width: 100%
+	}
+	
 }
 .section-content{
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
@@ -264,11 +319,17 @@ article.row section.row{
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		padding: 10px;
 		width:  460px;
-	}	
+	}
+	@media (max-width: 1024px) {
+		width: 660px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		width:  748px;
+	}
+	
 }
 .section-nav{
 	@include grid-unit(10);
-
 }
 #intro .section-content header{
 	@media only screen and (max-width : 320px) { // Smart phone, Portrait
@@ -289,6 +350,24 @@ img#flower{
 		top:  40px;
 		width: 100px;
 	}
+	@media (max-width: 1024px) {
+		position: absolute;
+		right:  10px;
+		top:  40px;
+		width: 200px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		position: absolute;
+		right:  -20px;
+		top:  80px;
+		width: 180px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+		position: absolute;
+		right:  -20px;
+		top:  80px;
+		width:260px;
+	}				
 }
 
 // Type				-------------------------------------------------------
@@ -309,7 +388,12 @@ img#flower{
 		font-weight: bold;
 		text-align: center;
 		width: 480px!important;
-	}		
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+		font-weight: bold;
+		text-align: center;
+		width: 1004px;
+	}			
 }
 h1,h2,h3{
 	text-transform: lowercase!important;
@@ -381,7 +465,10 @@ h2{
 		font-size: 25px;
 		margin-bottom: 5px;
 		width:  340px;
-	}		
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		width:  560px;
+	}			
 }
 #intro h2 span{
 	display: block;
@@ -409,6 +496,13 @@ h2{
 h3{
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)    { // Smart phone, landscape
 		width: 480px;
+	}
+	@media (max-width: 1024px) {
+		margin-bottom: 10px;
+		width: 990px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		width: 748px;
 	}	
 }
 p,dd{
@@ -442,7 +536,18 @@ dt{
 		font-size: 12px;
 		@include dark-text-shadow;
 		padding-right: 10px;
-	}	
+	}
+	@media (max-width: 1024px) {
+		margin-bottom: 10px;
+		width: 660px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		width: 738px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+		@include dark-text-shadow;
+		padding-right: 10px;
+	}				
 }
 dd{
 	
@@ -470,7 +575,10 @@ dl.techie-stuff dt{
 	}
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		text-shadow: none!important;
-	}		
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+		text-shadow:none!important
+	}			
 }
 dl.techie-stuff dd{
     color: $iamdash-grey;
@@ -515,7 +623,13 @@ p a,dl a{
 		background: none;
 		color: #B4B1A2;
 		font-weight: bold;		
-	}		
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+		@include dark-text-shadow;
+		background: none;
+		color: #B4B1A2;
+		font-weight: bold;
+	}			
 }
 blockquote{
 	background: url('/images/common/quote.png') no-repeat 0 10px;
@@ -529,12 +643,18 @@ blockquote{
 	}	
 }
 .section-nav{
+	position: relative;
+	z-index: 9998;
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
 		width:  320px!important;
 	}
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		width: 480px!important;
-	}	
+	}
+	@media (max-width: 1024px) {
+		margin: 3px 0;
+		width: 990px;
+	}		
 }
 .section-nav li{
 	@include block-line-height;
@@ -572,17 +692,32 @@ blockquote{
 .up-down{
 	float: left;
 	margin-bottom: 3px;
+	height:  30px;
 	position: absolute;
 	right: 0;
 	top:  20px;
 	width: 66px;
 	z-index: 4000;
+	@media (max-width: 1024px) {
+		@include full-opacity;
+	}	
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
 		top: 8px;
 	}
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)    { // Smart phone, landscape
 		top: 3px;
-	}	 	
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		@include full-opacity;
+		top: 10px;
+		z-index: 9999;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+		@include full-opacity;
+		top: 10px;
+		z-index: 9999!important;		
+	}		
+			 	
 }
 #page-footer .up-down{
 	bottom: 3px;
@@ -602,7 +737,17 @@ blockquote{
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		top: -30px;
 		@include full-opacity;
-	}		
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		@include full-opacity;
+		top: -50px;
+		z-index: 9999
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+		@include full-opacity;
+		top: -50px;
+		z-index: 9999
+	}			
 }
 .up-down a,
 .section-nav li a{
@@ -618,7 +763,13 @@ blockquote{
 	}
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		@include dark-text-shadow
-	}	
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+		@include dark-text-shadow;
+		color: #B4B1A2;
+		font-weight: bold;
+		padding-right: 10px;
+	}		
 }
 .section-nav li a:hover{
 	background-color: $iamdash-grey;
@@ -636,7 +787,12 @@ blockquote{
 	}
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		color: #fff;
-	}				
+	}
+
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+		color: #fff;
+		text-shadow: none!important;
+	}						
 }
 .up-down a{
     float: left;
@@ -705,7 +861,17 @@ blockquote{
 		margin-right: 8px;
 		padding: 2px;
 		width: 144px;
-	}			 
+	}
+	@media (max-width: 1024px) {
+		height: 148px;
+		width: 295px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		height: 118px;
+		margin-right: 14px;
+		padding: 2px;
+		width: 236px;
+	}					 
 }
 #project-images li:nth-child(3n){
 	margin-right: 0!important;
@@ -725,7 +891,13 @@ blockquote{
 	}
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		width: 150px;
-	}		    
+	}
+	@media (max-width: 1024px) {
+		width: 295px;
+	}
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+		width: 236px;
+	}					    
 }
 #project-images .active-project{
 	cursor: pointer;    	
@@ -756,6 +928,10 @@ div#contact-links{
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		margin-left: 5px;
 		margin-top: 5px;
+	}
+	@media (max-width: 1024px) {
+		height: 40px;
+		margin-top: 7px;
 	}	
 }
 
@@ -937,7 +1113,7 @@ a.jqmClose{
 	font-weight: bold;
 	padding: 5px;
 	position: absolute;
-	z-index: 4998; }
+	z-index: 9999; }
  
 .tipsy-inner {
 	background-color: #000;

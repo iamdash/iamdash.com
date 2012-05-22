@@ -92,8 +92,12 @@ body {
     body {
       max-width: 320px;
       width: 320px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 134, scss/main_style.scss */
+    body {
+      max-width: 600px; } }
 
-/* line 147, scss/main_style.scss */
+/* line 150, scss/main_style.scss */
 #wrapper {
   float: left;
   margin-right: 20px;
@@ -113,18 +117,34 @@ body {
   #wrapper {
     zoom: 1; }
   @media only screen and (max-width : 320px) {
-    /* line 147, scss/main_style.scss */
+    /* line 150, scss/main_style.scss */
     #wrapper {
       margin: 0;
       width: 320px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 147, scss/main_style.scss */
+    /* line 150, scss/main_style.scss */
     #wrapper {
       margin: 0;
       max-width: 480px;
       width: 480px; } }
+  @media (max-width: 1024px) {
+    /* line 150, scss/main_style.scss */
+    #wrapper {
+      margin-top: 0;
+      max-width: 990px;
+      min-height: 320px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 150, scss/main_style.scss */
+    #wrapper {
+      margin: 10px;
+      max-width: 748px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* line 150, scss/main_style.scss */
+    #wrapper {
+      margin: 10px;
+      width: 1004px; } }
 
-/* line 166, scss/main_style.scss */
+/* line 182, scss/main_style.scss */
 .row {
   float: left;
   margin-right: 20px;
@@ -146,73 +166,113 @@ body {
   .row {
     zoom: 1; }
   @media only screen and (max-width : 320px) {
-    /* line 166, scss/main_style.scss */
+    /* line 182, scss/main_style.scss */
     .row {
       margin: 0;
       min-height: 480px;
       padding-top: 0;
       width: 320px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 166, scss/main_style.scss */
+    /* line 182, scss/main_style.scss */
     .row {
       margin: 0;
       min-height: 320px;
       max-width: 480px;
       padding-top: 0;
       width: 480px; } }
+  @media (max-width: 1024px) {
+    /* line 182, scss/main_style.scss */
+    .row {
+      max-width: 990px;
+      min-height: 490px;
+      padding-top: 102px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 182, scss/main_style.scss */
+    .row {
+      min-height: 980px;
+      padding-top: 20px;
+      width: 748px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* line 182, scss/main_style.scss */
+    .row {
+      min-height: 675px;
+      padding-top: 20px;
+      width: 1004px; } }
 
-/* line 189, scss/main_style.scss */
+/* line 220, scss/main_style.scss */
 article.row section.row {
   min-height: 100px!important; }
 
-/* line 192, scss/main_style.scss */
+/* line 223, scss/main_style.scss */
 #intro.row {
   padding-top: 75px; }
   @media only screen and (max-width : 320px) {
-    /* line 192, scss/main_style.scss */
+    /* line 223, scss/main_style.scss */
     #intro.row {
       margin-top: 100px;
       padding-top: 0; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 223, scss/main_style.scss */
+    #intro.row {
+      min-height: 980px;
+      width: 748px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* line 223, scss/main_style.scss */
+    #intro.row {
+      width: 1004px; } }
 
-/* line 200, scss/main_style.scss */
+/* line 238, scss/main_style.scss */
 #get-in-touch.row,
 #page-footer.row {
   min-height: 500px; }
   @media only screen and (max-width : 320px) {
-    /* line 200, scss/main_style.scss */
+    /* line 238, scss/main_style.scss */
     #get-in-touch.row,
     #page-footer.row {
       min-height: 480px; } }
 
+@media (max-width: 1024px) {
+  /* line 245, scss/main_style.scss */
+  #get-in-touch.row {
+    min-height: 490px; } }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* line 245, scss/main_style.scss */
+  #get-in-touch.row {
+    min-height: 675px; } }
+
 @media only screen and (max-width : 320px) {
-  /* line 206, scss/main_style.scss */
+  /* line 253, scss/main_style.scss */
   #page-footer.row {
     min-height: 30px; } }
 
-/* line 211, scss/main_style.scss */
+/* line 258, scss/main_style.scss */
 #page-header.row {
   margin-top: 0;
   height: 30px;
   min-height: 30px;
   padding-top: 0;
-  position: fixed;
-  z-index: 3000; }
+  position: fixed; }
   @media only screen and (max-width : 320px) {
-    /* line 211, scss/main_style.scss */
+    /* line 258, scss/main_style.scss */
     #page-header.row {
       position: relative;
       width: 320px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 211, scss/main_style.scss */
+    /* line 258, scss/main_style.scss */
     #page-header.row {
       position: relative;
       width: 480px; } }
+  @media (max-width: 1024px) {
+    /* line 258, scss/main_style.scss */
+    #page-header.row {
+      background: #000;
+      position: relative; } }
 
-/* line 228, scss/main_style.scss */
+/* line 279, scss/main_style.scss */
 .row .row {
   padding-top: 0; }
 
-/* line 232, scss/main_style.scss */
+/* line 283, scss/main_style.scss */
 .section-header,
 #logo {
   float: left;
@@ -233,18 +293,18 @@ article.row section.row {
   #logo {
     zoom: 1; }
   @media only screen and (max-width : 320px) {
-    /* line 232, scss/main_style.scss */
+    /* line 283, scss/main_style.scss */
     .section-header,
     #logo {
       margin-right: 0;
       width: 320px; } }
 
 @media only screen and (max-width : 320px) {
-  /* line 241, scss/main_style.scss */
+  /* line 292, scss/main_style.scss */
   #page-header header {
     margin-bottom: 1px; } }
 
-/* line 249, scss/main_style.scss */
+/* line 300, scss/main_style.scss */
 .section-content,
 .section-intro,
 .section-nav,
@@ -277,52 +337,88 @@ article.row section.row {
   #page-nav {
     zoom: 1; }
   @media only screen and (max-width : 320px) {
-    /* line 249, scss/main_style.scss */
+    /* line 300, scss/main_style.scss */
     .section-content,
     .section-intro,
     .section-nav,
     #page-nav {
       margin-right: 0;
       width: 320px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* line 300, scss/main_style.scss */
+    .section-content,
+    .section-intro,
+    .section-nav,
+    #page-nav {
+      width: 100%; } }
 
 @media only screen and (max-width : 320px) {
-  /* line 259, scss/main_style.scss */
+  /* line 314, scss/main_style.scss */
   .section-content {
     padding: 10px;
     width: 300px; } }
 @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-  /* line 259, scss/main_style.scss */
+  /* line 314, scss/main_style.scss */
   .section-content {
     padding: 10px;
     width: 460px; } }
+@media (max-width: 1024px) {
+  /* line 314, scss/main_style.scss */
+  .section-content {
+    width: 660px; } }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* line 314, scss/main_style.scss */
+  .section-content {
+    width: 748px; } }
 
-/* line 269, scss/main_style.scss */
+/* line 331, scss/main_style.scss */
 .section-nav {
   float: left;
   margin-right: 20px;
   width: 780px; }
 
 @media only screen and (max-width : 320px) {
-  /* line 273, scss/main_style.scss */
+  /* line 334, scss/main_style.scss */
   #intro .section-content header {
     margin-bottom: 0; } }
 
 @media only screen and (max-width : 320px) {
-  /* line 279, scss/main_style.scss */
+  /* line 340, scss/main_style.scss */
   img#flower {
     position: absolute;
     right: 10px;
     top: 5px;
     width: 100px; } }
 @media only screen and (min-width : 321px)  and (max-device-width : 480px) {
-  /* line 279, scss/main_style.scss */
+  /* line 340, scss/main_style.scss */
   img#flower {
     position: absolute;
     right: 10px;
     top: 40px;
     width: 100px; } }
+@media (max-width: 1024px) {
+  /* line 340, scss/main_style.scss */
+  img#flower {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    width: 200px; } }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* line 340, scss/main_style.scss */
+  img#flower {
+    position: absolute;
+    right: -20px;
+    top: 80px;
+    width: 180px; } }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* line 340, scss/main_style.scss */
+  img#flower {
+    position: absolute;
+    right: -20px;
+    top: 80px;
+    width: 260px; } }
 
-/* line 296, scss/main_style.scss */
+/* line 375, scss/main_style.scss */
 #logo h1 {
   color: #fff;
   background-color: #500000;
@@ -340,23 +436,29 @@ article.row section.row {
   font-size: 16px;
   letter-spacing: -1px; }
   @media only screen and (max-width : 320px) {
-    /* line 296, scss/main_style.scss */
+    /* line 375, scss/main_style.scss */
     #logo h1 {
       font-weight: bold;
       text-align: center;
       width: 320px!important; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 296, scss/main_style.scss */
+    /* line 375, scss/main_style.scss */
     #logo h1 {
       font-weight: bold;
       text-align: center;
       width: 480px!important; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* line 375, scss/main_style.scss */
+    #logo h1 {
+      font-weight: bold;
+      text-align: center;
+      width: 1004px; } }
 
-/* line 314, scss/main_style.scss */
+/* line 398, scss/main_style.scss */
 h1, h2, h3 {
   text-transform: lowercase!important; }
 
-/* line 318, scss/main_style.scss */
+/* line 402, scss/main_style.scss */
 h3, dt {
   display: block;
   height: 30px;
@@ -373,7 +475,7 @@ h3, dt {
   color: #fff;
   font-size: 14px; }
 
-/* line 327, scss/main_style.scss */
+/* line 411, scss/main_style.scss */
 h2 {
   text-shadow: white 2px 2px 0px;
   background: none;
@@ -390,33 +492,33 @@ h2 {
   @media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 480px) {
-    /* line 327, scss/main_style.scss */
+    /* line 411, scss/main_style.scss */
     h2 {
       line-height: 40px;
       margin-bottom: 5px;
       margin-top: 3px;
       text-indent: 10px; } }
   @media only screen and (max-width : 320px) {
-    /* line 327, scss/main_style.scss */
+    /* line 411, scss/main_style.scss */
     h2 {
       font-size: 20px;
       letter-spacing: -1px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 327, scss/main_style.scss */
+    /* line 411, scss/main_style.scss */
     h2 {
       font-size: 25px;
       letter-spacing: -2px;
       line-height: 40px;
       margin-bottom: 20px; } }
 
-/* line 365, scss/main_style.scss */
+/* line 449, scss/main_style.scss */
 #intro h2 {
   font-size: 50px;
   letter-spacing: -2px; }
   @media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 480px) {
-    /* line 365, scss/main_style.scss */
+    /* line 449, scss/main_style.scss */
     #intro h2 {
       font-size: 20px;
       letter-spacing: -1px;
@@ -424,68 +526,81 @@ h2 {
       margin-bottom: 20px;
       text-indent: 0; } }
   @media only screen and (max-width : 320px) {
-    /* line 365, scss/main_style.scss */
+    /* line 449, scss/main_style.scss */
     #intro h2 {
       width: 200px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 365, scss/main_style.scss */
+    /* line 449, scss/main_style.scss */
     #intro h2 {
       font-size: 25px;
       margin-bottom: 5px;
       width: 340px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 449, scss/main_style.scss */
+    #intro h2 {
+      width: 560px; } }
 
-/* line 386, scss/main_style.scss */
+/* line 473, scss/main_style.scss */
 #intro h2 span {
   display: block;
   font-size: 30px;
   line-height: 35px;
   margin-top: 20px; }
   @media only screen and (max-width : 320px) {
-    /* line 386, scss/main_style.scss */
+    /* line 473, scss/main_style.scss */
     #intro h2 span {
       background: yellow;
       font-size: 18px;
       line-height: 20px; } }
   @media only screen and (max-width : 320px) {
-    /* line 386, scss/main_style.scss */
+    /* line 473, scss/main_style.scss */
     #intro h2 span {
       display: none; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 386, scss/main_style.scss */
+    /* line 473, scss/main_style.scss */
     #intro h2 span {
       font-size: 18px;
       margin-bottom: 60px;
       width: 460px; } }
 
-/* line 405, scss/main_style.scss */
+/* line 492, scss/main_style.scss */
 #logo h2 {
   display: none; }
 
 @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-  /* line 409, scss/main_style.scss */
+  /* line 496, scss/main_style.scss */
   h3 {
     width: 480px; } }
+@media (max-width: 1024px) {
+  /* line 496, scss/main_style.scss */
+  h3 {
+    margin-bottom: 10px;
+    width: 990px; } }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* line 496, scss/main_style.scss */
+  h3 {
+    width: 748px; } }
 
-/* line 414, scss/main_style.scss */
+/* line 508, scss/main_style.scss */
 p, dd {
   font-size: 12px;
   margin-bottom: 20px; }
   @media only screen and (max-width : 320px) {
-    /* line 414, scss/main_style.scss */
+    /* line 508, scss/main_style.scss */
     p, dd {
       font-size: 12px;
       line-height: 18px; } }
   @media only screen and (min-width : 321px)  and (max-device-width : 480px) {
-    /* line 414, scss/main_style.scss */
+    /* line 508, scss/main_style.scss */
     p, dd {
       font-size: 8px;
       line-height: 12px; } }
 
-/* line 426, scss/main_style.scss */
+/* line 520, scss/main_style.scss */
 dl p {
   margin-bottom: 7px; }
 
-/* line 429, scss/main_style.scss */
+/* line 523, scss/main_style.scss */
 dt {
   background: #dcdac8;
   color: #fff;
@@ -495,7 +610,7 @@ dt {
   padding: 0 5px;
   text-indent: 0; }
   @media only screen and (max-width : 320px) {
-    /* line 429, scss/main_style.scss */
+    /* line 523, scss/main_style.scss */
     dt {
       color: #686554;
       text-indent: 10px;
@@ -506,7 +621,7 @@ dt {
       text-shadow: white 1px 1px 0px;
       padding-right: 10px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 429, scss/main_style.scss */
+    /* line 523, scss/main_style.scss */
     dt {
       font-size: 12px;
       color: #686554;
@@ -517,18 +632,38 @@ dt {
       padding: 0;
       text-shadow: white 1px 1px 0px;
       padding-right: 10px; } }
+  @media (max-width: 1024px) {
+    /* line 523, scss/main_style.scss */
+    dt {
+      margin-bottom: 10px;
+      width: 660px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 523, scss/main_style.scss */
+    dt {
+      width: 738px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* line 523, scss/main_style.scss */
+    dt {
+      color: #686554;
+      text-indent: 10px;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      padding: 0;
+      text-shadow: white 1px 1px 0px;
+      padding-right: 10px; } }
 
-/* line 447, scss/main_style.scss */
+/* line 552, scss/main_style.scss */
 dd {
   clear: both;
   float: left; }
 
-/* line 452, scss/main_style.scss */
+/* line 557, scss/main_style.scss */
 dl.techie-stuff {
   font-size: 11px!important;
   margin-top: 30px; }
 
-/* line 457, scss/main_style.scss */
+/* line 562, scss/main_style.scss */
 dl.techie-stuff dt {
   background: #B4B1A2;
   color: #fff;
@@ -537,34 +672,38 @@ dl.techie-stuff dt {
   line-height: 20px;
   text-shadow: black 0 0 0px; }
   @media only screen and (max-width : 320px) {
-    /* line 457, scss/main_style.scss */
+    /* line 562, scss/main_style.scss */
     dl.techie-stuff dt {
       text-shadow: none!important; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 457, scss/main_style.scss */
+    /* line 562, scss/main_style.scss */
+    dl.techie-stuff dt {
+      text-shadow: none!important; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* line 562, scss/main_style.scss */
     dl.techie-stuff dt {
       text-shadow: none!important; } }
 
-/* line 475, scss/main_style.scss */
+/* line 583, scss/main_style.scss */
 dl.techie-stuff dd {
   color: #b4b1a2; }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 475, scss/main_style.scss */
+    /* line 583, scss/main_style.scss */
     dl.techie-stuff dd {
       font-size: 8px; } }
 
-/* line 482, scss/main_style.scss */
+/* line 590, scss/main_style.scss */
 .section-content ul li {
   background: url("/images/common/arrow-right.png") no-repeat 0 5px;
   margin-bottom: 7px;
   padding-left: 15px; }
 
-/* line 488, scss/main_style.scss */
+/* line 596, scss/main_style.scss */
 .section-content dl ul li,
 .jqmWindow .section-content ul li {
   margin-bottom: 0; }
 
-/* line 491, scss/main_style.scss */
+/* line 599, scss/main_style.scss */
 a {
   -webkit-transition: background 500ms ease;
   -moz-transition: background 500ms ease;
@@ -588,18 +727,31 @@ a {
   padding: 3px;
   text-decoration: none; }
   @media only screen and (max-width : 320px) {
-    /* line 491, scss/main_style.scss */
+    /* line 599, scss/main_style.scss */
     a {
       padding: 1px 2px; } }
 
-/* line 507, scss/main_style.scss */
+/* line 615, scss/main_style.scss */
 a:hover {
   background: #500000; }
 
 @media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 480px) {
-  /* line 510, scss/main_style.scss */
+  /* line 618, scss/main_style.scss */
+  p a, dl a {
+    color: #686554;
+    text-indent: 10px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    padding: 0;
+    text-shadow: white 1px 1px 0px;
+    background: none;
+    color: #B4B1A2;
+    font-weight: bold; } }
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* line 618, scss/main_style.scss */
   p a, dl a {
     color: #686554;
     text-indent: 10px;
@@ -612,7 +764,7 @@ a:hover {
     color: #B4B1A2;
     font-weight: bold; } }
 
-/* line 520, scss/main_style.scss */
+/* line 634, scss/main_style.scss */
 blockquote {
   background: url("/images/common/quote.png") no-repeat 0 10px;
   font-style: italic;
@@ -621,20 +773,29 @@ blockquote {
   padding: 20px 20px 0 60px;
   min-height: 50px; }
   @media only screen and (max-width : 320px) {
-    /* line 520, scss/main_style.scss */
+    /* line 634, scss/main_style.scss */
     blockquote {
       display: none; } }
 
-@media only screen and (max-width : 320px) {
-  /* line 531, scss/main_style.scss */
-  .section-nav {
-    width: 320px!important; } }
-@media only screen and (min-width : 321px) and (max-device-width : 480px) {
-  /* line 531, scss/main_style.scss */
-  .section-nav {
-    width: 480px!important; } }
+/* line 645, scss/main_style.scss */
+.section-nav {
+  position: relative;
+  z-index: 9998; }
+  @media only screen and (max-width : 320px) {
+    /* line 645, scss/main_style.scss */
+    .section-nav {
+      width: 320px!important; } }
+  @media only screen and (min-width : 321px) and (max-device-width : 480px) {
+    /* line 645, scss/main_style.scss */
+    .section-nav {
+      width: 480px!important; } }
+  @media (max-width: 1024px) {
+    /* line 645, scss/main_style.scss */
+    .section-nav {
+      margin: 3px 0;
+      width: 990px; } }
 
-/* line 539, scss/main_style.scss */
+/* line 659, scss/main_style.scss */
 .section-nav li {
   display: block;
   height: 30px;
@@ -645,7 +806,7 @@ blockquote {
   @media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 480px) {
-    /* line 539, scss/main_style.scss */
+    /* line 659, scss/main_style.scss */
     .section-nav li {
       background: yellow;
       clear: none;
@@ -654,55 +815,81 @@ blockquote {
       width: 159px; } }
 
 @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-  /* line 556, scss/main_style.scss */
+  /* line 676, scss/main_style.scss */
   #work .section-nav li {
     font-size: 11px;
     width: 119px; } }
 
 @media only screen and (max-width : 320px) {
-  /* line 562, scss/main_style.scss */
+  /* line 682, scss/main_style.scss */
   .section-nav li:nth-child(2n) {
     margin-right: 0; } }
 
 @media only screen and (max-width : 320px) {
-  /* line 567, scss/main_style.scss */
+  /* line 687, scss/main_style.scss */
   .section-nav li:last-child {
     width: 320px; } }
 
-/* line 572, scss/main_style.scss */
+/* line 692, scss/main_style.scss */
 .up-down {
   float: left;
   margin-bottom: 3px;
+  height: 30px;
   position: absolute;
   right: 0;
   top: 20px;
   width: 66px;
   z-index: 4000; }
+  @media (max-width: 1024px) {
+    /* line 692, scss/main_style.scss */
+    .up-down {
+      opacity: 1!important;
+      -moz-opacity: 1!important;
+      -o-opacity: 1!important;
+      -webkit-opacity: 1!important; } }
   @media only screen and (max-width : 320px) {
-    /* line 572, scss/main_style.scss */
+    /* line 692, scss/main_style.scss */
     .up-down {
       top: 8px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 572, scss/main_style.scss */
+    /* line 692, scss/main_style.scss */
     .up-down {
       top: 3px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 692, scss/main_style.scss */
+    .up-down {
+      opacity: 1!important;
+      -moz-opacity: 1!important;
+      -o-opacity: 1!important;
+      -webkit-opacity: 1!important;
+      top: 10px;
+      z-index: 9999; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* line 692, scss/main_style.scss */
+    .up-down {
+      opacity: 1!important;
+      -moz-opacity: 1!important;
+      -o-opacity: 1!important;
+      -webkit-opacity: 1!important;
+      top: 10px;
+      z-index: 9999!important; } }
 
-/* line 587, scss/main_style.scss */
+/* line 722, scss/main_style.scss */
 #page-footer .up-down {
   bottom: 3px;
   width: 34px; }
 
-/* line 591, scss/main_style.scss */
+/* line 726, scss/main_style.scss */
 #get-in-touch .up-down {
   width: 34px; }
 
-/* line 594, scss/main_style.scss */
+/* line 729, scss/main_style.scss */
 #intro .up-down {
   right: 0;
   top: 0;
   width: 30px; }
   @media only screen and (max-width : 320px) {
-    /* line 594, scss/main_style.scss */
+    /* line 729, scss/main_style.scss */
     #intro .up-down {
       top: -130px;
       opacity: 1!important;
@@ -710,15 +897,33 @@ blockquote {
       -o-opacity: 1!important;
       -webkit-opacity: 1!important; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 594, scss/main_style.scss */
+    /* line 729, scss/main_style.scss */
     #intro .up-down {
       top: -30px;
       opacity: 1!important;
       -moz-opacity: 1!important;
       -o-opacity: 1!important;
       -webkit-opacity: 1!important; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 729, scss/main_style.scss */
+    #intro .up-down {
+      opacity: 1!important;
+      -moz-opacity: 1!important;
+      -o-opacity: 1!important;
+      -webkit-opacity: 1!important;
+      top: -50px;
+      z-index: 9999; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* line 729, scss/main_style.scss */
+    #intro .up-down {
+      opacity: 1!important;
+      -moz-opacity: 1!important;
+      -o-opacity: 1!important;
+      -webkit-opacity: 1!important;
+      top: -50px;
+      z-index: 9999; } }
 
-/* line 608, scss/main_style.scss */
+/* line 753, scss/main_style.scss */
 .up-down a,
 .section-nav li a {
   display: block;
@@ -742,7 +947,7 @@ blockquote {
   padding: 0 5px;
   text-indent: 0; }
   @media only screen and (max-width : 320px) {
-    /* line 608, scss/main_style.scss */
+    /* line 753, scss/main_style.scss */
     .up-down a,
     .section-nav li a {
       color: #686554;
@@ -753,7 +958,7 @@ blockquote {
       padding: 0;
       text-shadow: white 1px 1px 0px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 608, scss/main_style.scss */
+    /* line 753, scss/main_style.scss */
     .up-down a,
     .section-nav li a {
       color: #686554;
@@ -763,26 +968,45 @@ blockquote {
       -moz-border-radius: 0;
       padding: 0;
       text-shadow: white 1px 1px 0px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* line 753, scss/main_style.scss */
+    .up-down a,
+    .section-nav li a {
+      color: #686554;
+      text-indent: 10px;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      padding: 0;
+      text-shadow: white 1px 1px 0px;
+      color: #B4B1A2;
+      font-weight: bold;
+      padding-right: 10px; } }
 
-/* line 623, scss/main_style.scss */
+/* line 774, scss/main_style.scss */
 .section-nav li a:hover {
   background-color: #b4b1a2; }
 
-/* line 627, scss/main_style.scss */
+/* line 778, scss/main_style.scss */
 .section-nav li a.active {
   text-shadow: white 0 0 0px;
   background-color: #500000;
   cursor: default; }
   @media only screen and (max-width : 320px) {
-    /* line 627, scss/main_style.scss */
+    /* line 778, scss/main_style.scss */
     .section-nav li a.active {
       color: #fff; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 627, scss/main_style.scss */
+    /* line 778, scss/main_style.scss */
     .section-nav li a.active {
       color: #fff; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* line 778, scss/main_style.scss */
+    .section-nav li a.active {
+      color: #fff;
+      text-shadow: none!important; } }
 
-/* line 641, scss/main_style.scss */
+/* line 797, scss/main_style.scss */
 .up-down a {
   float: left;
   height: 30px;
@@ -792,39 +1016,39 @@ blockquote {
   text-indent: -999em;
   width: 30px; }
 
-/* line 651, scss/main_style.scss */
+/* line 807, scss/main_style.scss */
 .up-down a.next {
   background: url("/images/icons/arrow-down.png") no-repeat bottom left; }
 
-/* line 654, scss/main_style.scss */
+/* line 810, scss/main_style.scss */
 .up-down a.next:hover {
   background: url("/images/icons/arrow-down.png") no-repeat top left; }
 
-/* line 657, scss/main_style.scss */
+/* line 813, scss/main_style.scss */
 .up-down a.previous {
   background: url("/images/icons/arrow-up.png") no-repeat top left; }
 
-/* line 660, scss/main_style.scss */
+/* line 816, scss/main_style.scss */
 .up-down a.previous:hover {
   background: url("/images/icons/arrow-up.png") no-repeat bottom left; }
 
-/* line 672, scss/main_style.scss */
+/* line 828, scss/main_style.scss */
 #project-images {
   margin-top: 20px; }
   @media only screen and (max-width : 320px) {
-    /* line 672, scss/main_style.scss */
+    /* line 828, scss/main_style.scss */
     #project-images {
       margin-top: 10px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 672, scss/main_style.scss */
+    /* line 828, scss/main_style.scss */
     #project-images {
       padding: 0 10px; } }
 
-/* line 681, scss/main_style.scss */
+/* line 837, scss/main_style.scss */
 #project-images ul {
   min-height: 480px; }
 
-/* line 684, scss/main_style.scss */
+/* line 840, scss/main_style.scss */
 #project-images li {
   float: left;
   margin-right: 20px;
@@ -837,7 +1061,7 @@ blockquote {
   overflow: hidden;
   width: 360px; }
   @media only screen and (max-width : 320px) {
-    /* line 684, scss/main_style.scss */
+    /* line 840, scss/main_style.scss */
     #project-images li {
       height: 50px;
       margin-bottom: 8px;
@@ -845,47 +1069,67 @@ blockquote {
       padding: 2px;
       width: 97px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 684, scss/main_style.scss */
+    /* line 840, scss/main_style.scss */
     #project-images li {
       height: 76px;
       margin-bottom: 8px;
       margin-right: 8px;
       padding: 2px;
       width: 144px; } }
+  @media (max-width: 1024px) {
+    /* line 840, scss/main_style.scss */
+    #project-images li {
+      height: 148px;
+      width: 295px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 840, scss/main_style.scss */
+    #project-images li {
+      height: 118px;
+      margin-right: 14px;
+      padding: 2px;
+      width: 236px; } }
 
-/* line 710, scss/main_style.scss */
+/* line 876, scss/main_style.scss */
 #project-images li:nth-child(3n) {
   margin-right: 0!important;
   float: right; }
 
-/* line 714, scss/main_style.scss */
+/* line 880, scss/main_style.scss */
 #project-images a {
   cursor: default;
   display: block;
   height: 180px;
   width: 360px; }
 
-/* line 721, scss/main_style.scss */
+/* line 887, scss/main_style.scss */
 #project-images li img {
   width: 100%; }
   @media only screen and (max-width : 320px) {
-    /* line 721, scss/main_style.scss */
+    /* line 887, scss/main_style.scss */
     #project-images li img {
       width: 97px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 721, scss/main_style.scss */
+    /* line 887, scss/main_style.scss */
     #project-images li img {
       width: 150px; } }
+  @media (max-width: 1024px) {
+    /* line 887, scss/main_style.scss */
+    #project-images li img {
+      width: 295px; } }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* line 887, scss/main_style.scss */
+    #project-images li img {
+      width: 236px; } }
 
-/* line 730, scss/main_style.scss */
+/* line 902, scss/main_style.scss */
 #project-images .active-project {
   cursor: pointer; }
 
-/* line 735, scss/main_style.scss */
+/* line 907, scss/main_style.scss */
 #project-images li.omega {
   margin-right: 0!important; }
 
-/* line 738, scss/main_style.scss */
+/* line 910, scss/main_style.scss */
 #project-images li a {
   background: none;
   padding: 0;
@@ -893,36 +1137,41 @@ blockquote {
 
 /* Social media links
 -------------------------------------------------------------- */
-/* line 747, scss/main_style.scss */
+/* line 919, scss/main_style.scss */
 div#contact-links {
   height: 30px;
   margin-top: 60px;
   position: relative;
   width: 100%; }
   @media only screen and (max-width : 320px) {
-    /* line 747, scss/main_style.scss */
+    /* line 919, scss/main_style.scss */
     div#contact-links {
       margin-left: 5px;
       margin-top: 5px; } }
   @media only screen and (min-width : 321px) and (max-device-width : 480px) {
-    /* line 747, scss/main_style.scss */
+    /* line 919, scss/main_style.scss */
     div#contact-links {
       margin-left: 5px;
       margin-top: 5px; } }
+  @media (max-width: 1024px) {
+    /* line 919, scss/main_style.scss */
+    div#contact-links {
+      height: 40px;
+      margin-top: 7px; } }
 
-/* line 762, scss/main_style.scss */
+/* line 938, scss/main_style.scss */
 ul.social-links {
   float: left;
   list-style: none; }
 
-/* line 766, scss/main_style.scss */
+/* line 942, scss/main_style.scss */
 ul.social-links li {
   float: left;
   height: 30px;
   margin-right: 5px;
   width: 30px; }
 
-/* line 772, scss/main_style.scss */
+/* line 948, scss/main_style.scss */
 .social-links a {
   background-position: 0 0;
   background-repeat: 0 0;
@@ -933,33 +1182,33 @@ ul.social-links li {
   text-indent: -999em;
   width: 30px; }
 
-/* line 782, scss/main_style.scss */
+/* line 958, scss/main_style.scss */
 ul.social-links li a:hover {
   background-color: none!important;
   background-position: 0 -30px; }
 
-/* line 788, scss/main_style.scss */
+/* line 964, scss/main_style.scss */
 .flickr a,
 .flickr a:hover {
   background: url("/images/icons/flickr.png"); }
 
-/* line 790, scss/main_style.scss */
+/* line 966, scss/main_style.scss */
 .linked-in a,
 .linked-in a:hover {
   background: url("/images/icons/linked-in.png"); }
 
-/* line 792, scss/main_style.scss */
+/* line 968, scss/main_style.scss */
 .delicious a,
 .delicious a:hover {
   background: url("/images/icons/delicious.png"); }
 
-/* line 794, scss/main_style.scss */
+/* line 970, scss/main_style.scss */
 .last-fm a,
 .last-fm a:hover {
   background: url("/images/icons/last-fm.png"); }
 
 /**	jQmodal window	**/
-/* line 799, scss/main_style.scss */
+/* line 975, scss/main_style.scss */
 a.jqmClose {
   cursor: pointer;
   display: block;
@@ -973,31 +1222,31 @@ a.jqmClose {
   text-indent: 0;
   width: 20px; }
 
-/* line 812, scss/main_style.scss */
+/* line 988, scss/main_style.scss */
 .jqmWindow .section-header {
   margin-bottom: 20px;
   width: 35%; }
   @media only screen and (max-width : 320px) {
-    /* line 812, scss/main_style.scss */
+    /* line 988, scss/main_style.scss */
     .jqmWindow .section-header {
       margin-bottom: 5px;
       width: 260px; } }
 
-/* line 821, scss/main_style.scss */
+/* line 997, scss/main_style.scss */
 .jqmWindow h2 {
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 12px; }
 
-/* line 826, scss/main_style.scss */
+/* line 1002, scss/main_style.scss */
 .jqmWindow h4 {
   margin-bottom: 20px; }
 
-/* line 829, scss/main_style.scss */
+/* line 1005, scss/main_style.scss */
 .jqmWindow h4 a {
   margin-right: 10px; }
 
-/* line 832, scss/main_style.scss */
+/* line 1008, scss/main_style.scss */
 .jqmWindow dt {
   font-size: 12px;
   height: 20px;
@@ -1005,7 +1254,7 @@ a.jqmClose {
   margin-right: 2px;
   width: 45px; }
 
-/* line 840, scss/main_style.scss */
+/* line 1016, scss/main_style.scss */
 .jqmWindow dt,
 .jqmWindow dd {
   display: block;
@@ -1013,34 +1262,34 @@ a.jqmClose {
   float: left;
   margin-bottom: 1px; }
 
-/* line 846, scss/main_style.scss */
+/* line 1022, scss/main_style.scss */
 .jqmWindow dd {
   display: block;
   width: 180px; }
   @media only screen and (max-width : 320px) {
-    /* line 846, scss/main_style.scss */
+    /* line 1022, scss/main_style.scss */
     .jqmWindow dd {
       height: 25px;
       line-height: 20px; } }
 
-/* line 854, scss/main_style.scss */
+/* line 1030, scss/main_style.scss */
 .jqmWindow p {
   line-height: 20px; }
 
-/* line 857, scss/main_style.scss */
+/* line 1033, scss/main_style.scss */
 .jqmWindow .copy {
   margin-top: 20px; }
 
-/* line 860, scss/main_style.scss */
+/* line 1036, scss/main_style.scss */
 .jqmWindow .section-content {
   margin-top: 1px; }
   @media only screen and (max-width : 320px) {
-    /* line 860, scss/main_style.scss */
+    /* line 1036, scss/main_style.scss */
     .jqmWindow .section-content {
       margin: 0;
       width: 240px; } }
 
-/* line 867, scss/main_style.scss */
+/* line 1043, scss/main_style.scss */
 .jqmWindow .row {
   background: #fff;
   border: 1px solid #B4B1A2;
@@ -1050,7 +1299,7 @@ a.jqmClose {
   position: relative;
   width: 758px; }
   @media only screen and (max-width : 320px) {
-    /* line 867, scss/main_style.scss */
+    /* line 1043, scss/main_style.scss */
     .jqmWindow .row {
       width: 300px; } }
 
@@ -1058,7 +1307,7 @@ a.jqmClose {
 	Brice Burgess <bhb@iceburg.net> */
 /* The Window's CSS z-index value is respected (takes priority). If none is supplied,
 	the Window's z-index value will be set to 3000 by default (via jqModal.js). */
-/* line 885, scss/main_style.scss */
+/* line 1061, scss/main_style.scss */
 .jqmWindow {
   display: none;
   position: fixed;
@@ -1072,17 +1321,17 @@ a.jqmClose {
   padding: 12px;
   z-index: 5000; }
 
-/* line 904, scss/main_style.scss */
+/* line 1080, scss/main_style.scss */
 .jqmOverlay {
   background-color: #000; }
   @media only screen and (max-width : 320px) {
-    /* line 904, scss/main_style.scss */
+    /* line 1080, scss/main_style.scss */
     .jqmOverlay {
       height: 480px;
       width: 320px; } }
 
 /* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
-/* line 914, scss/main_style.scss */
+/* line 1090, scss/main_style.scss */
 * iframe.jqm {
   position: absolute;
   top: 0;
@@ -1094,13 +1343,13 @@ a.jqmClose {
 /* Fixed posistioning emulation for IE6
      Star selector used to hide definition from browsers other than IE6
      For valid CSS, use a conditional include instead */
-/* line 922, scss/main_style.scss */
+/* line 1098, scss/main_style.scss */
 * html .jqmWindow {
   position: absolute;
   top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px'); }
 
 /**	Tipsy	**/
-/* line 933, scss/main_style.scss */
+/* line 1109, scss/main_style.scss */
 .tipsy {
   text-shadow: none!important;
   text-transform: uppercase;
@@ -1108,9 +1357,9 @@ a.jqmClose {
   font-weight: bold;
   padding: 5px;
   position: absolute;
-  z-index: 4998; }
+  z-index: 9999; }
 
-/* line 942, scss/main_style.scss */
+/* line 1118, scss/main_style.scss */
 .tipsy-inner {
   background-color: #000;
   color: #FFF;
@@ -1120,7 +1369,7 @@ a.jqmClose {
 
 /* Uncomment for shadow */
 /*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
-/* line 952, scss/main_style.scss */
+/* line 1128, scss/main_style.scss */
 .tipsy-arrow {
   border: 5px dashed #000;
   height: 0;
@@ -1129,23 +1378,23 @@ a.jqmClose {
   width: 0; }
 
 /* Rules to colour arrows */
-/* line 960, scss/main_style.scss */
+/* line 1136, scss/main_style.scss */
 .tipsy-arrow-n {
   border-bottom-color: #000; }
 
-/* line 962, scss/main_style.scss */
+/* line 1138, scss/main_style.scss */
 .tipsy-arrow-s {
   border-top-color: #000; }
 
-/* line 964, scss/main_style.scss */
+/* line 1140, scss/main_style.scss */
 .tipsy-arrow-e {
   border-left-color: #000; }
 
-/* line 966, scss/main_style.scss */
+/* line 1142, scss/main_style.scss */
 .tipsy-arrow-w {
   border-right-color: #000; }
 
-/* line 968, scss/main_style.scss */
+/* line 1144, scss/main_style.scss */
 .tipsy-n .tipsy-arrow {
   border-bottom-style: solid;
   border-left-color: transparent;
@@ -1155,7 +1404,7 @@ a.jqmClose {
   margin-left: -5px;
   top: 0px; }
 
-/* line 977, scss/main_style.scss */
+/* line 1153, scss/main_style.scss */
 .tipsy-nw .tipsy-arrow {
   border-bottom-style: solid;
   border-left-color: transparent;
@@ -1164,7 +1413,7 @@ a.jqmClose {
   left: 10px;
   top: 0; }
 
-/* line 985, scss/main_style.scss */
+/* line 1161, scss/main_style.scss */
 .tipsy-ne .tipsy-arrow {
   border-bottom-style: solid;
   border-left-color: transparent;
@@ -1173,7 +1422,7 @@ a.jqmClose {
   right: 10px;
   top: 0; }
 
-/* line 993, scss/main_style.scss */
+/* line 1169, scss/main_style.scss */
 .tipsy-s .tipsy-arrow {
   border-bottom: none;
   border-left-color: transparent;
@@ -1183,7 +1432,7 @@ a.jqmClose {
   left: 50%;
   margin-left: -5px; }
 
-/* line 1002, scss/main_style.scss */
+/* line 1178, scss/main_style.scss */
 .tipsy-sw .tipsy-arrow {
   border-bottom: none;
   border-left-color: transparent;
@@ -1192,7 +1441,7 @@ a.jqmClose {
   bottom: 0;
   left: 10px; }
 
-/* line 1010, scss/main_style.scss */
+/* line 1186, scss/main_style.scss */
 .tipsy-se .tipsy-arrow {
   border-bottom: none;
   border-left-color: transparent;
@@ -1201,7 +1450,7 @@ a.jqmClose {
   bottom: 0;
   right: 10px; }
 
-/* line 1018, scss/main_style.scss */
+/* line 1194, scss/main_style.scss */
 .tipsy-e .tipsy-arrow {
   border-bottom-color: transparent;
   border-left-style: solid;
@@ -1211,7 +1460,7 @@ a.jqmClose {
   right: 0;
   top: 50%; }
 
-/* line 1027, scss/main_style.scss */
+/* line 1203, scss/main_style.scss */
 .tipsy-w .tipsy-arrow {
   border-bottom-color: transparent;
   border-left: none;
