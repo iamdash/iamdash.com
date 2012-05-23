@@ -241,6 +241,8 @@ body{
 article.row section.row{
 	min-height: 100px!important;
 }
+
+
 #intro.row{
 	padding-top: 75px;
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
@@ -604,7 +606,9 @@ dl.techie-stuff dt{
 	$default-text-shadow-color: 	#000000;
 	$default-text-shadow-h-offset: 0;
 	$default-text-shadow-v-offset: 	0;
-	@include text-shadow;
+	
+        @include text-shadow;
+        
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
 		text-shadow: none!important;
 	}
@@ -696,6 +700,9 @@ blockquote{
 }
 .section-nav#page-nav{
 	margin-top: 0;
+	@media (max-width: 1024px) {
+		margin-top: 3px;
+	}        
 }
 .section-nav li{
 	@include block-line-height;

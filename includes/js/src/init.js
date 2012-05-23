@@ -8,7 +8,7 @@ $( document ).ready( function() {
     doInView();
     if(!$.browser.mobile){ 
         modalOverlay();
-        $('a').tipsy({
+        $('#project-images a').tipsy({
             gravity: 's',
             fade: true
         });        
