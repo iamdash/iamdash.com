@@ -1,5 +1,7 @@
+/** iamdash main stylesheet.css	**/
 @import 'compass/reset';
 @import 'compass/css3/text-shadow';
+@import "compass/css3/pie"; 
 @font-face {
     font-family: 'LeagueGothicRegular';
     src: url('/fonts/League_Gothic-webfont.eot');
@@ -92,7 +94,7 @@ $default-text-shadow-blur: 		0px;
 	$default-text-shadow-h-offset: 	1px;
 	$default-text-shadow-v-offset: 	1px;
 	$default-text-shadow-color: 	#ffffff;
-	@include text-shadow;	
+	@include text-shadow;
 }
 @mixin mid-text-shadow{
   	color:  #ffffff;
@@ -154,7 +156,7 @@ body{
  	@include sans-serif-font;
  	@include text-shadow;
  	background: #efeee3;
-	background: #fff url('/images/common/bg.png') fixed;
+	background: #efeee3 url('/images/common/bg.png') fixed;
 	color: #403f39;
 	font-weight: 500; 
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
@@ -639,6 +641,7 @@ a{
 	@include text-light-bg;
 	background: #DCDAC8;
 	color: #fff;
+	font-weight: bold;
 	padding: 3px;
 	text-decoration: none;
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
@@ -1037,7 +1040,7 @@ a.jqmClose{
 }
 
 .jqmWindow h2{
-	font-size: 24px;
+	font-size: 40px;
 	line-height: 36px;
 	margin-bottom: 12px;
 }
@@ -1249,4 +1252,23 @@ a.jqmClose{
 	border-top-color: transparent;
 	left: 0;
 	margin-top: -5px;
-	top: 50%; }
+	top: 50%;
+	}
+	
+	
+	
+p.chromeframe{
+  background:#FFF6BF;
+  border: 2px solid #7d1a00;
+  color:#7d1a00;
+  float: left;
+  font-weight: bold;
+  padding: 30px;
+
+  text-align: center;
+}
+p.chromeframe a{
+	background: none;
+	color:#7d1a00;
+	text-decoration: underline;
+}

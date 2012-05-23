@@ -37,10 +37,11 @@ include 'includes/php/functions.php';
             })();
 
             </script>
+
 </head>
 <body id="site">
  <div class="container_3 clearfix" id="wrapper">
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
      
 	<div id="page-header" class="row">
             <header id="logo" class="page-header">
@@ -73,6 +74,7 @@ include 'includes/php/functions.php';
                 </section>
             </section>
         </section>
+  		<!--[if lte IE 7]><p class=chromeframe>I have noticed that you are using a very outdated browser which I do not fully support as far as testing and bug-fixes goes. Please <a href="http://browsehappy.com/">upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site bug-free and in full.</p><![endif]-->
       </article>
       <article id="work" class="row">
           <section>

@@ -21,22 +21,22 @@
             <img src="/images/projects/tesco-thumb.png"  alt="doolittlesdispensary.com" class="frontend overlay" rel="/projects/tesco-opticians"  />
             </a>
         </li>  */?>
-        <li>
+        <li class="alpha">
             <a href="/projects/nrm" title="National Railway Museum">
             <img src="/images/projects/nrm-thumb.png"  alt="nrm.org.uk" class="frontend overlay"  rel="/projects/nrm"  />
             </a>
         </li>        
-        <li class="omega">
+        <li>
             <a href="/projects/snog" title="Snog Frozen Yogurt">
             <img src="/images/projects/snog-thumb.png"  alt="ifancyasnog.com" class="frontend cms wordpress overlay" rel="/projects/snog" />
             </a>
         </li>
-        <li class="alpha">
+        <li class="omega">
             <a href="/projects/ltm-sense" title="LTM Exhibiton 'Sense in the City'">
             <img src="/images/projects/ltm-sense-thumb.png"  alt="" class="cms php-framework exhibition overlay" rel="/projects/ltm-sense" />
             </a>
         </li>
-        <li>
+        <li class="alpha">
             <a href="/projects/yoobi" title="Yoobi">
             <img src="/images/projects/yoobi-thumb.png"  alt="loveyoobi.com" class="cms frontend wordpress overlay" rel="/projects/yoobi" />
             </a>
