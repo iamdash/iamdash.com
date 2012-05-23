@@ -14,9 +14,6 @@ include 'includes/php/functions.php';
   <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
   <title>iamdash.com | Online home of Dave Ashman, web developer, based in Greater Manchester, UK</title>
   <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
-  <?php /*
-    <script type="text/javascript" src="http://use.typekit.com/jek6rrs.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  */?>
 	
 	<meta name="author" content="Dave Ashman" />
 	<meta name="description" content="Dave Ashman, freelance web developer based in Greater Manchester, UK. My work focuses on the development of 
@@ -66,7 +63,7 @@ include 'includes/php/functions.php';
             <img src="/images/common/flower.png" alt="Flower" class="section-header" id="flower" />
             <section class="section-content">
                 <header>
-                    <h2>I am Dave Ashman, web developer, based in Greater Manchester, UK. <span>Building web things since 2003 and still going strong.</span></h2>
+                    <h2 class="tk-league-gothic">I am Dave Ashman, web developer, based in Greater Manchester, UK. <span>Building web things since 2003 and still going strong.</span></h2>
                 </header>
                 <section>
                     <?php include('includes/content/intro.php');?>
