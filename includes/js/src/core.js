@@ -240,7 +240,6 @@
  * @desc Scroll to a fixed position
  * @example $('div').scrollTo( 340 );
  *
- * @desc Scroll relatively to the actual position
  * @example $('div').scrollTo( '+=340px', { axis:'y' } );
  *
  * @dec Scroll using a selector (relative to the scrolled element)
@@ -252,7 +251,6 @@
  *				alert('scrolled!!');																   
  *			}});
  *
- * @desc Scroll on both axes, to different values
  * @example $('div').scrollTo( { top: 300, left:'+=200' }, { axis:'xy', offset:-20 } );
  */
 ;(function( $ ){
@@ -1371,7 +1369,7 @@ hs=function(w,t,c){
 //         part of jQuery BBQ, but also be available separately.
 
 (function($,window,undefined){
-  '$:nomunge'; // Used by YUI compressor.
+  //'$:nomunge'; // Used by YUI compressor.
   
   // Reused string.
   var str_hashchange = 'hashchange',
@@ -1810,3 +1808,7 @@ var hideDialog=function(hash) {
         $('.up-down a').fadeIn(500);
     }); 
 }; 
+$(window).hashchange( function(){
+    _gaq.push(['_trackPageview',location.pathname + location.search  + location.hash]);
+
+})
