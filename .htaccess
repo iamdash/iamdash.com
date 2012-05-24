@@ -1,4 +1,4 @@
-#RewriteEngine on 
+RewriteEngine on 
 Options FollowSymLinks 
 RedirectMatch 404 /\..*$
 RewriteCond %{HTTP_HOST} ^iamdash.com$ [NC]
