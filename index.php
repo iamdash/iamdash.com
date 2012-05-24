@@ -12,11 +12,11 @@ include 'includes/php/functions.php';
 <head>
   <meta charset="utf-8">
   <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
-  <title>iamdash.com | Online home of Dave Ashman, web developer, based in Greater Manchester, UK</title>
+  <title>iamdash.com | Dave Ashman, freelance and contract web developer, based in Greater Manchester, UK</title>
   <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 	
 	<meta name="author" content="Dave Ashman" />
-	<meta name="description" content="Dave Ashman, freelance web developer based in Greater Manchester, UK. My work focuses on the development of 
+	<meta name="description" content="Dave Ashman, freelance and contract web developer based in Greater Manchester, UK. My work focuses on the development of 
 		accessible, standards-based web sites, from front- and back-end build through to custom content management systems and 
 		WordPress integration and customisation" />
 	<meta name="keywords" content="Dave Ashman, dave ashman, iamdash,web developer, Manchester, Greater Machester, Bury, Bolton, UK, front end (x)HTML, HTML5, CSS, JavaScript, PHP backend and CMS development" />
