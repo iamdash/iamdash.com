@@ -176,10 +176,7 @@ body{
     max-width: 1200px;
     width: percentage(940px / 960px);
 		
-	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
-		margin:  0;
-		width: 320px;
-	}	
+	
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)  { // Smart phone, landscape
 		margin:  0;
 		max-width: 480px;
@@ -190,6 +187,11 @@ body{
 		max-width: 990px;
 		min-height: 320px;
 	}
+	 @media only screen and (max-width : 320px) and (orientation : portrait) { 
+		margin:  0;
+		width: 320px!important;
+                overflow:hidden
+	}        
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		margin: 10px;
 		max-width:  748px;
@@ -209,11 +211,13 @@ body{
     position: relative;
     width: 100%;
     margin-bottom: 20px;
-	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+
+	@media only screen and (max-width : 320px) and (orientation : portrait) { 
+  
 		margin:  0;
 		min-height: 480px;
 		padding-top:0;
-		width: 320px;
+		width: 320px!important;
 	} 
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)    { // Smart phone, landscape
 		margin:  0;
@@ -296,7 +300,10 @@ article.row section.row{
 	@media (max-width: 1024px) {
 		background: #000;
 		position: relative;
-	}			
+	}
+        @media only screen and (max-width : 320px) and (orientation : portrait) { 
+            margin-top: 0;
+        }
 }
 
 .row .row{
@@ -307,7 +314,7 @@ article.row section.row{
 	@include clearfix;
 	@include grid-unit(5);
 	
-	@media only screen and (max-width : 320px)  {
+	@media only screen and (max-width : 320px) and (orientation : portrait) {
 		margin-right: 0;
 		width: 320px;
 	}	
@@ -325,17 +332,24 @@ article.row section.row{
     @include grid-unit(8);
     margin-right: 0;
     width: 66.666%;	
-	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+	@media only screen and (max-width : 320px) and (orientation : portrait) {
 		margin-right: 0;
-		width: 320px;
+		width: 300px!important;
 	} 
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 		width: 100%
 	}
 	
 }
+#page-nav{
+	@media only screen and (max-width : 320px) and (orientation : portrait) {
+		
+		width: 320px!important;
+	}
+	
+}
 .section-content{
-	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
+	@media only screen and (max-width : 320px) and (orientation : portrait) {
 		padding: 10px;
 		width: 300px;
 	}
@@ -361,11 +375,18 @@ article.row section.row{
 }
 
 img#flower{
-	@media only screen and (max-width : 320px) { // Smart phone, Portrait
+	@media (max-width: 1024px) {
 		position: absolute;
 		right:  10px;
-		top:  5px;
-		width: 100px;
+		top:  40px;
+		width: 300px;
+	}    
+	@media only screen and (max-width : 320px) and (orientation : portrait) {
+		position: absolute;
+		right:  60px;
+		top:  20px;
+		width: 200px;
+                display:none;
 	}
 	@media only screen and (min-width : 321px)  and (max-device-width : 480px)   { // Smart phone, landscape
 		position: absolute;
@@ -373,12 +394,7 @@ img#flower{
 		top:  40px;
 		width: 100px;
 	}
-	@media (max-width: 1024px) {
-		position: absolute;
-		right:  10px;
-		top:  40px;
-		width: 200px;
-	}
+
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		position: absolute;
 		right:  -20px;
@@ -459,9 +475,11 @@ h2{
 		margin-top: 3px;
 		text-indent: 10px;
 	}	
-	@media only screen and (max-width : 320px) { // Smart phone, Portrait
-		font-size: 20px;
+	@media only screen and (max-width : 320px) and (orientation : portrait) { 
+		font-size: 32px!important;
 		letter-spacing: -1px;
+                line-height: 45px;
+                width: 300px!important;
 	}
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)    { // Smart phone, landscape
 		font-size: 25px;
@@ -493,7 +511,10 @@ h2{
 	}
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		width:  560px;
-	}			
+	}
+	@media only screen and (max-width : 320px) and (orientation : portrait) { 
+                line-height:35px;
+	}        
 }
 #intro h2 span{
 	display: block;
@@ -530,6 +551,10 @@ h3{
 		margin-bottom: 10px;
 		width: 990px;
 	}
+	@media only screen and (max-width : 320px) and (orientation : portrait) { 
+
+                width: 320px!important;
+	}        
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		width: 748px;
 	}	
@@ -537,14 +562,16 @@ h3{
 p,dd{
 	font-size: 12px;
 	margin-bottom: 20px;
-	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
-		font-size: 12px;
+	@media only screen and (max-width : 320px) and (orientation : portrait) { 
+		font-size: 14px!important;
 		line-height: 18px;
 	}
 	@media only screen and (min-width : 321px)  and (max-device-width : 480px)   { // Smart phone, landscape
 		font-size: 8px;
 		line-height: 12px;
 	}
+        @media only screen and (max-width : 320px) and (orientation : portrait) { 
+        }
 }
 dl p{
 	margin-bottom: 7px;
@@ -578,6 +605,9 @@ dt{
 		margin-bottom: 10px;
 		width: 660px;
 	}
+        @media only screen and (max-width : 320px) and (orientation : portrait) { 
+            width:285px;
+        }
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		width: 738px;
 	}
@@ -778,17 +808,18 @@ blockquote{
 	right: 0;
 	top: 0;
 	width:  30px;
-	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
-		top: -130px;
-		@include full-opacity;
-	}
+
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		top: -30px;
 		@include full-opacity;
 	}
 	@media only screen and (max-width : 1024px)  { // Smart phone, Portrait
 		top: -50px;
-	}	
+	}
+	@media only screen and (max-width : 320px) and (orientation : portrait) {
+		top: -130px;
+		@include full-opacity;
+	}        
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		@include full-opacity;
 		top: -50px;
@@ -899,14 +930,7 @@ blockquote{
     outline: 1px solid #B4B1A2;
     overflow: hidden;
 	width: 360px;
-	
-	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
-		height:  50px;
-		margin-bottom: 8px;
-		margin-right: 8px;
-		padding: 2px;
-		width: 97px;
-	}
+
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)   {
 		height:  76px;
 		margin-bottom: 8px;
@@ -918,6 +942,13 @@ blockquote{
 		height: 148px;
 		width: 295px;
 	}
+        @media only screen and (max-width : 320px) and (orientation : portrait) {
+		height:  50px;
+		margin-bottom: 8px;
+		margin-right: 8px;
+		padding: 2px;
+		width: 97px;
+        }
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		height: 118px;
 		margin-right: 14px;
