@@ -529,7 +529,7 @@ h2{
 	line-height: 35px;
 	margin-top: 20px;
 	@media only screen and (max-width : 320px)   {
-		background: yellow;
+		
 		font-size: 18px;
 		line-height: 20px;
 	}
@@ -750,7 +750,6 @@ blockquote{
 	@media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 480px) {
-		background: yellow;
 		clear: none;
 		margin: 0 1px 1px 0;
 		text-align: center;
@@ -975,7 +974,7 @@ blockquote{
 }
 
 #project-images li img{
-    width: 100%;
+        width: 100%;
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
 		width: 97px;
 	}
@@ -985,6 +984,9 @@ blockquote{
 	@media (max-width: 1024px) {
 		width: 295px;
 	}
+        @media only screen and (max-width : 320px) and (orientation : portrait) {
+            width: 97px;
+        }
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		width: 236px;
 	}					    
