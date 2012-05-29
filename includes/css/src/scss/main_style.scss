@@ -159,13 +159,17 @@ body{
 	background: #efeee3 url('/images/common/bg.png') fixed;
 	color: #403f39;
 	font-weight: 500; 
+        
 	@media only screen and (max-width : 320px)  { // Smart phone, Portrait
 		max-width: 320px;
 		width: 320px;
 	}
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		max-width: 600px;
-	}	
+		margin: 10px 0 0 0;
+                width: 600px!important;
+                overflow:hidden!important;
+	}        
 }
 
 #wrapper{
@@ -175,7 +179,8 @@ body{
 	margin: 20px auto;
     max-width: 1200px;
     width: percentage(940px / 960px);
-		
+		 
+                 min-height: 100px;
 	
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)  { // Smart phone, landscape
 		margin:  0;
@@ -195,6 +200,7 @@ body{
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 		margin: 10px;
 		max-width:  748px;
+                width: 748px!important
 	}
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
 		margin: 10px;
@@ -211,7 +217,7 @@ body{
     position: relative;
     width: 100%;
     margin-bottom: 20px;
-
+   
 	@media only screen and (max-width : 320px) and (orientation : portrait) { 
   
 		margin:  0;
@@ -235,6 +241,7 @@ body{
 		min-height: 980px;
 		padding-top: 20px;
 		width:  748px;
+                overflow:hidden
 	}
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
 		min-height: 675px;
@@ -483,7 +490,7 @@ h2{
 	}
 	@media only screen and (min-width : 321px) and (max-device-width : 480px)    { // Smart phone, landscape
 		font-size: 25px;
-		letter-spacing: -2px;
+		letter-spacing: -2px; 
 		line-height: 40px;
 		margin-bottom: 20px
 	}		
