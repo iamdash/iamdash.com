@@ -1,8 +1,0 @@
-#RewriteEngine on 
-#Options FollowSymLinks 
-#RedirectMatch 404 /\..*$
-#RewriteCond %{HTTP_HOST} ^iamdash.com$ [NC]
-#RewriteRule ^(.*)$ http://www.iamdash.com/$1 [R=301,L]
-ErrorDocument 404 /404.php
-
-#RewriteRule ^(.*)$ $1.php

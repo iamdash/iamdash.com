@@ -1,3 +1,0 @@
-<p>This is the latest of many iterations of this site with each version being built using new bits and pieces and methods I have picked up since the previous.</p>
-<p>This current build has been developed using hand-coded <a href="http://www.html5rocks.com/en/">HTML5 markup</a>, while the CSS has been developed using <a href="http://sass-lang.com/">SASS</a> with the interactive bits created with the <a href="http://jquery.com/">jQuery javascript framework</a>.</p>
-<p>The site uses what is called a responsive design, which means the layout and design <em>responds</em> and adjusts accordingly to the size of your screen, whether viewing on older and smaller or newer and larger desktop monitors, or smaller mobile devices.</p>
