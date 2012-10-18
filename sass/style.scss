@@ -1,0 +1,179 @@
+@import "compass/css3";
+@import "compass/reset";
+
+@font-face {
+    font-family: 'OswaldLight';
+    src: url('/fonts/Oswald-Light-webfont.eot');
+    src: url('/fonts/Oswald-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Oswald-Light-webfont.woff') format('woff'),
+         url('/fonts/Oswald-Light-webfont.ttf') format('truetype'),
+         url('/fonts/Oswald-Light-webfont.svg#OswaldLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OswaldBook';
+    src: url('/fonts/Oswald-Regular-webfont.eot');
+    src: url('/fonts/Oswald-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Oswald-Regular-webfont.woff') format('woff'),
+         url('/fonts/Oswald-Regular-webfont.ttf') format('truetype'),
+         url('/fonts/Oswald-Regular-webfont.svg#OswaldBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OswaldBold';
+    src: url('/fonts/Oswald-Bold-webfont.eot');
+    src: url('/fonts/Oswald-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Oswald-Bold-webfont.woff') format('woff'),
+         url('/fonts/Oswald-Bold-webfont.ttf') format('truetype'),
+         url('/fonts/Oswald-Bold-webfont.svg#OswaldBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OswaldStencilRegular';
+    src: url('/fonts/Oswald-Stencil-webfont.eot');
+    src: url('/fonts/Oswald-Stencil-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Oswald-Stencil-webfont.woff') format('woff'),
+         url('/fonts/Oswald-Stencil-webfont.ttf') format('truetype'),
+         url('/fonts/Oswald-Stencil-webfont.svg#OswaldStencilRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+	background: #000;
+	color: #fff;
+	font-family: 'OswaldBook';
+    text-transform: lowercase;
+    @media only screen and (min-width:990px) {
+        font-size: 30px;
+    }
+    @media only screen and (min-width:768px) and (max-width:989px) {
+        font-size: 20px;       
+    }
+    @media only screen and (max-width:767px){
+        font-size: 16px;
+    }     
+}
+.wrapper{
+    margin: 40px 10%;
+    padding-bottom: 116px;
+    position: relative;
+    @media only screen and (min-width:990px) {
+    }
+    @media only screen and (min-width:768px) and (max-width:989px) {     
+    }
+    @media only screen and (max-width:767px){
+    }       
+}
+.row{
+    margin-bottom: 20px;
+     @media only screen and (min-width:990px) {
+    }
+    @media only screen and (min-width:768px) and (max-width:989px) {
+    }
+    @media only screen and (max-width:767px){
+    }    
+}
+h1{
+    font-family: 'OswaldBold';
+    @media only screen and (min-width:990px) {
+        font-size: 90px;
+        letter-spacing: -5px;
+    }
+    @media only screen and (min-width:768px) and (max-width:989px) {
+        font-size: 50px;       
+    }
+    @media only screen and (max-width:767px){
+        font-family: 'OswaldBook';
+        font-size: 40px;
+    }    
+}
+p,li{
+   line-height: 1.2em;
+}
+h1 span,
+h2 span,
+p span{
+    background: rgba(0, 0, 0, 0.75);
+    display: inline-block;     
+}
+h1 span{
+    padding: 20px 20px 10px 20px;
+    @media only screen and (min-width:768px) and (max-width:989px) {
+    }
+    @media only screen and (max-width:767px){
+        padding: 20px;
+        width: 260px;
+    }     
+}
+h2 span,
+p span{
+    padding: 20px;
+    @media only screen and (min-width:768px) and (max-width:989px) {}
+    @media only screen and (max-width:767px){
+        line-height: 1.5em;
+        padding: 10px 20px;
+        width: 260px;
+    }     
+}
+h2 span{
+    padding-bottom: 0;
+}
+p:last-child span{
+    @media only screen and (min-width:768px) and (max-width:989px) {
+
+    }
+    @media only screen and (max-width:767px){
+        padding-bottom: 20px;
+    }     
+}
+.maincontent p:last-child span{
+  
+}
+a{
+    color: #fff;
+}
+.footer{
+    bottom: 20px;
+    height: 76px;
+    position: absolute;
+    right: 0;
+    @media only screen and (min-width:768px) and (max-width:989px) {
+
+    }
+    @media only screen and (max-width:767px){
+        bottom: 0;
+        left: 0;
+        margin-top: 20px;
+        position: relative;
+    }     
+}
+.footer span{
+    margin-left: 20px;
+    @media only screen and (min-width:768px) and (max-width:989px) {
+
+    }
+    @media only screen and (max-width:767px){
+        margin-bottom: 20px;
+        margin-left: 0;
+        padding-bottom: 20px;
+    }     
+}
+
+
+
+
+
+
+
