@@ -17,7 +17,7 @@ class ImageCacher{
 		$this->image_url 		= $image_url;
 		$this->file_ext 		= $this->_getImageExtension($image_url);
 		$this->cache_time 		= 24 * 60 * 60;
-		d($this);
+		//d($this);
 	}
 
 	/**
@@ -32,7 +32,7 @@ class ImageCacher{
 		$file_name 			= md5($this->image_url).'.'.$this->file_ext;
 		$cached_file_root 	= $this->cache_dir_root.DIRECTORY_SEPARATOR.$file_name;
 		$cached_file 		= $this->cache_dir.DIRECTORY_SEPARATOR.$file_name;
-		if($this->checkCachedFileExists($cached_file_root)){
+		if($this->_checkCachedFileExists($cached_file_root)){
 			return $cached_file;
 		} else {
 			$this->_cacheImage();
