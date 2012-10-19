@@ -8,7 +8,7 @@ function getFlickrImage(){
 	$secret 	= '49f92ed2cd7a9a93';
 	
 	$f = new phpFlickr($api_key,$secret);
-	$f->enableCache("db", "mysql://iamdash_db:@87.239.18.178/iamdash_main");
+	//$f->enableCache("db", "mysql://iamdash_db:@87.239.18.178/iamdash_main");
 
 	$photos = $f->people_getPublicPhotos ('53572347@N02',null,'url_o','original_format');
 	//d($photos['photos']['photo'][0]);exit();
