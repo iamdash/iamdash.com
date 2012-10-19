@@ -1,4 +1,6 @@
-<?php require_once './lib/fns.php';
+<?php 
+require_once './lib/utils.php';
+require_once './lib/fns.php';
 $image = getFlickrImage();
 ?>
 <!DOCTYPE html>
@@ -37,7 +39,7 @@ $image = getFlickrImage();
 		</div>
 		<div class="twitter row">
 			<h2><span><a href="https://twitter.com/_iamdash">@_iamdash</a></span></h2>
-			<?php $tweet = getTweet();?>
+			<?php #$tweet = getTweet();?>
 			<p><span><?php echo $tweet['tweet'];?></span></p>
 		</div>
 		<footer class="footer row">
@@ -46,7 +48,7 @@ $image = getFlickrImage();
 	</article>
 	<script src="js/app.js"></script>
 	<script type="text/javascript">
-	$.backstretch('<?php echo $image['raw_url']?>');
+	$.backstretch('<?php echo $image['path']?>');
 	</script>
 </body>
 </html>
