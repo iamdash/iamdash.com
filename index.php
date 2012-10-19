@@ -39,16 +39,20 @@ $image = getFlickrImage();
 		</div>
 		<div class="twitter row">
 			<h2><span><a href="https://twitter.com/_iamdash">@_iamdash</a></span></h2>
-			<?php #$tweet = getTweet();?>
+			<?php $tweet = getTweet();?>
 			<p><span><?php echo $tweet['tweet'];?></span></p>
 		</div>
 		<footer class="footer row">
-			<p><span><a href='<?php echo obfuscateEmail('sayhello@iamdash.com')?>'>Say hello</a></span> <span><a href="<?php echo $image['url']?>">The photo</a></span></p>
+			<p><span><a href='<?php echo obfuscateEmail('sayhello@iamdash.com')?>'>Say hello</a></span> 
+				<span><a href="<?php echo $image['url']?>" target="_blank">The photo</a></span></p>
 		</footer>
 	</article>
 	<script src="js/app.js"></script>
 	<script type="text/javascript">
-	$.backstretch('<?php echo $image['path']?>');
+		$(window).ready(function(){
+			$.backstretch('<?php echo $image['path']?>', {fade: 2500});
+		});
+		
 	</script>
 </body>
 </html>
