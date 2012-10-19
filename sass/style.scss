@@ -66,14 +66,17 @@ body{
     }     
 }
 .wrapper{
+    font-size: 80%;
     margin: 40px 10%;
     padding-bottom: 116px;
     position: relative;
     @media only screen and (min-width:990px) {
     }
-    @media only screen and (min-width:768px) and (max-width:989px) {     
+    @media only screen and (min-width:768px) and (max-width:989px) { 
+        font-size: 100%;    
     }
     @media only screen and (max-width:767px){
+        font-size: 100%;
     }       
 }
 .row{
@@ -87,6 +90,7 @@ body{
 }
 h1{
     font-family: 'OswaldBold';
+    margin-bottom: 20px;
     @media only screen and (min-width:990px) {
         font-size: 90px;
         letter-spacing: -5px;

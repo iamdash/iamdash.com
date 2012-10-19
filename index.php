@@ -14,7 +14,8 @@ $image = getFlickrImage();
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 	<!--[if lte IE 8]>
 	<script src="/js/html5shiv.js"></script>
-	<script src="/js/css3-mediaqueries-min.js"></script>
+	<script src="/js/css3-mediaqueries.js"></script>
+	<link rel="stylesheet" href="css/ie.css" type="text/css"/>
 	<![endif]-->
 	<script type="text/javascript">
 

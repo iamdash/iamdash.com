@@ -83,6 +83,9 @@ class ImageCacher{
 		}
 	}
 
+	private function makeCacheDirs(){
+
+	}
 
 
 }

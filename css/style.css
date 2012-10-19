@@ -103,96 +103,106 @@ body {
 
 /* line 68, ../sass/style.scss */
 .wrapper {
+  font-size: 80%;
   margin: 40px 10%;
   padding-bottom: 116px;
   position: relative; }
+  @media only screen and (min-width: 768px) and (max-width: 989px) {
+    /* line 68, ../sass/style.scss */
+    .wrapper {
+      font-size: 100%; } }
+  @media only screen and (max-width: 767px) {
+    /* line 68, ../sass/style.scss */
+    .wrapper {
+      font-size: 100%; } }
 
-/* line 79, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .row {
   margin-bottom: 20px; }
 
-/* line 88, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 h1 {
-  font-family: 'OswaldBold'; }
+  font-family: 'OswaldBold';
+  margin-bottom: 20px; }
   @media only screen and (min-width: 990px) {
-    /* line 88, ../sass/style.scss */
+    /* line 91, ../sass/style.scss */
     h1 {
       font-size: 90px;
       letter-spacing: -5px; } }
   @media only screen and (min-width: 768px) and (max-width: 989px) {
-    /* line 88, ../sass/style.scss */
+    /* line 91, ../sass/style.scss */
     h1 {
       font-size: 50px; } }
   @media only screen and (max-width: 767px) {
-    /* line 88, ../sass/style.scss */
+    /* line 91, ../sass/style.scss */
     h1 {
       font-family: 'OswaldBook';
       font-size: 40px; } }
 
-/* line 102, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 p, li {
   line-height: 1.2em; }
 
-/* line 107, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 h1 span,
 h2 span,
 p span {
   background: rgba(0, 0, 0, 0.75);
   display: inline-block; }
 
-/* line 111, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 h1 span {
   padding: 20px 20px 10px 20px; }
   @media only screen and (max-width: 767px) {
-    /* line 111, ../sass/style.scss */
+    /* line 115, ../sass/style.scss */
     h1 span {
       padding: 20px;
       width: 260px; } }
 
-/* line 121, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 h2 span,
 p span {
   padding: 20px; }
   @media only screen and (max-width: 767px) {
-    /* line 121, ../sass/style.scss */
+    /* line 125, ../sass/style.scss */
     h2 span,
     p span {
       line-height: 1.5em;
       padding: 10px 20px;
       width: 260px; } }
 
-/* line 130, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 h2 span {
   padding-bottom: 0; }
 
 @media only screen and (max-width: 767px) {
-  /* line 133, ../sass/style.scss */
+  /* line 137, ../sass/style.scss */
   p:last-child span {
     padding-bottom: 20px; } }
 
-/* line 144, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 a {
   color: #fff; }
 
-/* line 147, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .footer {
   bottom: 20px;
   height: 76px;
   position: absolute;
   right: 0; }
   @media only screen and (max-width: 767px) {
-    /* line 147, ../sass/style.scss */
+    /* line 151, ../sass/style.scss */
     .footer {
       bottom: 0;
       left: 0;
       margin-top: 20px;
       position: relative; } }
 
-/* line 162, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .footer span {
   margin-left: 20px; }
   @media only screen and (max-width: 767px) {
-    /* line 162, ../sass/style.scss */
+    /* line 166, ../sass/style.scss */
     .footer span {
       margin-bottom: 20px;
       margin-left: 0;
