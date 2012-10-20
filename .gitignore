@@ -1,3 +1,6 @@
 .sass-cache/*
 .DS_Store
 cache/*
+nbproject/
+/nbproject/private/
+lib/config.php
