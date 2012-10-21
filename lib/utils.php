@@ -42,3 +42,10 @@ function curl_download($Url){
     curl_close($ch);
     return $output;
 }
+
+function make_cache_path($path) {
+        //Test if path exist
+        if (is_dir($path) || file_exists($path)) return;
+        //No, create it
+        mkdir($path, 0777, true);
+    }

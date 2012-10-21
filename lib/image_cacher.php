@@ -13,7 +13,7 @@ class ImageCacher{
 	function __construct($image_url, $cache_dir){
 		$this->image_url 		= $image_url;
 		$this->cache_dir 		= 'cache'.DIRECTORY_SEPARATOR.$cache_dir;
-		$this->cache_dir_root 	= $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.$this->cache_dir;
+		$this->cache_dir_root           = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.$this->cache_dir;
 		$this->image_url 		= $image_url;
 		$this->file_ext 		= $this->_getImageExtension($image_url);
 		$this->cache_time 		= 24 * 60 * 60;
