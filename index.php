@@ -7,10 +7,10 @@ $image = getFlickrImage();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>iamdash.com</title>
-         <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0" />
+        <title>iamdash.com | Home page of Dave Ashman. Web developer at Music. Living in the North West.</title>
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0" />
         <meta charset="UTF-8" />
-        <meta name="description" content="" />
+        <meta name="description" content="Home page of Dave Ashman. Web developer at Music. Living in the North West." />
         <link href="/favicon.ico" type="image/x-icon" rel="icon" />
         <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
