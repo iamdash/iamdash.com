@@ -26,6 +26,9 @@ body{
     margin: 40px 10%;
     padding-bottom: 116px;
     position: relative;
+    @media only screen and (max-device-width:480px) {
+        margin: 10px;
+    }    
     @media only screen and (min-width:990px) {
     }
     @media only screen and (min-width:768px) and (max-width:989px) { 
@@ -37,6 +40,9 @@ body{
 }
 .row{
     margin-bottom: 20px;
+    @media only screen and (max-device-width:480px) {
+        margin-bottom: 0;
+    }     
      @media only screen and (min-width:990px) {
     }
     @media only screen and (min-width:768px) and (max-width:989px) {
@@ -70,6 +76,10 @@ p span{
 }
 h1 span{
     padding: 20px 20px 10px 20px;
+         @media only screen and (max-device-width:480px) {
+       padding: 10px 10%!important;
+        width: 80%!important;
+    } 
     @media only screen and (min-width:768px) and (max-width:989px) {
     }
     @media only screen and (max-width:767px){
@@ -80,6 +90,10 @@ h1 span{
 h2 span,
 p span{
     padding: 20px;
+    @media only screen and (max-device-width:480px) {
+       padding: 10px 10%!important;
+        width: 80%!important;
+    }     
     @media only screen and (min-width:768px) and (max-width:989px) {}
     @media only screen and (max-width:767px){
         line-height: 1.5em;
