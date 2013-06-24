@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Europe/London');
 require_once './lib/utils.php';
 require_once './lib/fns.php';
 $image = getFlickrImage();
@@ -41,11 +42,12 @@ $image = getFlickrImage();
             <div class="twitter row">
                 <h2><span><a href="https://twitter.com/_iamdash">@_iamdash</a></span></h2>
                 <?php
-                $twitter = new Twitter('_iamdash', 1);
-                $tweets = $twitter->getTweets();
+                $twitter = new Twitter(1);
+                $tweets = $twitter->getRecentTweets();
+
                 foreach($tweets as $tweet):
                 ?>
-                <p><span><?php echo $tweet['tweet']; ?></span></p>
+                <p><span><?php echo $tweet['content']; ?></span></p>
                 <?php endforeach;?>
             </div>
             <footer class="footer row">
