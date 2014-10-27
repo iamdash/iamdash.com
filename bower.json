@@ -1,9 +1,0 @@
-{
-  "name": "iamdash-com",
-  "private": true,
-  "dependencies": {
-    "sass-bootstrap": "~3.0.0",
-    "jquery": "~1.10.2"
-  },
-  "devDependencies": {}
-}
